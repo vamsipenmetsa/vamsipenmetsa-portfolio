@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/ali-abdaal-portfolio/',
+  base: '/vamsipenmetsa-portfolio/',
   plugins: [
     react(),
     tailwindcss(),
