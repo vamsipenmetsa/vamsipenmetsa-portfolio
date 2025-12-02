@@ -55,18 +55,11 @@ function App() {
           {/* Image Side (Left on Desktop) */}
           <div className="relative w-full md:w-1/2 flex justify-center md:justify-end">
             <div className="relative w-72 h-72 md:w-[450px] md:h-[450px]">
-              {/* Yellow Blob Background */}
-              <div className="absolute top-4 right-4 w-full h-full bg-ali-yellow rounded-[60%_40%_30%_70%/60%_30%_70%_40%] -z-10 transform rotate-12"></div>
               <img
-                src="./vamsi-profile.jpg"
+                src="./vamsiPenmetsa.png"
                 alt="Vamsi Penmetsa"
-                className="w-full h-full object-cover object-[center_20%] rounded-[50%] border-4 border-white shadow-xl z-10 relative"
+                className="w-full h-full object-contain z-10 relative"
               />
-              {/* Floating Element */}
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-lg transform -rotate-6 z-20 hidden md:block">
-                <span className="text-2xl">👋</span>
-                <span className="font-hand text-xl font-bold ml-2">Hi there!</span>
-              </div>
             </div>
           </div>
 
@@ -120,8 +113,8 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1: Career Mentorship */}
-            <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300 group">
-              <div className="w-20 h-20 bg-ali-blue/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-blue/30 transition-colors">
+            <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 hover:bg-ali-blue/10 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-20 h-20 bg-ali-blue/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-blue group-hover:scale-110 transition-all">
                 <svg className="w-12 h-12 text-ali-blue-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
@@ -136,8 +129,8 @@ function App() {
             </div>
 
             {/* Card 2: How to Leverage LinkedIn */}
-            <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300 group">
-              <div className="w-20 h-20 bg-ali-orange/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-orange/30 transition-colors">
+            <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 hover:bg-ali-orange/10 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-20 h-20 bg-ali-orange/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-orange group-hover:scale-110 transition-all">
                 <svg className="w-12 h-12 text-ali-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -152,8 +145,8 @@ function App() {
             </div>
 
             {/* Card 3: Resume Review & Optimisation */}
-            <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300 group">
-              <div className="w-20 h-20 bg-ali-yellow/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-yellow/40 transition-colors">
+            <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 hover:bg-ali-yellow/20 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-20 h-20 bg-ali-yellow/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-yellow group-hover:scale-110 transition-all">
                 <svg className="w-12 h-12 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
@@ -342,6 +335,44 @@ function App() {
                 <p className="text-gray-600 mb-4">Complete Pack: From Basics to Advanced K8s. Your go-to reference.</p>
                 <span className="inline-block px-4 py-1 bg-ali-yellow/20 text-yellow-800 text-sm font-bold rounded-full">Free Download</span>
               </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-24 bg-gradient-to-b from-white to-ali-cream">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+            Let's <span className="relative inline-block">
+              Connect
+              <svg className="absolute w-full h-4 -bottom-1 left-0 text-ali-orange" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.00025 7.00001C45.9184 3.66668 156.667 -2.33332 198.001 2.50001" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+              </svg>
+            </span>
+          </h2>
+          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+            Have questions about DevOps, Cloud, or career growth? Let's connect and discuss how I can help you achieve your goals.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <a href="mailto:vamsivarmapenmatsa@gmail.com" className="inline-flex items-center gap-3 px-8 py-4 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all transform hover:scale-105">
+              <Mail size={24} />
+              <span>Email Me</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-[#0077b5] text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all transform hover:scale-105">
+              <Linkedin size={24} />
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+          <div className="mt-12 flex justify-center gap-6">
+            <a href="https://github.com/vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-ali-heading hover:text-white hover:scale-110 transition-all shadow-md">
+              <Github size={24} />
+            </a>
+            <a href="https://medium.com/@vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-black hover:text-white hover:scale-110 transition-all shadow-md">
+              <BookOpen size={24} />
+            </a>
+            <a href="https://www.instagram.com/vamsipenmetsa7" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white hover:scale-110 transition-all shadow-md">
+              <Instagram size={24} />
             </a>
           </div>
         </div>

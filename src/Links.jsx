@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Gift, Star } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Gift, Star, Code, Cloud } from 'lucide-react';
 
 function Links() {
 
@@ -7,7 +7,7 @@ function Links() {
     free: [
       {
         href: "https://vamsipenmetsa.gumroad.com/l/ryfhqh",
-        icon: "fas fa-robot",
+        icon: Code,
         bg: "bg-ali-yellow",
         title: "GitHub Copilot Visual Guide",
         desc: "Master AI-powered coding with prompting strategies",
@@ -15,7 +15,7 @@ function Links() {
       },
       {
         href: "https://vamsipenmetsa.gumroad.com/l/knioda",
-        icon: "fas fa-dharmachakra",
+        icon: Cloud,
         bg: "bg-ali-blue",
         title: "Kubernetes Cheat Sheet",
         desc: "Complete K8s reference from basics to advanced",
@@ -100,7 +100,7 @@ function Links() {
     ]
   };
 
-  const LinkCard = ({ href, icon: Icon, bg, title, desc, badge, iconClass }) => (
+  const LinkCard = ({ href, icon: Icon, bg, title, desc, badge }) => (
     <a 
       href={href} 
       target="_blank" 
@@ -114,11 +114,7 @@ function Links() {
       )}
       <div className="flex items-center gap-4">
         <div className={`${bg} rounded-xl p-3 flex items-center justify-center min-w-[52px] group-hover:scale-110 transition-transform duration-300`}>
-          {iconClass ? (
-            <i className={`${iconClass} text-2xl text-white`}></i>
-          ) : (
-            <Icon className="text-white" size={24} />
-          )}
+          <Icon className="text-white" size={24} />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-serif font-bold text-lg text-ali-heading group-hover:text-ali-orange transition-colors">
@@ -189,7 +185,7 @@ function Links() {
               </p>
               <div className="space-y-4">
                 {linkCards.free.map((link, idx) => (
-                  <LinkCard key={idx} {...link} iconClass={link.icon} />
+                  <LinkCard key={idx} {...link} />
                 ))}
               </div>
             </div>
