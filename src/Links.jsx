@@ -25,7 +25,7 @@ function Links() {
       {/* Minimal Profile Section */}
       <div className="text-center mb-6 relative z-10">
         <img 
-          src="/vamsipenmetsa-portfolio/vamsiPenmetsa.png" 
+          src="./vamsi-profile.jpg" 
           alt="Vamsi Penmetsa"
           className="w-20 h-20 rounded-full border-2 border-gray-800 dark:border-gray-400 shadow-md mx-auto mb-3 object-cover object-top"
         />
@@ -223,7 +223,7 @@ function Links() {
 
         {/* Back to Portfolio */}
         <div className="text-center pt-6 pb-4">
-          <a href="/vamsipenmetsa-portfolio/" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-gray-800 dark:border-gray-400 text-sm font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-800 hover:text-white dark:hover:bg-gray-400 dark:hover:text-gray-900 transition-all duration-300 shadow-lg font-sans">
+          <a href="/vamsipenmetsa-portfolio" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-gray-800 dark:border-gray-400 text-sm font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-800 hover:text-white dark:hover:bg-gray-400 dark:hover:text-gray-900 transition-all duration-300 shadow-lg font-sans">
             <ArrowLeft size={18} />
             <span>Back to Portfolio</span>
           </a>
