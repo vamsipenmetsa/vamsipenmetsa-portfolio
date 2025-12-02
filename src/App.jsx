@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ExternalLink, ChevronRight, BookOpen, Terminal, Cloud, Code } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ArrowRight, Send, BookOpen, Cloud, Terminal, Code, ChevronDown } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,274 +7,280 @@ function App() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div className="min-h-screen bg-ali-dark text-ali-text selection:bg-ali-gold selection:text-ali-dark">
+    <div className="min-h-screen bg-ali-cream text-ali-text selection:bg-ali-orange selection:text-white">
       {/* Navigation */}
-      <nav className="fixed w-full z-50 bg-ali-dark/80 backdrop-blur-md border-b border-ali-blue">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0 flex items-center">
-              <span className="text-xl font-bold tracking-tighter">Vamsi Penmetsa</span>
-            </div>
+      <nav className="w-full py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="flex justify-between items-center">
+          <div className="flex items-center gap-2">
+            {/* Logo Placeholder - stylized text */}
+            <span className="font-serif text-2xl font-bold tracking-tight">Vamsi Penmetsa</span>
+          </div>
 
-            {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8 items-center">
-              <a href="#about" className="text-ali-muted hover:text-ali-gold transition-colors text-sm font-medium">About</a>
-              <a href="#experience" className="text-ali-muted hover:text-ali-gold transition-colors text-sm font-medium">Experience</a>
-              <a href="#skills" className="text-ali-muted hover:text-ali-gold transition-colors text-sm font-medium">Skills</a>
-              <a href="#resources" className="text-ali-muted hover:text-ali-gold transition-colors text-sm font-medium">Resources</a>
-              <a href="#contact" className="px-4 py-2 bg-ali-gold text-ali-dark rounded-full text-sm font-bold hover:bg-yellow-400 transition-colors">
-                Let's Talk
-              </a>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-8">
+            <a href="#about" className="font-sans font-medium hover:text-ali-orange transition-colors">About</a>
+            <div className="group relative cursor-pointer">
+              <span className="font-sans font-medium hover:text-ali-orange transition-colors flex items-center gap-1">
+                Resources <ChevronDown size={16} />
+              </span>
             </div>
+            <a href="#experience" className="font-sans font-medium hover:text-ali-orange transition-colors">Experience</a>
+            <a href="#contact" className="px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-orange-400 transition-transform transform hover:scale-105 shadow-sm">
+              Let's Connect
+            </a>
+          </div>
 
-            {/* Mobile menu button */}
-            <div className="md:hidden flex items-center">
-              <button onClick={toggleMenu} className="text-ali-text hover:text-ali-gold">
-                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button onClick={toggleMenu} className="text-ali-heading">
+              {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-ali-dark border-b border-ali-blue">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a href="#about" className="block px-3 py-2 text-ali-muted hover:text-ali-gold" onClick={toggleMenu}>About</a>
-              <a href="#experience" className="block px-3 py-2 text-ali-muted hover:text-ali-gold" onClick={toggleMenu}>Experience</a>
-              <a href="#skills" className="block px-3 py-2 text-ali-muted hover:text-ali-gold" onClick={toggleMenu}>Skills</a>
-              <a href="#resources" className="block px-3 py-2 text-ali-muted hover:text-ali-gold" onClick={toggleMenu}>Resources</a>
-              <a href="#contact" className="block px-3 py-2 text-ali-gold font-bold" onClick={toggleMenu}>Let's Talk</a>
+          <div className="md:hidden absolute top-20 left-0 w-full bg-white shadow-xl z-50 border-t border-gray-100">
+            <div className="p-4 space-y-4">
+              <a href="#about" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>About</a>
+              <a href="#experience" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Experience</a>
+              <a href="#resources" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Resources</a>
+              <a href="#contact" className="block font-bold text-ali-orange p-2" onClick={toggleMenu}>Let's Connect</a>
             </div>
           </div>
         )}
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1 space-y-6">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-ali-blue text-ali-gold text-xs font-bold tracking-wide uppercase">
-              Lead DevOps Engineer
+      <section className="pt-12 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-24">
+
+          {/* Image Side (Left on Desktop) */}
+          <div className="relative w-full md:w-1/2 flex justify-center md:justify-end">
+            <div className="relative w-72 h-72 md:w-[450px] md:h-[450px]">
+              {/* Yellow Blob Background */}
+              <div className="absolute top-4 right-4 w-full h-full bg-ali-yellow rounded-[60%_40%_30%_70%/60%_30%_70%_40%] -z-10 transform rotate-12"></div>
+              <img
+                src="/vamsi-profile.jpg"
+                alt="Vamsi Penmetsa"
+                className="w-full h-full object-cover rounded-[50%] border-4 border-white shadow-xl z-10 relative"
+              />
+              {/* Floating Element */}
+              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-lg transform -rotate-6 z-20 hidden md:block">
+                <span className="text-2xl">👋</span>
+                <span className="font-hand text-xl font-bold ml-2">Hi there!</span>
+              </div>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
-              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-ali-gold to-yellow-200">Vamsi Penmetsa</span>
+          </div>
+
+          {/* Text Side (Right on Desktop) */}
+          <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
+            <h1 className="text-5xl md:text-7xl font-serif font-bold text-ali-heading relative inline-block">
+              Hey Friends
+              <span className="text-4xl md:text-6xl ml-4 animate-wave inline-block">👋</span>
+              {/* Blue Underline */}
+              <svg className="absolute w-full h-4 -bottom-2 left-0 text-ali-blue" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.00025 7.00001C45.9184 3.66668 156.667 -2.33332 198.001 2.50001" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+              </svg>
             </h1>
-            <p className="text-xl text-ali-muted max-w-2xl leading-relaxed">
-              Deploying <span className="text-ali-text font-semibold">LLMs as a Service</span> on Azure AKS for <span className="text-ali-text font-semibold">LSEG × Microsoft UK Partnership</span>.
-              Based in Warsaw, Poland 🇵🇱.
+
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-sans font-light">
+              I'm <span className="font-bold text-ali-heading">Vamsi</span>. I'm a Lead DevOps Engineer turned
+              <span className="font-serif italic font-bold text-ali-heading"> AI Enthusiast</span>,
+              deploying LLMs for LSEG × Microsoft.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
-              <a href="#resources" className="px-8 py-3 bg-ali-gold text-ali-dark rounded-full font-bold hover:bg-yellow-400 transition-all transform hover:scale-105">
+
+            <p className="text-lg text-gray-500">
+              Author of the <span className="underline decoration-ali-orange decoration-2 underline-offset-2">GitHub Copilot Visual Guide</span> and
+              <span className="underline decoration-ali-blue decoration-2 underline-offset-2"> Kubernetes Cheat Sheet</span>.
+            </p>
+
+            <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a href="#about" className="px-8 py-3 bg-ali-heading text-white rounded-full font-bold hover:bg-gray-800 transition-all">
+                More About Me
+              </a>
+              <a href="#resources" className="px-8 py-3 bg-white text-ali-heading border-2 border-gray-200 rounded-full font-bold hover:border-ali-orange hover:text-ali-orange transition-all">
                 Free Resources
               </a>
-              <a href="Vamsi_Penmetsa_Resume.pdf" target="_blank" className="px-8 py-3 bg-ali-blue text-ali-text border border-ali-muted/20 rounded-full font-bold hover:bg-ali-blue/80 transition-all">
-                View Resume
-              </a>
-            </div>
-            <div className="flex items-center gap-6 pt-6 text-ali-muted">
-              <div className="flex items-center gap-2">
-                <span className="font-bold text-ali-text">150+</span> Interviews
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="font-bold text-ali-text">7x</span> Azure Certified
-              </div>
-            </div>
-          </div>
-          <div className="relative w-72 h-72 md:w-96 md:h-96 flex-shrink-0">
-            <div className="absolute inset-0 bg-ali-gold/20 rounded-full blur-3xl"></div>
-            <img
-              src="/vamsi-profile.jpg"
-              alt="Vamsi Penmetsa"
-              className="relative w-full h-full object-cover rounded-2xl shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 border-2 border-ali-blue"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-20 bg-ali-blue/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
-            <span className="w-8 h-1 bg-ali-gold rounded-full"></span>
-            About Me
-          </h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-ali-blue p-8 rounded-2xl border border-ali-muted/10 hover:border-ali-gold/50 transition-colors">
-              <h3 className="text-xl font-bold mb-4 text-ali-gold">The Professional Side 👔</h3>
-              <p className="text-ali-muted mb-4 leading-relaxed">
-                I'm a <strong className="text-ali-text">Lead DevOps Engineer</strong> deploying Large Language Models (LLMs) as a service on Azure AKS and PaaS for the London Stock Exchange Group (LSEG) and its UK financial clients.
-              </p>
-              <p className="text-ali-muted leading-relaxed">
-                Part of the high-profile <strong className="text-ali-text">LSEG × Microsoft UK Partnership</strong>. I hold 7 Active Azure Certifications and am an EPAM AI Ambassador.
-              </p>
-            </div>
-            <div className="bg-ali-blue p-8 rounded-2xl border border-ali-muted/10 hover:border-ali-gold/50 transition-colors">
-              <h3 className="text-xl font-bold mb-4 text-ali-gold">The Journey 🌟</h3>
-              <p className="text-ali-muted mb-4 leading-relaxed">
-                Successfully navigated from Manual Tester → Automation Engineer → DevOps → SRE → Platform Engineer → Cloud Engineer.
-              </p>
-              <p className="text-ali-muted leading-relaxed">
-                Worked with industry leaders: IMF, WTW, Wolters Kluwer, Corteva, UBS Swiss, Microsoft.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="experience" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
-            <span className="w-8 h-1 bg-ali-gold rounded-full"></span>
-            My Journey
-          </h2>
-          <div className="space-y-8">
-            {[
-              {
-                role: "AI Ambassador & Copilot Champion",
-                company: "EPAM Poland",
-                date: "May 2025 - Present",
-                desc: "Promoting Microsoft Copilot, conducting workshops, and driving AI adoption.",
-                tags: ["AI", "Workshops"]
-              },
-              {
-                role: "Lead Systems Engineer",
-                company: "EPAM Systems",
-                date: "Apr 2023 - Present",
-                desc: "Leading DevOps for LLM deployment on Azure AKS & PaaS. Designing scalable infrastructure for model hosting.",
-                tags: ["Azure AKS", "LLM", "SRE"]
-              },
-              {
-                role: "Senior Systems Engineer",
-                company: "EPAM Systems",
-                date: "Aug 2022 - Mar 2023",
-                desc: "PaaS infrastructure for Corteva. Cloud migration for UBS Switzerland.",
-                tags: ["PaaS", "Migration"]
-              }
-            ].map((job, index) => (
-              <div key={index} className="flex flex-col md:flex-row gap-6 p-6 rounded-2xl hover:bg-ali-blue/50 transition-colors border-l-4 border-ali-gold bg-ali-blue/20">
-                <div className="md:w-1/4">
-                  <span className="text-sm font-bold text-ali-gold">{job.date}</span>
-                  <h4 className="text-lg font-semibold text-ali-muted">{job.company}</h4>
-                </div>
-                <div className="md:w-3/4">
-                  <h3 className="text-xl font-bold mb-2">{job.role}</h3>
-                  <p className="text-ali-muted mb-4">{job.desc}</p>
-                  <div className="flex gap-2">
-                    {job.tags.map(tag => (
-                      <span key={tag} className="text-xs px-2 py-1 rounded-md bg-ali-blue text-ali-text border border-ali-muted/20">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+      {/* Newsletter / LifeNotes Section */}
+      <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto mb-24 relative">
+        {/* Hand drawn arrow */}
+        <div className="absolute -top-16 right-0 md:-right-12 hidden md:block text-ali-orange transform rotate-12">
+          <svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M10,10 Q50,50 20,80" strokeLinecap="round" />
+            <path d="M20,80 L30,70 M20,80 L10,70" strokeLinecap="round" />
+          </svg>
+        </div>
+
+        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 flex flex-col md:flex-row gap-12 items-center">
+          <div className="flex-1 space-y-6">
+            <div className="flex items-center gap-3">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold">Subscribe to LifeNotes</h2>
+              <Send className="text-ali-blue transform -rotate-12" size={32} />
+            </div>
+            <p className="text-lg text-gray-600">
+              Each week, I share actionable DevOps tips, AI insights, and highlights from my journey in tech.
+              It's free to join, and always will be.
+            </p>
+            <div className="flex items-center gap-2 text-sm font-bold text-gray-500">
+              <span>Join a growing community of more than</span>
+              <span className="text-ali-heading bg-ali-yellow/30 px-2 py-0.5 rounded">15,000+ friendly readers</span>
+            </div>
+          </div>
+
+          <div className="w-full md:w-5/12 bg-ali-cream p-6 rounded-2xl">
+            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <div>
+                <label className="block text-sm font-bold text-gray-700 mb-1">Your email address</label>
+                <input
+                  type="email"
+                  placeholder="john@example.com"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-ali-blue focus:ring-2 focus:ring-ali-blue/20 outline-none transition-all"
+                />
               </div>
-            ))}
+              <button className="w-full py-3 bg-ali-blue-dark text-white font-bold rounded-xl hover:bg-sky-500 transition-colors shadow-md hover:shadow-lg">
+                Subscribe
+              </button>
+              <p className="text-xs text-center text-gray-400">No spam, unsubscribe anytime.</p>
+            </form>
           </div>
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section id="skills" className="py-20 bg-ali-blue/30">
+      {/* About / Professional Section */}
+      <section id="about" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
-            <span className="w-8 h-1 bg-ali-gold rounded-full"></span>
-            Skills & Tools
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="p-6 bg-ali-blue rounded-xl text-center hover:-translate-y-1 transition-transform duration-300">
-              <Cloud className="w-10 h-10 mx-auto mb-4 text-ali-gold" />
-              <h3 className="font-bold mb-2">Cloud</h3>
-              <p className="text-sm text-ali-muted">Azure, AWS, AKS</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-serif font-bold mb-4">The Professional Side</h2>
+            <div className="w-24 h-1 bg-ali-yellow mx-auto rounded-full"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-ali-cream rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
+              <div className="w-12 h-12 bg-ali-blue/20 text-ali-blue-dark rounded-xl flex items-center justify-center mb-6">
+                <Cloud size={24} />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Cloud Architect</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Specialized in Azure AKS and PaaS infrastructure. Currently leading the deployment of LLMs for major financial institutions.
+              </p>
             </div>
-            <div className="p-6 bg-ali-blue rounded-xl text-center hover:-translate-y-1 transition-transform duration-300">
-              <Code className="w-10 h-10 mx-auto mb-4 text-ali-gold" />
-              <h3 className="font-bold mb-2">IaC</h3>
-              <p className="text-sm text-ali-muted">Terraform, Bicep</p>
+
+            {/* Card 2 */}
+            <div className="bg-ali-cream rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
+              <div className="w-12 h-12 bg-ali-orange/20 text-ali-orange rounded-xl flex items-center justify-center mb-6">
+                <Terminal size={24} />
+              </div>
+              <h3 className="text-xl font-bold mb-3">DevOps Leader</h3>
+              <p className="text-gray-600 leading-relaxed">
+                From Manual Tester to Lead Systems Engineer. I've walked the path and now mentor others to do the same.
+              </p>
             </div>
-            <div className="p-6 bg-ali-blue rounded-xl text-center hover:-translate-y-1 transition-transform duration-300">
-              <Terminal className="w-10 h-10 mx-auto mb-4 text-ali-gold" />
-              <h3 className="font-bold mb-2">Scripting</h3>
-              <p className="text-sm text-ali-muted">Python, PowerShell</p>
-            </div>
-            <div className="p-6 bg-ali-blue rounded-xl text-center hover:-translate-y-1 transition-transform duration-300">
-              <BookOpen className="w-10 h-10 mx-auto mb-4 text-ali-gold" />
-              <h3 className="font-bold mb-2">AI/ML</h3>
-              <p className="text-sm text-ali-muted">LLM Ops, Copilot</p>
+
+            {/* Card 3 */}
+            <div className="bg-ali-cream rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
+              <div className="w-12 h-12 bg-ali-yellow/20 text-yellow-600 rounded-xl flex items-center justify-center mb-6">
+                <BookOpen size={24} />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Educator</h3>
+              <p className="text-gray-600 leading-relaxed">
+                EPAM AI Ambassador and Microsoft Copilot Champion. I love breaking down complex topics into simple guides.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Resources Section */}
-      <section id="resources" className="py-20">
+      <section id="resources" className="py-24 bg-ali-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Resources & Community</h2>
-            <p className="text-ali-muted text-lg">Everything you need to grow!</p>
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div>
+              <h2 className="text-4xl font-serif font-bold mb-4">Free Resources</h2>
+              <p className="text-xl text-gray-600">Tools to help you grow in your career.</p>
+            </div>
+            <a href="https://vamsipenmetsa.gumroad.com/" target="_blank" className="text-ali-blue-dark font-bold hover:underline flex items-center gap-2">
+              View all resources <ArrowRight size={20} />
+            </a>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="group relative bg-gradient-to-br from-ali-blue to-ali-dark p-8 rounded-3xl border border-ali-muted/20 hover:border-ali-gold transition-all">
-              <div className="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">
-                FREE
+          <div className="grid md:grid-cols-2 gap-8">
+            <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl transition-all duration-300">
+              <div className="bg-ali-blue/10 rounded-2xl h-48 flex items-center justify-center mb-6 group-hover:bg-ali-blue/20 transition-colors">
+                <Code size={64} className="text-ali-blue-dark" />
               </div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-ali-gold transition-colors">GitHub Copilot Visual Guide</h3>
-              <p className="text-ali-muted mb-6">Prompting Made Simple. Master AI coding assistance.</p>
-              <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" className="inline-flex items-center text-ali-gold font-bold hover:gap-2 transition-all">
-                Get it Free <ChevronRight size={20} />
-              </a>
-            </div>
-            <div className="group relative bg-gradient-to-br from-ali-blue to-ali-dark p-8 rounded-3xl border border-ali-muted/20 hover:border-ali-gold transition-all">
-              <div className="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">
-                FREE
+              <div className="px-6 pb-6">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-ali-blue-dark transition-colors">GitHub Copilot Visual Guide</h3>
+                <p className="text-gray-600 mb-4">Prompting Made Simple. Master AI coding assistance with this visual guide.</p>
+                <span className="inline-block px-4 py-1 bg-ali-yellow/20 text-yellow-800 text-sm font-bold rounded-full">Free Download</span>
               </div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-ali-gold transition-colors">Kubernetes Cheat Sheet</h3>
-              <p className="text-ali-muted mb-6">Complete Pack: From Basics to Advanced K8s.</p>
-              <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" className="inline-flex items-center text-ali-gold font-bold hover:gap-2 transition-all">
-                Get it Free <ChevronRight size={20} />
-              </a>
-            </div>
-          </div>
+            </a>
 
-          {/* Success Story */}
-          <div className="bg-ali-gold/10 p-8 rounded-3xl border border-ali-gold/30 text-center max-w-3xl mx-auto">
-            <p className="text-xl italic text-ali-text mb-6">
-              "Hi Vamsi! I am writing back to tell you that I successfully passed last technical interview. Thank you for your recommendation... I am so excited and grateful!"
-            </p>
-            <div className="flex items-center justify-center gap-4">
-              <div className="text-left">
-                <p className="font-bold text-ali-gold">Mariia</p>
-                <p className="text-sm text-ali-muted">Aspiring DevOps Engineer</p>
+            <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl transition-all duration-300">
+              <div className="bg-ali-orange/10 rounded-2xl h-48 flex items-center justify-center mb-6 group-hover:bg-ali-orange/20 transition-colors">
+                <Cloud size={64} className="text-ali-orange" />
               </div>
-            </div>
+              <div className="px-6 pb-6">
+                <h3 className="text-2xl font-bold mb-2 group-hover:text-ali-orange transition-colors">Kubernetes Cheat Sheet</h3>
+                <p className="text-gray-600 mb-4">Complete Pack: From Basics to Advanced K8s. Your go-to reference.</p>
+                <span className="inline-block px-4 py-1 bg-ali-yellow/20 text-yellow-800 text-sm font-bold rounded-full">Free Download</span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-ali-blue py-12 border-t border-ali-muted/10">
+      <footer className="bg-white border-t border-gray-100 pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-2">Vamsi Penmetsa</h3>
-              <p className="text-ali-muted">Lead DevOps Engineer & AI Enthusiast</p>
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
+            <div className="col-span-1 md:col-span-2">
+              <span className="font-serif text-2xl font-bold tracking-tight block mb-6">Vamsi Penmetsa</span>
+              <p className="text-gray-500 max-w-sm mb-6">
+                Lead DevOps Engineer, AI Ambassador, and creator of educational content for the tech community.
+              </p>
+              <div className="flex gap-4">
+                <a href="https://github.com/vamsipenmetsa" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-ali-heading hover:text-white transition-colors">
+                  <Github size={20} />
+                </a>
+                <a href="https://www.linkedin.com/in/vamsipenmetsa" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-[#0077b5] hover:text-white transition-colors">
+                  <Linkedin size={20} />
+                </a>
+                <a href="mailto:vamsivarmapenmatsa@gmail.com" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-ali-orange hover:text-white transition-colors">
+                  <Mail size={20} />
+                </a>
+              </div>
             </div>
-            <div className="flex gap-6">
-              <a href="https://github.com/vamsipenmetsa" target="_blank" className="text-ali-muted hover:text-ali-gold transition-colors">
-                <Github size={24} />
-              </a>
-              <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank" className="text-ali-muted hover:text-ali-gold transition-colors">
-                <Linkedin size={24} />
-              </a>
-              <a href="mailto:vamsivarmapenmatsa@gmail.com" className="text-ali-muted hover:text-ali-gold transition-colors">
-                <Mail size={24} />
-              </a>
+
+            <div>
+              <h4 className="font-bold mb-6">Explore</h4>
+              <ul className="space-y-4 text-gray-600">
+                <li><a href="#about" className="hover:text-ali-orange">About</a></li>
+                <li><a href="#experience" className="hover:text-ali-orange">Experience</a></li>
+                <li><a href="#resources" className="hover:text-ali-orange">Free Resources</a></li>
+                <li><a href="#contact" className="hover:text-ali-orange">Contact</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-6">Community</h4>
+              <ul className="space-y-4 text-gray-600">
+                <li><a href="#" className="hover:text-ali-orange">Newsletter</a></li>
+                <li><a href="#" className="hover:text-ali-orange">LinkedIn Group</a></li>
+                <li><a href="#" className="hover:text-ali-orange">Warsaw Friends</a></li>
+              </ul>
             </div>
           </div>
-          <div className="mt-8 text-center text-ali-muted text-sm">
-            &copy; 2025 Vamsi Penmetsa. All rights reserved.
+
+          <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+            <p>&copy; 2025 Vamsi Penmetsa. All rights reserved.</p>
+            <p>Designed with <span className="text-red-400">♥</span> inspired by Ali Abdaal.</p>
           </div>
         </div>
       </footer>

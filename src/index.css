@@ -1,17 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ali-dark: #0f172a;
-  --color-ali-blue: #1e293b;
-  --color-ali-gold: #fbbf24;
-  --color-ali-text: #f1f5f9;
-  --color-ali-muted: #94a3b8;
+  --color-ali-cream: #f9f7f2;
+  --color-ali-text: #333333;
+  --color-ali-heading: #1a1a1a;
+  --color-ali-orange: #ffab7b;
+  --color-ali-yellow: #facc15;
+  --color-ali-blue: #7dd3fc;
+  --color-ali-blue-dark: #38bdf8;
 
+  --font-serif: 'Merriweather', serif;
   --font-sans: 'Inter', sans-serif;
+  --font-hand: 'Caveat', cursive;
 }
 
 body {
-  @apply bg-ali-dark text-ali-text font-sans antialiased;
+  @apply bg-ali-cream text-ali-text font-sans antialiased;
 }
 
 h1,
@@ -20,5 +24,9 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold tracking-tight;
+  @apply font-serif font-bold tracking-tight text-ali-heading;
+}
+
+.font-hand {
+  font-family: var(--font-hand);
 }
