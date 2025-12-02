@@ -19,13 +19,10 @@ function App() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#about" className="font-sans font-medium hover:text-ali-orange transition-colors">About</a>
-            <div className="group relative cursor-pointer">
-              <span className="font-sans font-medium hover:text-ali-orange transition-colors flex items-center gap-1">
-                Resources <ChevronDown size={16} />
-              </span>
-            </div>
+            <a href="#resources" className="font-sans font-medium hover:text-ali-orange transition-colors">Resources</a>
             <a href="#experience" className="font-sans font-medium hover:text-ali-orange transition-colors">Experience</a>
-            <a href="#contact" className="px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-orange-400 transition-transform transform hover:scale-105 shadow-sm">
+            <a href="/vamsipenmetsa-portfolio/links" className="font-sans font-medium hover:text-ali-blue-dark transition-colors">Links</a>
+            <a href="#contact" className="px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-lg transition-all transform hover:scale-105 shadow-sm">
               Let's Connect
             </a>
           </div>
@@ -96,10 +93,10 @@ function App() {
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="#resources" className="px-8 py-3 bg-ali-orange text-white rounded-full font-bold hover:bg-orange-400 transition-all shadow-lg animate-pulse">
+              <a href="#resources" className="px-8 py-3 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all shadow-lg animate-pulse">
                 🎁 Free Resources
               </a>
-              <a href="#about" className="px-8 py-3 bg-white text-ali-heading border-2 border-gray-200 rounded-full font-bold hover:border-ali-heading hover:bg-ali-heading hover:text-white transition-all">
+              <a href="#about" className="px-8 py-3 bg-white text-ali-heading border-2 border-ali-orange rounded-full font-bold hover:border-ali-blue-dark hover:bg-ali-blue-dark hover:text-white hover:shadow-lg transition-all">
                 More About Me
               </a>
             </div>
@@ -133,7 +130,7 @@ function App() {
               <p className="text-gray-600 leading-relaxed mb-6">
                 Get personalized guidance for your DevOps/Cloud career. Mock interviews, resume reviews, and career strategy sessions based on 150+ interviews conducted.
               </p>
-              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" className="inline-flex items-center gap-2 text-ali-blue-dark font-bold hover:gap-3 transition-all">
+              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2.5 bg-ali-blue-dark text-white rounded-full font-bold hover:bg-ali-orange hover:gap-3 hover:shadow-lg transition-all">
                 Get started <ArrowRight size={20} />
               </a>
             </div>
@@ -149,7 +146,7 @@ function App() {
               <p className="text-gray-600 leading-relaxed mb-6">
                 Learn strategies to optimize your LinkedIn profile, build your professional network, and successfully transition to a cloud/DevOps career.
               </p>
-              <a href="https://topmate.io/vamsipenmetsa/137043?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-ali-orange font-bold hover:gap-3 transition-all">
+              <a href="https://topmate.io/vamsipenmetsa/137043?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:gap-3 hover:shadow-lg transition-all">
                 Get started <ArrowRight size={20} />
               </a>
             </div>
@@ -165,7 +162,7 @@ function App() {
               <p className="text-gray-600 leading-relaxed mb-6">
                 Get your resume professionally reviewed and optimized for cloud and DevOps roles. Stand out in the competitive tech job market.
               </p>
-              <a href="https://topmate.io/vamsipenmetsa/1804944?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-yellow-700 font-bold hover:gap-3 transition-all">
+              <a href="https://topmate.io/vamsipenmetsa/1804944?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2.5 bg-ali-yellow text-ali-heading rounded-full font-bold hover:bg-ali-blue-dark hover:text-white hover:gap-3 hover:shadow-lg transition-all">
                 Get started <ArrowRight size={20} />
               </a>
             </div>
@@ -319,7 +316,7 @@ function App() {
               <p className="text-xl text-gray-600 font-bold">⚡ Limited: First 100 people only • <span className="text-ali-orange text-2xl">$0</span></p>
               <p className="text-lg text-gray-500 mt-2">Tools to help you grow in your career.</p>
             </div>
-            <a href="https://vamsipenmetsa.gumroad.com/" target="_blank" className="text-ali-blue-dark font-bold hover:underline flex items-center gap-2">
+            <a href="https://vamsipenmetsa.gumroad.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2.5 bg-ali-blue-dark text-white rounded-full font-bold hover:bg-ali-orange hover:shadow-lg transition-all">
               View all resources <ArrowRight size={20} />
             </a>
           </div>

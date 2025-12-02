@@ -105,7 +105,7 @@ function Links() {
       href={href} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="group bg-white rounded-2xl p-6 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-xl border border-white relative overflow-hidden"
+      className="group bg-white rounded-2xl p-6 hover:-translate-y-2 hover:border-ali-orange transition-all duration-300 shadow-md hover:shadow-2xl border border-gray-100 relative overflow-hidden"
     >
       {badge && (
         <span className="absolute top-3 right-3 bg-ali-orange text-white text-xs font-bold px-3 py-1 rounded-full z-10 animate-pulse">
@@ -115,9 +115,9 @@ function Links() {
       <div className="flex items-center gap-4">
         <div className={`${bg} rounded-xl p-3 flex items-center justify-center min-w-[52px] group-hover:scale-110 transition-transform duration-300`}>
           {iconClass ? (
-            <i className={`${iconClass} text-2xl text-ali-heading`}></i>
+            <i className={`${iconClass} text-2xl text-white`}></i>
           ) : (
-            <Icon className="text-ali-heading" size={24} />
+            <Icon className="text-white" size={24} />
           )}
         </div>
         <div className="flex-1 min-w-0">
@@ -257,7 +257,7 @@ function Links() {
         <div className="text-center pt-8">
           <a 
             href="/vamsipenmetsa-portfolio" 
-            className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-ali-heading text-ali-heading hover:bg-ali-heading hover:text-white transition-all duration-300 shadow-md hover:shadow-lg font-sans font-medium"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-ali-orange text-ali-heading hover:bg-ali-blue-dark hover:border-ali-blue-dark hover:text-white transition-all duration-300 shadow-md hover:shadow-lg font-sans font-medium"
           >
             <ArrowLeft size={20} />
             <span>Back to Portfolio</span>
