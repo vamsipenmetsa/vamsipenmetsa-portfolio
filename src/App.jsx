@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ArrowRight, Send, BookOpen, Cloud, Terminal, Code, ChevronDown } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ArrowRight, Send, BookOpen, Cloud, Terminal, Code, ChevronDown, Instagram, Users, ExternalLink, Calendar } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -107,7 +107,74 @@ function App() {
         </div>
       </section>
 
-      {/* Newsletter / LifeNotes Section */}
+      {/* How Can I Help You Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+              How Can <span className="relative inline-block">
+                I Help You?
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.00025 7.00001C45.9184 3.66668 156.667 -2.33332 198.001 2.50001" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                </svg>
+              </span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1: Career Mentorship */}
+            <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-20 h-20 bg-ali-blue/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-blue/30 transition-colors">
+                <svg className="w-12 h-12 text-ali-blue-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-serif font-bold mb-3">Career Mentorship</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Get personalized guidance for your DevOps/Cloud career. Mock interviews, resume reviews, and career strategy sessions based on 150+ interviews conducted.
+              </p>
+              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" className="inline-flex items-center gap-2 text-ali-blue-dark font-bold hover:gap-3 transition-all">
+                Get started <ArrowRight size={20} />
+              </a>
+            </div>
+
+            {/* Card 2: DevOps Consulting */}
+            <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-20 h-20 bg-ali-orange/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-orange/30 transition-colors">
+                <svg className="w-12 h-12 text-ali-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-serif font-bold mb-3">DevOps Consulting</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Azure AKS, Terraform, CI/CD pipelines, and cloud architecture design. Leverage my experience from LSEG, IMF, and Fortune 500 companies.
+              </p>
+              <a href="https://openinapp.link/aq10m" target="_blank" className="inline-flex items-center gap-2 text-ali-orange font-bold hover:gap-3 transition-all">
+                Get started <ArrowRight size={20} />
+              </a>
+            </div>
+
+            {/* Card 3: AI/LLM Guidance */}
+            <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-20 h-20 bg-ali-yellow/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-yellow/40 transition-colors">
+                <svg className="w-12 h-12 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-serif font-bold mb-3">AI/LLM Guidance</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Learn how to deploy and manage LLMs in production. GitHub Copilot mastery, AI tooling, and productivity enhancement strategies.
+              </p>
+              <a href="https://vamsipenmetsa.gumroad.com/" target="_blank" className="inline-flex items-center gap-2 text-yellow-700 font-bold hover:gap-3 transition-all">
+                Get started <ArrowRight size={20} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Success Story & Socials Section (Replaces Newsletter) */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto mb-24 relative">
         {/* Hand drawn arrow */}
         <div className="absolute -top-16 right-0 md:-right-12 hidden md:block text-ali-orange transform rotate-12">
@@ -117,37 +184,73 @@ function App() {
           </svg>
         </div>
 
-        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 flex flex-col md:flex-row gap-12 items-center">
+        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 flex flex-col md:flex-row gap-12">
+          {/* Left: Testimonial */}
           <div className="flex-1 space-y-6">
             <div className="flex items-center gap-3">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold">Subscribe to LifeNotes</h2>
-              <Send className="text-ali-blue transform -rotate-12" size={32} />
+              <h2 className="text-3xl md:text-4xl font-serif font-bold">Success Story</h2>
+              <div className="bg-ali-yellow/30 p-2 rounded-full">
+                <span className="text-2xl">⭐</span>
+              </div>
             </div>
-            <p className="text-lg text-gray-600">
-              Each week, I share actionable DevOps tips, AI insights, and highlights from my journey in tech.
-              It's free to join, and always will be.
-            </p>
-            <div className="flex items-center gap-2 text-sm font-bold text-gray-500">
-              <span>Join a growing community of more than</span>
-              <span className="text-ali-heading bg-ali-yellow/30 px-2 py-0.5 rounded">15,000+ friendly readers</span>
+
+            <blockquote className="text-lg text-gray-600 italic border-l-4 border-ali-orange pl-4 py-2 bg-ali-cream/50 rounded-r-lg">
+              "Hi Vamsi! I am writing back to tell you that I successfully passed last technical interview. Thank you for your recommendation to try to behave as I am already middle... I am sure there’s a lot of work ahead, but I am so excited and grateful!"
+            </blockquote>
+
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-ali-blue rounded-full flex items-center justify-center text-white font-bold text-xl">M</div>
+              <div>
+                <p className="font-bold text-ali-heading">Mariia</p>
+                <p className="text-sm text-gray-500">Aspiring DevOps Engineer</p>
+              </div>
+              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" className="ml-auto text-sm font-bold text-ali-blue-dark hover:underline">
+                Read full story ➔
+              </a>
             </div>
           </div>
 
-          <div className="w-full md:w-5/12 bg-ali-cream p-6 rounded-2xl">
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-              <div>
-                <label className="block text-sm font-bold text-gray-700 mb-1">Your email address</label>
-                <input
-                  type="email"
-                  placeholder="john@example.com"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-ali-blue focus:ring-2 focus:ring-ali-blue/20 outline-none transition-all"
-                />
-              </div>
-              <button className="w-full py-3 bg-ali-blue-dark text-white font-bold rounded-xl hover:bg-sky-500 transition-colors shadow-md hover:shadow-lg">
-                Subscribe
-              </button>
-              <p className="text-xs text-center text-gray-400">No spam, unsubscribe anytime.</p>
-            </form>
+          {/* Right: Connect & Resources Grid */}
+          <div className="w-full md:w-5/12 space-y-6">
+            <h3 className="text-xl font-bold font-serif mb-4">Connect & Learn</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {/* Socials */}
+              <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-ali-blue/10 transition-colors border border-transparent hover:border-ali-blue/30 group">
+                <Linkedin size={20} className="text-[#0077b5]" />
+                <span className="text-sm font-medium group-hover:text-[#0077b5] transition-colors">LinkedIn</span>
+              </a>
+              <a href="https://github.com/vamsipenmetsa" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-300 group">
+                <Github size={20} className="text-gray-800" />
+                <span className="text-sm font-medium group-hover:text-gray-800 transition-colors">GitHub</span>
+              </a>
+              <a href="https://medium.com/@vamsipenmetsa" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-300 group">
+                <BookOpen size={20} className="text-black" />
+                <span className="text-sm font-medium group-hover:text-black transition-colors">Medium</span>
+              </a>
+              <a href="https://www.instagram.com/vamsipenmetsa7" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-pink-50 transition-colors border border-transparent hover:border-pink-200 group">
+                <Instagram size={20} className="text-[#E4405F]" />
+                <span className="text-sm font-medium group-hover:text-[#E4405F] transition-colors">Instagram</span>
+              </a>
+
+              {/* Communities */}
+              <a href="https://linkedin.openinapp.co/groups-13986647" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-ali-blue/10 transition-colors border border-transparent hover:border-ali-blue/30 group col-span-full">
+                <Users size={20} className="text-ali-blue-dark" />
+                <div className="flex flex-col">
+                  <span className="text-sm font-medium group-hover:text-ali-blue-dark transition-colors">DevOps Pros Group</span>
+                  <span className="text-xs text-gray-500">15,000+ Members</span>
+                </div>
+              </a>
+
+              {/* Services */}
+              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-orange/10 hover:bg-ali-orange/20 transition-colors border border-transparent hover:border-ali-orange/30 group col-span-full">
+                <Calendar size={20} className="text-ali-orange" />
+                <div className="flex flex-col">
+                  <span className="text-sm font-bold text-ali-heading">1:1 Mentorship</span>
+                  <span className="text-xs text-gray-600">Mock Interviews & Guidance</span>
+                </div>
+                <ExternalLink size={16} className="ml-auto text-ali-orange opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -271,16 +374,16 @@ function App() {
             <div>
               <h4 className="font-bold mb-6">Community</h4>
               <ul className="space-y-4 text-gray-600">
-                <li><a href="#" className="hover:text-ali-orange">Newsletter</a></li>
-                <li><a href="#" className="hover:text-ali-orange">LinkedIn Group</a></li>
-                <li><a href="#" className="hover:text-ali-orange">Warsaw Friends</a></li>
+                <li><a href="https://linkedin.openinapp.co/groups-13986647" target="_blank" className="hover:text-ali-orange">LinkedIn Group</a></li>
+                <li><a href="https://www.instagram.com/international_friends_wawa" target="_blank" className="hover:text-ali-orange">Warsaw Friends</a></li>
+                <li><a href="https://www.instagram.com/poland_streets" target="_blank" className="hover:text-ali-orange">Poland Streets</a></li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
             <p>&copy; 2025 Vamsi Penmetsa. All rights reserved.</p>
-            <p>Designed with <span className="text-red-400">♥</span> inspired by Ali Abdaal.</p>
+            <p>Designed with <span className="text-red-400">♥</span> by Vamsi Penmetsa.</p>
           </div>
         </div>
       </footer>
