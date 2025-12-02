@@ -14,13 +14,6 @@
   --font-hand: 'Caveat', cursive;
 }
 
-/* Dark mode color overrides */
-.dark {
-  --color-ali-cream: #111827;
-  --color-ali-text: #e5e7eb;
-  --color-ali-heading: #f9fafb;
-}
-
 body {
   @apply bg-ali-cream text-ali-text font-sans antialiased;
 }
