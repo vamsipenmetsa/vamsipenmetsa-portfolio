@@ -61,7 +61,7 @@ function App() {
               {/* Yellow Blob Background */}
               <div className="absolute top-4 right-4 w-full h-full bg-ali-yellow rounded-[60%_40%_30%_70%/60%_30%_70%_40%] -z-10 transform rotate-12"></div>
               <img
-                src="/vamsiPenmetsa.png"
+                src="/vamsipenmetsa-portfolio/vamsiPenmetsa.png"
                 alt="Vamsi Penmetsa"
                 className="w-full h-full object-cover rounded-[50%] border-4 border-white shadow-xl z-10 relative"
               />
