@@ -54,7 +54,7 @@ function App() {
 
           {/* Image Side (Left on Desktop) */}
           <div className="relative w-full md:w-1/2 flex justify-center md:justify-end">
-            <div className="relative w-72 h-72 md:w-[450px] md:h-[450px]">
+            <div className="relative w-80 h-80 md:w-[550px] md:h-[550px]">
               <img
                 src="./vamsiPenmetsa.png"
                 alt="Vamsi Penmetsa"

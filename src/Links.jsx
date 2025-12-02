@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Gift, Star, Code, Cloud } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Gift, Star, Bot, Server } from 'lucide-react';
 
 function Links() {
 
@@ -7,7 +7,7 @@ function Links() {
     free: [
       {
         href: "https://vamsipenmetsa.gumroad.com/l/ryfhqh",
-        icon: Code,
+        icon: Bot,
         bg: "bg-ali-yellow",
         title: "GitHub Copilot Visual Guide",
         desc: "Master AI-powered coding with prompting strategies",
@@ -15,7 +15,7 @@ function Links() {
       },
       {
         href: "https://vamsipenmetsa.gumroad.com/l/knioda",
-        icon: Cloud,
+        icon: Server,
         bg: "bg-ali-blue",
         title: "Kubernetes Cheat Sheet",
         desc: "Complete K8s reference from basics to advanced",
