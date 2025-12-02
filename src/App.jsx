@@ -61,7 +61,7 @@ function App() {
               {/* Yellow Blob Background */}
               <div className="absolute top-4 right-4 w-full h-full bg-ali-yellow rounded-[60%_40%_30%_70%/60%_30%_70%_40%] -z-10 transform rotate-12"></div>
               <img
-                src="/vamsipenmetsa-portfolio/vamsiPenmetsa.png"
+                src="./vamsiPenmetsa.png"
                 alt="Vamsi Penmetsa"
                 className="w-full h-full object-cover rounded-[50%] border-4 border-white shadow-xl z-10 relative"
               />
@@ -96,11 +96,11 @@ function App() {
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="#about" className="px-8 py-3 bg-ali-heading text-white rounded-full font-bold hover:bg-gray-800 transition-all">
-                More About Me
+              <a href="#resources" className="px-8 py-3 bg-ali-orange text-white rounded-full font-bold hover:bg-orange-400 transition-all shadow-lg animate-pulse">
+                🎁 Free Resources
               </a>
-              <a href="#resources" className="px-8 py-3 bg-white text-ali-heading border-2 border-gray-200 rounded-full font-bold hover:border-ali-orange hover:text-ali-orange transition-all">
-                Free Resources
+              <a href="#about" className="px-8 py-3 bg-white text-ali-heading border-2 border-gray-200 rounded-full font-bold hover:border-ali-heading hover:bg-ali-heading hover:text-white transition-all">
+                More About Me
               </a>
             </div>
           </div>
@@ -138,35 +138,34 @@ function App() {
               </a>
             </div>
 
-            {/* Card 2: DevOps Consulting */}
+            {/* Card 2: How to Leverage LinkedIn */}
             <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300 group">
               <div className="w-20 h-20 bg-ali-orange/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-orange/30 transition-colors">
                 <svg className="w-12 h-12 text-ali-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-serif font-bold mb-3">DevOps Consulting</h3>
+              <h3 className="text-2xl font-serif font-bold mb-3">How to Leverage LinkedIn & Transition Career?</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Azure AKS, Terraform, CI/CD pipelines, and cloud architecture design. Leverage my experience from LSEG, IMF, and Fortune 500 companies.
+                Learn strategies to optimize your LinkedIn profile, build your professional network, and successfully transition to a cloud/DevOps career.
               </p>
-              <a href="https://openinapp.link/aq10m" target="_blank" className="inline-flex items-center gap-2 text-ali-orange font-bold hover:gap-3 transition-all">
+              <a href="https://topmate.io/vamsipenmetsa/137043?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-ali-orange font-bold hover:gap-3 transition-all">
                 Get started <ArrowRight size={20} />
               </a>
             </div>
 
-            {/* Card 3: AI/LLM Guidance */}
+            {/* Card 3: Resume Review & Optimisation */}
             <div className="bg-ali-cream rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300 group">
               <div className="w-20 h-20 bg-ali-yellow/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-yellow/40 transition-colors">
                 <svg className="w-12 h-12 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-serif font-bold mb-3">AI/LLM Guidance</h3>
+              <h3 className="text-2xl font-serif font-bold mb-3">Resume Review & Optimisation for Cloud & DevOps</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Learn how to deploy and manage LLMs in production. GitHub Copilot mastery, AI tooling, and productivity enhancement strategies.
+                Get your resume professionally reviewed and optimized for cloud and DevOps roles. Stand out in the competitive tech job market.
               </p>
-              <a href="https://vamsipenmetsa.gumroad.com/" target="_blank" className="inline-flex items-center gap-2 text-yellow-700 font-bold hover:gap-3 transition-all">
+              <a href="https://topmate.io/vamsipenmetsa/1804944?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-yellow-700 font-bold hover:gap-3 transition-all">
                 Get started <ArrowRight size={20} />
               </a>
             </div>
@@ -301,12 +300,24 @@ function App() {
       </section>
 
       {/* Resources Section */}
-      <section id="resources" className="py-24 bg-ali-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="resources" className="py-24 bg-gradient-to-b from-ali-cream to-ali-yellow/20 relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-10 right-10 w-32 h-32 bg-ali-orange/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-40 h-40 bg-ali-blue/10 rounded-full blur-3xl"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div>
-              <h2 className="text-4xl font-serif font-bold mb-4">Free Resources</h2>
-              <p className="text-xl text-gray-600">Tools to help you grow in your career.</p>
+              <div className="inline-block mb-4">
+                <h2 className="text-4xl md:text-5xl font-serif font-bold mb-2 relative inline-block">
+                  🎁 Free Resources
+                  <svg className="absolute w-full h-4 -bottom-1 left-0 text-ali-orange" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.00025 7.00001C45.9184 3.66668 156.667 -2.33332 198.001 2.50001" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                  </svg>
+                </h2>
+              </div>
+              <p className="text-xl text-gray-600 font-bold">⚡ Limited: First 100 people only • <span className="text-ali-orange text-2xl">$0</span></p>
+              <p className="text-lg text-gray-500 mt-2">Tools to help you grow in your career.</p>
             </div>
             <a href="https://vamsipenmetsa.gumroad.com/" target="_blank" className="text-ali-blue-dark font-bold hover:underline flex items-center gap-2">
               View all resources <ArrowRight size={20} />
