@@ -1,18 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  body {
-    @apply bg-ali-dark text-ali-text font-sans antialiased;
-  }
+@theme {
+  --color-ali-dark: #0f172a;
+  --color-ali-blue: #1e293b;
+  --color-ali-gold: #fbbf24;
+  --color-ali-text: #f1f5f9;
+  --color-ali-muted: #94a3b8;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold tracking-tight;
-  }
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  @apply bg-ali-dark text-ali-text font-sans antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold tracking-tight;
 }
