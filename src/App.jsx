@@ -63,7 +63,7 @@ function App() {
               <img
                 src="./vamsi-profile.jpg"
                 alt="Vamsi Penmetsa"
-                className="w-full h-full object-cover rounded-[50%] border-4 border-white shadow-xl z-10 relative"
+                className="w-full h-full object-cover object-[center_20%] rounded-[50%] border-4 border-white shadow-xl z-10 relative"
               />
               {/* Floating Element */}
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-lg transform -rotate-6 z-20 hidden md:block">
