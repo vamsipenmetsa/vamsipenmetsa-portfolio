@@ -114,7 +114,7 @@ function Links() {
       )}
       <div className="flex items-center gap-4">
         <div className={`${bg} rounded-xl p-3 flex items-center justify-center min-w-[52px] group-hover:scale-110 transition-transform duration-300`}>
-          <Icon className="text-white" size={24} />
+          <Icon className="text-gray-800" size={24} strokeWidth={2.5} />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-serif font-bold text-lg text-ali-heading group-hover:text-ali-orange transition-colors">
