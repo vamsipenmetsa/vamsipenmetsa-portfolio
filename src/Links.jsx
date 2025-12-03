@@ -1,22 +1,7 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Gift, Star, Bot, Server } from 'lucide-react';
 
 function Links() {
-
-  const MediumIcon = ({ size = 24, className = "" }) => (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M13.5 10.5C13.5 14.0899 10.5899 17 7 17C3.41015 17 0.5 14.0899 0.5 10.5C0.5 6.91015 3.41015 4 7 4C10.5899 4 13.5 6.91015 13.5 10.5Z" />
-      <path d="M19.5 10.5C19.5 13.8137 18.3807 16.5 17 16.5C15.6193 16.5 14.5 13.8137 14.5 10.5C14.5 7.18629 15.6193 4.5 17 4.5C18.3807 4.5 19.5 7.18629 19.5 10.5Z" />
-      <path d="M23.5 10.5C23.5 13.2614 22.8284 15.5 22 15.5C21.1716 15.5 20.5 13.2614 20.5 10.5C20.5 7.73858 21.1716 5.5 22 5.5C22.8284 5.5 23.5 7.73858 23.5 10.5Z" />
-    </svg>
-  );
 
   const linkCards = {
     free: [
@@ -70,7 +55,7 @@ function Links() {
       },
       {
         href: "https://medium.com/@vamsipenmetsa",
-        icon: MediumIcon,
+        icon: BookOpen,
         bg: "bg-ali-heading",
         title: "Medium Blog",
         desc: "Technical articles & insights"
@@ -120,29 +105,26 @@ function Links() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group bg-white rounded-2xl p-5 md:p-6 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 hover:border-ali-orange/50 transition-all duration-300 relative overflow-hidden flex items-center gap-4 md:gap-5"
+      className="group bg-white rounded-2xl p-6 hover:-translate-y-2 hover:border-ali-orange transition-all duration-300 shadow-md hover:shadow-2xl border border-gray-100 relative overflow-hidden"
     >
       {badge && (
-        <span className="absolute top-0 right-0 bg-ali-orange text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl z-10 shadow-sm uppercase tracking-wider">
+        <span className="absolute top-3 right-3 bg-ali-orange text-white text-xs font-bold px-3 py-1 rounded-full z-10 animate-pulse">
           {badge}
         </span>
       )}
-
-      <div className={`${bg} rounded-xl p-3.5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-sm`}>
-        <Icon className="text-white" size={26} strokeWidth={2} />
-      </div>
-
-      <div className="flex-1 min-w-0 py-1">
-        <h3 className="font-serif font-bold text-lg text-ali-heading group-hover:text-ali-orange transition-colors duration-300 line-clamp-1">
-          {title}
-        </h3>
-        <p className="text-sm text-ali-text/80 font-sans mt-1 leading-relaxed line-clamp-2 group-hover:text-ali-text transition-colors duration-300">
-          {desc}
-        </p>
-      </div>
-
-      <div className="flex-shrink-0 self-center opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-        <ExternalLink className="text-ali-orange" size={20} />
+      <div className="flex items-center gap-4">
+        <div className={`${bg} rounded-xl p-3 flex items-center justify-center min-w-[52px] group-hover:scale-110 transition-transform duration-300`}>
+          <Icon className="text-white" size={24} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="font-serif font-bold text-lg text-ali-heading group-hover:text-ali-orange transition-colors">
+            {title}
+          </h3>
+          <p className="text-sm text-ali-text font-sans mt-1 leading-snug">
+            {desc}
+          </p>
+        </div>
+        <ExternalLink className="text-ali-text group-hover:text-ali-orange transition-colors ml-2 flex-shrink-0" size={20} />
       </div>
     </a>
   );
@@ -269,13 +251,13 @@ function Links() {
 
         {/* Back to Portfolio */}
         <div className="text-center pt-8">
-          <Link
-            to="/"
+          <a
+            href="/vamsipenmetsa-portfolio"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-ali-orange text-ali-heading hover:bg-ali-blue-dark hover:border-ali-blue-dark hover:text-white transition-all duration-300 shadow-md hover:shadow-lg font-sans font-medium"
           >
             <ArrowLeft size={20} />
             <span>Back to Portfolio</span>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

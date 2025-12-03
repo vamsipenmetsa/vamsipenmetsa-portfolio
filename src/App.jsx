@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Github, Linkedin, Mail, ArrowRight, Send, BookOpen, Cloud, Terminal, Code, ChevronDown, Instagram, Users, ExternalLink, Calendar } from 'lucide-react';
 
-import { Link } from 'react-router-dom';
-
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -23,7 +21,7 @@ function App() {
             <a href="#about" className="font-sans font-medium hover:text-ali-orange transition-colors">About</a>
             <a href="#resources" className="font-sans font-medium hover:text-ali-orange transition-colors">Resources</a>
             <a href="#experience" className="font-sans font-medium hover:text-ali-orange transition-colors">Experience</a>
-            <Link to="/links" className="font-sans font-medium hover:text-ali-blue-dark transition-colors">Links</Link>
+            <a href="/vamsipenmetsa-portfolio/links" className="font-sans font-medium hover:text-ali-blue-dark transition-colors">Links</a>
             <a href="#contact" className="px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-lg transition-all transform hover:scale-105 shadow-sm">
               Let's Connect
             </a>
@@ -206,29 +204,25 @@ function App() {
             <h3 className="text-xl font-bold font-serif mb-4">Connect & Learn</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {/* Socials */}
-              <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-ali-blue/10 transition-all border border-transparent hover:border-ali-blue/30 group hover:-translate-y-0.5 hover:shadow-sm">
+              <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-ali-blue/10 transition-colors border border-transparent hover:border-ali-blue/30 group">
                 <Linkedin size={20} className="text-[#0077b5]" />
                 <span className="text-sm font-medium group-hover:text-[#0077b5] transition-colors">LinkedIn</span>
               </a>
-              <a href="https://github.com/vamsipenmetsa" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-gray-100 transition-all border border-transparent hover:border-gray-300 group hover:-translate-y-0.5 hover:shadow-sm">
+              <a href="https://github.com/vamsipenmetsa" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-300 group">
                 <Github size={20} className="text-gray-800" />
                 <span className="text-sm font-medium group-hover:text-gray-800 transition-colors">GitHub</span>
               </a>
-              <a href="https://medium.com/@vamsipenmetsa" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-gray-100 transition-all border border-transparent hover:border-gray-300 group hover:-translate-y-0.5 hover:shadow-sm">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-black" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.5 10.5C13.5 14.0899 10.5899 17 7 17C3.41015 17 0.5 14.0899 0.5 10.5C0.5 6.91015 3.41015 4 7 4C10.5899 4 13.5 6.91015 13.5 10.5Z" />
-                  <path d="M19.5 10.5C19.5 13.8137 18.3807 16.5 17 16.5C15.6193 16.5 14.5 13.8137 14.5 10.5C14.5 7.18629 15.6193 4.5 17 4.5C18.3807 4.5 19.5 7.18629 19.5 10.5Z" />
-                  <path d="M23.5 10.5C23.5 13.2614 22.8284 15.5 22 15.5C21.1716 15.5 20.5 13.2614 20.5 10.5C20.5 7.73858 21.1716 5.5 22 5.5C22.8284 5.5 23.5 7.73858 23.5 10.5Z" />
-                </svg>
+              <a href="https://medium.com/@vamsipenmetsa" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-300 group">
+                <BookOpen size={20} className="text-black" />
                 <span className="text-sm font-medium group-hover:text-black transition-colors">Medium</span>
               </a>
-              <a href="https://www.instagram.com/vamsipenmetsa7" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-pink-50 transition-all border border-transparent hover:border-pink-200 group hover:-translate-y-0.5 hover:shadow-sm">
+              <a href="https://www.instagram.com/vamsipenmetsa7" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-pink-50 transition-colors border border-transparent hover:border-pink-200 group">
                 <Instagram size={20} className="text-[#E4405F]" />
                 <span className="text-sm font-medium group-hover:text-[#E4405F] transition-colors">Instagram</span>
               </a>
 
               {/* Communities */}
-              <a href="https://linkedin.openinapp.co/groups-13986647" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-ali-blue/10 transition-all border border-transparent hover:border-ali-blue/30 group col-span-full hover:-translate-y-0.5 hover:shadow-sm">
+              <a href="https://linkedin.openinapp.co/groups-13986647" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-cream hover:bg-ali-blue/10 transition-colors border border-transparent hover:border-ali-blue/30 group col-span-full">
                 <Users size={20} className="text-ali-blue-dark" />
                 <div className="flex flex-col">
                   <span className="text-sm font-medium group-hover:text-ali-blue-dark transition-colors">DevOps Pros Group</span>
@@ -237,7 +231,7 @@ function App() {
               </a>
 
               {/* Services */}
-              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-orange/10 hover:bg-ali-orange/20 transition-all border border-transparent hover:border-ali-orange/30 group col-span-full hover:-translate-y-0.5 hover:shadow-sm">
+              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" className="flex items-center gap-3 p-3 rounded-xl bg-ali-orange/10 hover:bg-ali-orange/20 transition-colors border border-transparent hover:border-ali-orange/30 group col-span-full">
                 <Calendar size={20} className="text-ali-orange" />
                 <div className="flex flex-col">
                   <span className="text-sm font-bold text-ali-heading">1:1 Mentorship</span>
@@ -321,7 +315,7 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl transition-all duration-300">
               <div className="bg-ali-blue/10 rounded-2xl h-48 flex items-center justify-center mb-6 group-hover:bg-ali-blue/20 transition-colors">
                 <Code size={64} className="text-ali-blue-dark" />
               </div>
@@ -332,7 +326,7 @@ function App() {
               </div>
             </a>
 
-            <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl transition-all duration-300">
               <div className="bg-ali-orange/10 rounded-2xl h-48 flex items-center justify-center mb-6 group-hover:bg-ali-orange/20 transition-colors">
                 <Cloud size={64} className="text-ali-orange" />
               </div>
