@@ -85,12 +85,15 @@ function App() {
               <span className="underline decoration-ali-blue decoration-2 underline-offset-2"> Kubernetes Cheat Sheet</span>.
             </p>
 
-            <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start flex-wrap">
               <a href="#resources" className="px-8 py-3 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all shadow-lg animate-pulse">
                 🎁 Free Resources
               </a>
               <a href="#about" className="px-8 py-3 bg-white text-ali-heading border-2 border-ali-orange rounded-full font-bold hover:border-ali-blue-dark hover:bg-ali-blue-dark hover:text-white hover:shadow-lg transition-all">
                 More About Me
+              </a>
+              <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-8 py-3 bg-[#0A66C2] text-white rounded-full font-bold hover:bg-[#004182] hover:shadow-xl transition-all">
+                Follow on LinkedIn
               </a>
             </div>
           </div>
@@ -354,7 +357,7 @@ function App() {
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
             Have questions about DevOps, Cloud, or career growth? Let's connect and discuss how I can help you achieve your goals.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center flex-wrap">
             <a href="mailto:vamsivarmapenmatsa@gmail.com" className="inline-flex items-center gap-3 px-8 py-4 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all transform hover:scale-105">
               <Mail size={24} />
               <span>Email Me</span>
@@ -362,6 +365,10 @@ function App() {
             <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-[#0077b5] text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all transform hover:scale-105">
               <Linkedin size={24} />
               <span>Connect on LinkedIn</span>
+            </a>
+            <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-[#0A66C2] text-white rounded-full font-bold hover:bg-[#004182] hover:shadow-xl transition-all transform hover:scale-105">
+              <Linkedin size={24} />
+              <span>Follow on LinkedIn</span>
             </a>
           </div>
           <div className="mt-12 flex justify-center gap-6">

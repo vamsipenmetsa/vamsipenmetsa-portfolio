@@ -178,6 +178,11 @@ function Links() {
           <p className="text-sm text-ali-text mt-2 font-sans max-w-2xl mx-auto opacity-75">
             All my resources, services, and community links in one place 🚀
           </p>
+          <div className="mt-6">
+            <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3 bg-[#0A66C2] text-white rounded-full font-bold hover:bg-[#004182] hover:shadow-xl transition-all transform hover:scale-105">
+              Follow on LinkedIn
+            </a>
+          </div>
         </div>
       </section>
 
