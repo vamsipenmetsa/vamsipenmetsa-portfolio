@@ -186,43 +186,20 @@ function App() {
               </div>
             </div>
 
-            {/* Testimonial 1 - Sumeet */}
-            <div className="space-y-3">
-              <div className="flex items-center gap-2 text-ali-orange">
-                <span>⭐⭐⭐⭐⭐</span>
-              </div>
-              <blockquote className="text-base text-gray-600 italic border-l-4 border-ali-blue pl-4 py-2 bg-ali-cream/50 rounded-r-lg">
-                "I had a wonderful session with Vamsi, his insights regarding DevOps and associated tools and technologies are very valuable."
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-ali-orange rounded-full flex items-center justify-center text-white font-bold text-sm">SK</div>
-                <div>
-                  <p className="font-bold text-ali-heading text-sm">Sumeet Khastgir</p>
-                  <p className="text-xs text-gray-500">1st Dec, 2025</p>
-                </div>
-              </div>
-            </div>
+            <blockquote className="text-lg text-gray-600 italic border-l-4 border-ali-orange pl-4 py-2 bg-ali-cream/50 rounded-r-lg">
+              "Hi Vamsi! I am writing back to tell you that I successfully passed last technical interview. Thank you for your recommendation to try to behave as I am already middle... I am sure there’s a lot of work ahead, but I am so excited and grateful!"
+            </blockquote>
 
-            {/* Testimonial 2 - Mariia */}
-            <div className="space-y-3">
-              <div className="flex items-center gap-2 text-ali-orange">
-                <span>⭐⭐⭐⭐⭐</span>
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-ali-blue rounded-full flex items-center justify-center text-white font-bold text-xl">M</div>
+              <div>
+                <p className="font-bold text-ali-heading">Mariia</p>
+                <p className="text-sm text-gray-500">Aspiring DevOps Engineer</p>
               </div>
-              <blockquote className="text-base text-gray-600 italic border-l-4 border-ali-orange pl-4 py-2 bg-ali-cream/50 rounded-r-lg">
-                "Hi Vamsi! I am writing back to tell you that I successfully passed last technical interview. Thank you for your recommendation to try to behave as I am already middle... I am sure there's a lot of work ahead, but I am so excited and grateful!"
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-ali-blue rounded-full flex items-center justify-center text-white font-bold text-sm">M</div>
-                <div>
-                  <p className="font-bold text-ali-heading text-sm">Mariia</p>
-                  <p className="text-xs text-gray-500">Aspiring DevOps Engineer</p>
-                </div>
-              </div>
+              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" className="ml-auto text-sm font-bold text-ali-blue-dark hover:underline">
+                Read full story ➔
+              </a>
             </div>
-
-            <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-bold text-ali-blue-dark hover:underline mt-4">
-              Read more stories ➔
-            </a>
           </div>
 
           {/* Right: Connect & Resources Grid */}
