@@ -9,6 +9,7 @@ function Links() {
         href: "https://vamsipenmetsa.gumroad.com/l/ryfhqh",
         icon: Sparkles,
         bg: "bg-ali-yellow",
+        iconColor: "text-gray-800",
         title: "GitHub Copilot Visual Guide",
         desc: "Master AI-powered coding with prompting strategies",
         badge: "FREE"
@@ -17,6 +18,7 @@ function Links() {
         href: "https://vamsipenmetsa.gumroad.com/l/knioda",
         icon: Database,
         bg: "bg-ali-blue",
+        iconColor: "text-gray-800",
         title: "Kubernetes Cheat Sheet",
         desc: "Complete K8s reference from basics to advanced",
         badge: "FREE"
@@ -27,6 +29,7 @@ function Links() {
         href: "https://topmate.io/vamsipenmetsa/1755002",
         icon: Calendar,
         bg: "bg-ali-orange",
+        iconColor: "text-white",
         title: "1:1 Career Mentorship",
         desc: "Mock interviews & guidance (150+ interviews conducted)"
       },
@@ -34,6 +37,7 @@ function Links() {
         href: "https://topmate.io/vamsipenmetsa/1804944?utm_source=public_profile&utm_campaign=vamsipenmetsa",
         icon: Award,
         bg: "bg-ali-blue-dark",
+        iconColor: "text-white",
         title: "Resume Review & Optimisation",
         desc: "Get your resume optimized for Cloud & DevOps roles"
       }
@@ -43,6 +47,7 @@ function Links() {
         href: "https://www.linkedin.com/in/vamsipenmetsa",
         icon: Linkedin,
         bg: "bg-ali-blue-dark",
+        iconColor: "text-white",
         title: "LinkedIn Profile",
         desc: "Professional updates & networking"
       },
@@ -50,6 +55,7 @@ function Links() {
         href: "https://github.com/vamsipenmetsa",
         icon: Github,
         bg: "bg-ali-heading",
+        iconColor: "text-white",
         title: "GitHub",
         desc: "Open source projects & contributions"
       },
@@ -57,6 +63,7 @@ function Links() {
         href: "https://medium.com/@vamsipenmetsa",
         icon: BookOpen,
         bg: "bg-ali-heading",
+        iconColor: "text-white",
         title: "Medium Blog",
         desc: "Technical articles & insights"
       },
@@ -64,6 +71,7 @@ function Links() {
         href: "mailto:vamsivarmapenmatsa@gmail.com",
         icon: Mail,
         bg: "bg-ali-orange",
+        iconColor: "text-white",
         title: "Email",
         desc: "vamsivarmapenmatsa@gmail.com"
       }
@@ -73,6 +81,7 @@ function Links() {
         href: "https://linkedin.openinapp.co/groups-13986647",
         icon: Users,
         bg: "bg-ali-blue",
+        iconColor: "text-gray-800",
         title: "DevOps Professionals Group",
         desc: "Join 15,000+ cloud & DevOps professionals"
       },
@@ -80,6 +89,7 @@ function Links() {
         href: "https://www.instagram.com/poland_streets",
         icon: Instagram,
         bg: "bg-ali-orange",
+        iconColor: "text-white",
         title: "Poland Streets 📸",
         desc: "Curated street photography (3M+ Views)"
       },
@@ -87,6 +97,7 @@ function Links() {
         href: "https://www.instagram.com/international_friends_wawa",
         icon: Instagram,
         bg: "bg-ali-yellow",
+        iconColor: "text-gray-800",
         title: "International Friends Warsaw",
         desc: "Community events & meetups"
       },
@@ -94,13 +105,14 @@ function Links() {
         href: "https://www.instagram.com/vamsipenmetsa7",
         icon: Instagram,
         bg: "bg-ali-blue-dark",
+        iconColor: "text-white",
         title: "Instagram",
         desc: "Personal updates & life"
       }
     ]
   };
 
-  const LinkCard = ({ href, icon: Icon, bg, title, desc, badge }) => (
+  const LinkCard = ({ href, icon: Icon, bg, iconColor = "text-white", title, desc, badge }) => (
     <a
       href={href}
       target="_blank"
@@ -114,7 +126,7 @@ function Links() {
       )}
       <div className="flex items-center gap-4">
         <div className={`${bg} rounded-xl p-3 flex items-center justify-center min-w-[52px] group-hover:scale-110 transition-transform duration-300`}>
-          <Icon className="text-gray-800" size={24} strokeWidth={2.5} />
+          <Icon className={iconColor} size={24} strokeWidth={2.5} />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-serif font-bold text-lg text-ali-heading group-hover:text-ali-orange transition-colors">
