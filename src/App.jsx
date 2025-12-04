@@ -277,52 +277,173 @@ function App() {
       </section>
 
       {/* About / Professional Section */}
-      <section id="about" className="py-24 bg-white">
+      <section id="about" className="py-24 bg-gradient-to-b from-white to-ali-cream/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-bold mb-4">About Me</h2>
-            <div className="w-24 h-1 bg-ali-yellow mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-              Lead DevOps Engineer deploying Large Language Models (LLMs) on Azure AKS and PaaS for <span className="font-bold text-ali-heading">London Stock Exchange Group (LSEG) × Microsoft UK Partnership</span>. 
-              With <span className="font-bold">7 active Azure certifications</span> and <span className="font-bold">2 EPAM AI certifications</span>, I specialize in Azure DevOps, AKS, SRE, Terraform, and AI/ML infrastructure. Currently serving as <span className="font-bold text-ali-orange">EPAM AI Ambassador</span> and <span className="font-bold text-ali-blue-dark">Microsoft Copilot Champion</span>.
-            </p>
-            
-            {/* Key Expertise Highlights */}
-            <div className="max-w-3xl mx-auto space-y-3 mb-12">
-              <div className="flex items-start gap-3 p-4 bg-ali-blue/5 rounded-xl hover:bg-ali-blue/10 transition-all">
-                <span className="text-2xl">⚙️</span>
-                <div>
-                  <h4 className="font-bold text-ali-heading mb-1">Azure Infrastructure Management</h4>
-                  <p className="text-gray-600 text-sm">Deep expertise in Azure platform services, including networking, storage, and compute resources.</p>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">About Me</h2>
+            <div className="w-24 h-1 bg-ali-blue-dark mx-auto rounded-full"></div>
+          </div>
+
+          {/* Two Column Layout */}
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            {/* Left Column - The Professional Side */}
+            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border-l-4 border-ali-blue-dark">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-ali-blue-dark rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-serif font-bold text-ali-heading">The Professional Side</h3>
+              </div>
+              
+              <p className="text-gray-700 leading-relaxed mb-6">
+                I'm a <span className="font-bold text-ali-heading">Lead DevOps Engineer</span> deploying Large Language Models (LLMs) as a service on <span className="font-bold">Azure AKS and PaaS</span> for the <span className="font-bold text-ali-blue-dark">London Stock Exchange Group (LSEG)</span> and its UK financial clients.
+              </p>
+
+              <div className="bg-ali-blue/5 rounded-xl p-5 mb-6">
+                <p className="text-sm font-bold text-ali-blue-dark mb-2">STRATEGIC PARTNERSHIP</p>
+                <p className="text-gray-700">Part of the high-profile <span className="font-bold">LSEG × Microsoft UK Partnership</span></p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-ali-blue-dark rounded-full mt-2"></div>
+                  <div>
+                    <p className="font-bold text-ali-heading">7 Active Azure Certifications</p>
+                    <p className="text-sm text-gray-600">Including Azure Solutions Architect Expert</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-ali-blue-dark rounded-full mt-2"></div>
+                  <div>
+                    <p className="font-bold text-ali-heading">2 EPAM AI Certifications</p>
+                    <p className="text-sm text-gray-600">Specialized in AI/ML infrastructure</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-ali-orange rounded-full mt-2"></div>
+                  <div>
+                    <p className="font-bold text-ali-heading">Microsoft M365 Copilot Champion</p>
+                    <p className="text-sm text-gray-600">Pioneering AI productivity tools</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-ali-orange rounded-full mt-2"></div>
+                  <div>
+                    <p className="font-bold text-ali-heading">EPAM AI Ambassador</p>
+                    <p className="text-sm text-gray-600">Leading AI adoption initiatives</p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-ali-orange/5 rounded-xl hover:bg-ali-orange/10 transition-all">
-                <span className="text-2xl">🛠️</span>
-                <div>
-                  <h4 className="font-bold text-ali-heading mb-1">DevOps and Automation</h4>
-                  <p className="text-gray-600 text-sm">Proven ability in Azure DevOps, CI/CD pipelines, and Infrastructure as Code for efficient system management.</p>
+            </div>
+
+            {/* Right Column - The Journey */}
+            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border-l-4 border-ali-orange">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-ali-orange rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-serif font-bold text-ali-heading">The Journey</h3>
+              </div>
+
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Successfully navigated from <span className="font-bold">Manual Tester</span> → <span className="font-bold">Automation Engineer</span> → <span className="font-bold">DevOps</span> → <span className="font-bold">SRE</span> → <span className="font-bold">Platform Engineer</span> → <span className="font-bold text-ali-orange">Cloud Engineer</span>
+              </p>
+
+              <div className="bg-ali-orange/5 rounded-xl p-5 mb-6">
+                <p className="text-sm font-bold text-ali-orange mb-2">INDUSTRY EXPERIENCE</p>
+                <p className="text-gray-700">Worked with industry leaders</p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3 mb-6">
+                <div className="bg-gradient-to-br from-ali-cream to-white p-3 rounded-lg border border-gray-100">
+                  <p className="font-bold text-sm text-ali-heading">IMF</p>
+                </div>
+                <div className="bg-gradient-to-br from-ali-cream to-white p-3 rounded-lg border border-gray-100">
+                  <p className="font-bold text-sm text-ali-heading">WTW</p>
+                </div>
+                <div className="bg-gradient-to-br from-ali-cream to-white p-3 rounded-lg border border-gray-100">
+                  <p className="font-bold text-sm text-ali-heading">Wolters Kluwer</p>
+                </div>
+                <div className="bg-gradient-to-br from-ali-cream to-white p-3 rounded-lg border border-gray-100">
+                  <p className="font-bold text-sm text-ali-heading">Corteva</p>
+                </div>
+                <div className="bg-gradient-to-br from-ali-cream to-white p-3 rounded-lg border border-gray-100">
+                  <p className="font-bold text-sm text-ali-heading">UBS Swiss</p>
+                </div>
+                <div className="bg-gradient-to-br from-ali-cream to-white p-3 rounded-lg border border-gray-100">
+                  <p className="font-bold text-sm text-ali-heading">Microsoft</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-ali-yellow/10 rounded-xl hover:bg-ali-yellow/20 transition-all">
-                <span className="text-2xl">💡</span>
-                <div>
-                  <h4 className="font-bold text-ali-heading mb-1">Site Reliability Engineering (SRE)</h4>
-                  <p className="text-gray-600 text-sm">Focus on ensuring system reliability, availability, and performance through proactive monitoring and incident management.</p>
+
+              <div className="border-t border-gray-200 pt-6">
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <span className="font-bold text-ali-heading">Expertise:</span> Azure DevOps, AKS, SRE, Terraform, AI/ML infrastructure with architecture design & team management using ITIL v4, Scrum, Agile
+                </p>
+                <div className="flex items-center gap-2 text-sm text-gray-600">
+                  <div className="w-2 h-2 bg-ali-yellow rounded-full"></div>
+                  <p>Thriving in multicultural environments & distributed teams</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-ali-blue/5 rounded-xl hover:bg-ali-blue/10 transition-all">
-                <span className="text-2xl">🤖</span>
-                <div>
-                  <h4 className="font-bold text-ali-heading mb-1">AI Integration and Productivity</h4>
-                  <p className="text-gray-600 text-sm">Hands-on experience with GenAI for Systems Engineering Productivity, Microsoft Copilot, and AI Agents.</p>
+            </div>
+          </div>
+
+          {/* Key Expertise Highlights - Horizontal Cards */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-serif font-bold text-center mb-8">Core Competencies</h3>
+            <div className="grid md:grid-cols-5 gap-4">
+              <div className="bg-white rounded-xl p-5 border-2 border-ali-blue/20 hover:border-ali-blue hover:shadow-lg transition-all">
+                <div className="w-10 h-10 bg-ali-blue/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+                  <svg className="w-5 h-5 text-ali-blue-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
                 </div>
+                <h4 className="font-bold text-sm text-center text-ali-heading mb-1">Azure Infrastructure</h4>
+                <p className="text-xs text-gray-600 text-center">Networking, Storage, Compute</p>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-ali-orange/5 rounded-xl hover:bg-ali-orange/10 transition-all">
-                <span className="text-2xl">☁️</span>
-                <div>
-                  <h4 className="font-bold text-ali-heading mb-1">Cloud Solutions Architecture</h4>
-                  <p className="text-gray-600 text-sm">Broad understanding of cloud computing principles and services to design and implement robust solutions.</p>
+
+              <div className="bg-white rounded-xl p-5 border-2 border-ali-orange/20 hover:border-ali-orange hover:shadow-lg transition-all">
+                <div className="w-10 h-10 bg-ali-orange/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+                  <svg className="w-5 h-5 text-ali-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
                 </div>
+                <h4 className="font-bold text-sm text-center text-ali-heading mb-1">DevOps Automation</h4>
+                <p className="text-xs text-gray-600 text-center">CI/CD, IaC, Pipelines</p>
+              </div>
+
+              <div className="bg-white rounded-xl p-5 border-2 border-ali-yellow/30 hover:border-ali-yellow hover:shadow-lg transition-all">
+                <div className="w-10 h-10 bg-ali-yellow/20 rounded-lg flex items-center justify-center mb-3 mx-auto">
+                  <svg className="w-5 h-5 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <h4 className="font-bold text-sm text-center text-ali-heading mb-1">SRE Excellence</h4>
+                <p className="text-xs text-gray-600 text-center">Reliability, Monitoring</p>
+              </div>
+
+              <div className="bg-white rounded-xl p-5 border-2 border-ali-blue/20 hover:border-ali-blue hover:shadow-lg transition-all">
+                <div className="w-10 h-10 bg-ali-blue/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+                  <svg className="w-5 h-5 text-ali-blue-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <h4 className="font-bold text-sm text-center text-ali-heading mb-1">AI Integration</h4>
+                <p className="text-xs text-gray-600 text-center">GenAI, Copilot, Agents</p>
+              </div>
+
+              <div className="bg-white rounded-xl p-5 border-2 border-ali-orange/20 hover:border-ali-orange hover:shadow-lg transition-all">
+                <div className="w-10 h-10 bg-ali-orange/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+                  <svg className="w-5 h-5 text-ali-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                  </svg>
+                </div>
+                <h4 className="font-bold text-sm text-center text-ali-heading mb-1">Cloud Architecture</h4>
+                <p className="text-xs text-gray-600 text-center">Design, Implementation</p>
               </div>
             </div>
           </div>
