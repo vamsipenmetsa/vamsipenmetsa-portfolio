@@ -101,7 +101,13 @@ function App() {
       </section>
 
       {/* How Can I Help You Section */}
-      <section className="py-20 bg-white">
+      <section id="experience" className="py-20 bg-white relative overflow-hidden">
+        {/* Decorative Scribble */}
+        <div className="absolute top-10 right-20 text-ali-yellow/20">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10,40 Q20,10 40,20 T70,40 Q60,70 40,60 T10,40" stroke="currentColor" strokeWidth="3" fill="none" />
+          </svg>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
@@ -116,7 +122,7 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1: Career Mentorship */}
-            <div className="bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-ali-blue hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
+            <div className="bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-ali-blue hover:bg-ali-blue/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
               <div className="w-20 h-20 bg-ali-blue/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-blue group-hover:scale-110 transition-all">
                 <svg className="w-12 h-12 text-ali-blue-dark group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -132,7 +138,7 @@ function App() {
             </div>
 
             {/* Card 2: How to Leverage LinkedIn */}
-            <div className="bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-ali-orange hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
+            <div className="bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-ali-orange hover:bg-ali-orange/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
               <div className="w-20 h-20 bg-ali-orange/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-orange group-hover:scale-110 transition-all">
                 <svg className="w-12 h-12 text-ali-orange group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -148,7 +154,7 @@ function App() {
             </div>
 
             {/* Card 3: Resume Review & Optimisation */}
-            <div className="bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-ali-yellow hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
+            <div className="bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-ali-yellow hover:bg-ali-yellow/10 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
               <div className="w-20 h-20 bg-ali-yellow/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ali-yellow group-hover:scale-110 transition-all">
                 <svg className="w-12 h-12 text-yellow-700 group-hover:text-gray-800 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -276,10 +282,49 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-serif font-bold mb-4">About Me</h2>
             <div className="w-24 h-1 bg-ali-yellow mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
               Lead DevOps Engineer deploying Large Language Models (LLMs) on Azure AKS and PaaS for <span className="font-bold text-ali-heading">London Stock Exchange Group (LSEG) × Microsoft UK Partnership</span>. 
               With <span className="font-bold">7 active Azure certifications</span> and <span className="font-bold">2 EPAM AI certifications</span>, I specialize in Azure DevOps, AKS, SRE, Terraform, and AI/ML infrastructure. Currently serving as <span className="font-bold text-ali-orange">EPAM AI Ambassador</span> and <span className="font-bold text-ali-blue-dark">Microsoft Copilot Champion</span>.
             </p>
+            
+            {/* Key Expertise Highlights */}
+            <div className="max-w-3xl mx-auto space-y-3 mb-12">
+              <div className="flex items-start gap-3 p-4 bg-ali-blue/5 rounded-xl hover:bg-ali-blue/10 transition-all">
+                <span className="text-2xl">⚙️</span>
+                <div>
+                  <h4 className="font-bold text-ali-heading mb-1">Azure Infrastructure Management</h4>
+                  <p className="text-gray-600 text-sm">Deep expertise in Azure platform services, including networking, storage, and compute resources.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-ali-orange/5 rounded-xl hover:bg-ali-orange/10 transition-all">
+                <span className="text-2xl">🛠️</span>
+                <div>
+                  <h4 className="font-bold text-ali-heading mb-1">DevOps and Automation</h4>
+                  <p className="text-gray-600 text-sm">Proven ability in Azure DevOps, CI/CD pipelines, and Infrastructure as Code for efficient system management.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-ali-yellow/10 rounded-xl hover:bg-ali-yellow/20 transition-all">
+                <span className="text-2xl">💡</span>
+                <div>
+                  <h4 className="font-bold text-ali-heading mb-1">Site Reliability Engineering (SRE)</h4>
+                  <p className="text-gray-600 text-sm">Focus on ensuring system reliability, availability, and performance through proactive monitoring and incident management.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-ali-blue/5 rounded-xl hover:bg-ali-blue/10 transition-all">
+                <span className="text-2xl">🤖</span>
+                <div>
+                  <h4 className="font-bold text-ali-heading mb-1">AI Integration and Productivity</h4>
+                  <p className="text-gray-600 text-sm">Hands-on experience with GenAI for Systems Engineering Productivity, Microsoft Copilot, and AI Agents.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-ali-orange/5 rounded-xl hover:bg-ali-orange/10 transition-all">
+                <span className="text-2xl">☁️</span>
+                <div>
+                  <h4 className="font-bold text-ali-heading mb-1">Cloud Solutions Architecture</h4>
+                  <p className="text-gray-600 text-sm">Broad understanding of cloud computing principles and services to design and implement robust solutions.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Key Expertise Cards */}
@@ -402,6 +447,11 @@ function App() {
         {/* Decorative Elements */}
         <div className="absolute top-10 right-10 w-32 h-32 bg-ali-orange/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-40 h-40 bg-ali-blue/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-20 text-ali-orange/10">
+          <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,50 L30,30 L50,40 L70,20 L80,50 L60,70 L40,60 L20,80 Z" stroke="currentColor" strokeWidth="4" fill="none" />
+          </svg>
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
@@ -423,7 +473,7 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl transition-all duration-300">
+            <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl hover:bg-ali-blue/5 transition-all duration-300 transform hover:-translate-y-2">
               <div className="bg-ali-blue/10 rounded-2xl h-48 flex items-center justify-center mb-6 group-hover:bg-ali-blue/20 transition-colors">
                 <Code size={64} className="text-ali-blue-dark" />
               </div>
@@ -434,7 +484,7 @@ function App() {
               </div>
             </a>
 
-            <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl transition-all duration-300">
+            <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" className="group bg-white rounded-3xl p-2 hover:shadow-xl hover:bg-ali-orange/5 transition-all duration-300 transform hover:-translate-y-2">
               <div className="bg-ali-orange/10 rounded-2xl h-48 flex items-center justify-center mb-6 group-hover:bg-ali-orange/20 transition-colors">
                 <Cloud size={64} className="text-ali-orange" />
               </div>
@@ -449,7 +499,14 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gradient-to-b from-white to-ali-cream">
+      <section id="contact" className="py-24 bg-gradient-to-b from-white to-ali-cream relative overflow-hidden">
+        {/* Decorative Scribble */}
+        <div className="absolute bottom-20 right-10 text-ali-blue/10">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="50" stroke="currentColor" strokeWidth="3" />
+            <path d="M30,60 L90,60 M60,30 L60,90" stroke="currentColor" strokeWidth="3" />
+          </svg>
+        </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
             Let's <span className="relative inline-block">
