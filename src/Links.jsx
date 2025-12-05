@@ -125,8 +125,8 @@ function Links() {
         </span>
       )}
       <div className="flex items-center gap-4">
-        <div className={`${bg} rounded-xl p-3 flex items-center justify-center min-w-[52px] group-hover:scale-110 transition-transform duration-300`}>
-          <Icon className={iconColor} size={24} strokeWidth={2.5} />
+        <div className={`${bg} rounded-xl p-4 flex items-center justify-center min-w-[60px] min-h-[60px] group-hover:scale-110 transition-transform duration-300 shadow-md`}>
+          <Icon className={iconColor} size={28} strokeWidth={3} />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-serif font-bold text-lg text-ali-heading group-hover:text-ali-orange transition-colors">
@@ -162,7 +162,7 @@ function Links() {
         <div className="text-center mb-8 relative">
           <div className="relative inline-block mb-6">
             <div className="absolute -top-2 -right-2 w-40 h-40 bg-ali-blue rounded-full blur-3xl opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-2 -left-2 w-40 h-40 bg-ali-orange rounded-full blur-3xl opacity-20 animate-pulse" style={{animationDelay: '1s'}}></div>
+            <div className="absolute -bottom-2 -left-2 w-40 h-40 bg-ali-orange rounded-full blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
             <img
               src="./vamsi-profile.jpg"
               alt="Vamsi Penmetsa"
@@ -219,7 +219,7 @@ function Links() {
             </div>
             <p className="text-sm text-gray-600">Real feedback from real people</p>
           </div>
-          
+
           <div className="space-y-6">
             {/* Testimonial 1 - Sumeet */}
             <div className="bg-white rounded-2xl p-6 border-l-4 border-ali-blue shadow-sm hover:shadow-md transition-shadow">
@@ -267,7 +267,7 @@ function Links() {
               </div>
             </div>
           </div>
-          
+
           <div className="text-center mt-6">
             <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-ali-blue-dark hover:text-ali-orange transition-colors">
               Read more stories
