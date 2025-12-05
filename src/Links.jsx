@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Gift, Star, Code, Cloud } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Gift, Star, Bot, Server } from 'lucide-react';
 
 function Links() {
 
@@ -7,7 +7,7 @@ function Links() {
     free: [
       {
         href: "https://vamsipenmetsa.gumroad.com/l/ryfhqh",
-        icon: Code,
+        icon: Bot,
         bg: "bg-gradient-to-br from-ali-blue-dark to-ali-blue",
         iconColor: "text-white",
         title: "GitHub Copilot Visual Guide",
@@ -16,7 +16,7 @@ function Links() {
       },
       {
         href: "https://vamsipenmetsa.gumroad.com/l/knioda",
-        icon: Cloud,
+        icon: Server,
         bg: "bg-gradient-to-br from-ali-orange to-ali-yellow",
         iconColor: "text-white",
         title: "Kubernetes Cheat Sheet",
@@ -197,19 +197,14 @@ function Links() {
         {/* FREE RESOURCES */}
         <section>
           <div className="bg-gradient-to-r from-ali-yellow/20 to-ali-orange/20 rounded-3xl p-8 md:p-10 border-2 border-dashed border-ali-orange/40 relative overflow-hidden">
-            <div className="absolute top-4 right-4">
-              <Gift className="text-ali-orange opacity-10" size={120} />
-            </div>
-            <div className="relative z-10">
-              <SectionHeader emoji="🎁" title="Free Resources" accent="text-ali-orange" />
-              <p className="text-center text-sm font-bold text-ali-orange mb-6">
-                ⚡ Limited: First 100 people only • $0
-              </p>
-              <div className="space-y-4">
-                {linkCards.free.map((link, idx) => (
-                  <LinkCard key={idx} {...link} />
-                ))}
-              </div>
+            <SectionHeader emoji="🎁" title="Free Resources" accent="text-ali-orange" />
+            <p className="text-center text-sm font-bold text-ali-orange mb-6">
+              ⚡ Limited: First 100 people only • $0
+            </p>
+            <div className="space-y-4">
+              {linkCards.free.map((link, idx) => (
+                <LinkCard key={idx} {...link} />
+              ))}
             </div>
           </div>
         </section>
