@@ -137,7 +137,7 @@ function Links() {
           <div className="space-y-5">
             <div className="space-y-2">
               <div className="flex items-center gap-1 text-ali-orange text-xs">⭐⭐⭐⭐⭐</div>
-              <blockquote className="text-sm text-gray-600 italic border-l-3 border-ali-blue pl-3 py-1">
+              <blockquote className="text-sm text-gray-600 italic border-l-2 border-ali-blue pl-3 py-1">
                 "His insights regarding DevOps and associated tools and technologies are very valuable."
               </blockquote>
               <div className="flex items-center gap-2">
@@ -148,7 +148,7 @@ function Links() {
 
             <div className="space-y-2">
               <div className="flex items-center gap-1 text-ali-orange text-xs">⭐⭐⭐⭐⭐</div>
-              <blockquote className="text-sm text-gray-600 italic border-l-3 border-ali-orange pl-3 py-1">
+              <blockquote className="text-sm text-gray-600 italic border-l-2 border-ali-orange pl-3 py-1">
                 "I successfully passed last technical interview. Thank you for your recommendation... I am so excited and grateful!"
               </blockquote>
               <div className="flex items-center gap-2">
@@ -168,7 +168,7 @@ function Links() {
         {/* CONNECT */}
         <section>
           <SectionHeader title="Connect" accent="text-ali-orange" />
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <LinkCard
               href="https://www.linkedin.com/in/vamsipenmetsa"
               icon={Linkedin}
