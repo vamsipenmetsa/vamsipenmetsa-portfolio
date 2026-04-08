@@ -2,247 +2,186 @@ import React from 'react';
 import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Bot, Server, ArrowRight } from 'lucide-react';
 
 function Links() {
-
-  const LinkCard = ({ href, icon: Icon, bg, iconColor = "text-white", title, desc, badge }) => (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group bg-white rounded-2xl p-5 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-gray-100 relative overflow-hidden"
-    >
-      {badge && (
-        <span className="absolute top-3 right-3 bg-ali-orange text-white text-xs font-bold px-2.5 py-0.5 rounded-full z-10">
-          {badge}
-        </span>
-      )}
-      <div className="flex items-center gap-4">
-        <div className={`${bg} rounded-xl p-3.5 flex items-center justify-center min-w-[52px] min-h-[52px] group-hover:scale-105 transition-transform duration-300 shadow-sm`}>
-          <Icon className={iconColor} size={24} strokeWidth={2.5} />
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="font-serif font-bold text-base text-ali-heading group-hover:text-ali-orange transition-colors">
-            {title}
-          </h3>
-          <p className="text-sm text-gray-500 font-sans mt-0.5 leading-snug">
-            {desc}
-          </p>
-        </div>
-        <ExternalLink className="text-gray-300 group-hover:text-ali-orange transition-colors ml-2 flex-shrink-0" size={18} />
-      </div>
-    </a>
-  );
-
-  const SectionHeader = ({ title, accent = "text-ali-blue" }) => (
-    <div className="mb-6">
-      <h2 className="text-xl font-serif font-bold text-ali-heading relative inline-block">
-        {title}
-        <svg className={`absolute w-full h-2 -bottom-1 left-0 ${accent}`} viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.00025 7.00001C45.9184 3.66668 156.667 -2.33332 198.001 2.50001" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-        </svg>
-      </h2>
-    </div>
-  );
-
   return (
-    <div className="min-h-screen bg-ali-cream text-ali-text selection:bg-ali-orange selection:text-white">
+    <div className="min-h-screen bg-ali-cream text-ali-text">
 
-      {/* Hero Profile */}
-      <section className="pt-14 pb-10 px-4 sm:px-6 lg:px-8 max-w-2xl mx-auto">
-        <div className="text-center relative">
-          <div className="relative inline-block mb-5">
-            <img
-              src="./vamsi-profile.jpg"
-              alt="Vamsi Penmetsa — Lead DevOps & Platform Engineer"
-              className="w-28 h-28 rounded-full border-4 border-white shadow-xl mx-auto object-cover object-[center_20%] relative z-10 ring-4 ring-ali-blue/10"
-            />
+      {/* Profile Header */}
+      <div className="pt-12 pb-8 px-4 max-w-lg mx-auto text-center">
+        <img
+          src="./vamsi-profile.jpg"
+          alt="Vamsi Penmetsa"
+          className="w-24 h-24 rounded-full border-4 border-white shadow-lg mx-auto object-cover object-[center_20%] mb-4"
+        />
+        <h1 className="text-2xl font-serif font-bold text-ali-heading">Vamsi Penmetsa</h1>
+        <p className="text-xs font-bold tracking-widest uppercase text-ali-blue-dark mt-1">Lead DevOps & Platform Engineer</p>
+        <p className="text-xs text-gray-500 mt-2">LSEG × Microsoft · 7 Azure Certs · 🇮🇳 → 🇵🇱</p>
+      </div>
+
+      {/* Links */}
+      <div className="max-w-lg mx-auto px-4 pb-16 space-y-3">
+
+        {/* Primary CTA */}
+        <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer"
+          className="block w-full text-center py-3.5 bg-ali-orange text-white rounded-2xl font-bold text-sm hover:opacity-90 transition-opacity shadow-md">
+          🚀 Book a 1:1 Session
+        </a>
+
+        <a href="/vamsipenmetsa-portfolio"
+          className="block w-full text-center py-3 bg-white text-ali-heading rounded-2xl font-bold text-sm border-2 border-gray-200 hover:border-ali-orange transition-colors">
+          View Full Portfolio
+        </a>
+
+        {/* Divider — Services */}
+        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest pt-4 pb-1">Services</p>
+
+        <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div className="w-10 h-10 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
+            <Calendar size={20} className="text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-serif font-bold text-ali-heading mb-2">
-            Vamsi Penmetsa
-          </h1>
-          <p className="text-sm font-bold tracking-wide uppercase text-ali-blue-dark mb-2">Lead DevOps & Platform Engineer</p>
-          <div className="flex flex-wrap gap-2 justify-center mb-6">
-            <span className="text-xs font-bold px-2.5 py-1 bg-ali-blue/15 text-ali-blue-dark rounded-full">LSEG × Microsoft</span>
-            <span className="text-xs font-bold px-2.5 py-1 bg-ali-orange/15 text-ali-orange rounded-full">7 Azure Certs</span>
-            <span className="text-xs font-bold px-2.5 py-1 bg-gray-100 text-gray-600 rounded-full">🇮🇳 → 🇵🇱</span>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">Land Your Next Cloud Role</p>
+            <p className="text-xs text-gray-500">Mock interviews & career guidance</p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-            <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-7 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all shadow-md text-sm">
-              Book a 1:1 Session <ArrowRight size={16} className="ml-1.5" />
-            </a>
-            <a href="/vamsipenmetsa-portfolio" className="inline-flex items-center justify-center px-7 py-2.5 bg-white text-ali-heading border-2 border-gray-200 rounded-full font-bold hover:border-ali-orange hover:text-ali-orange transition-all text-sm">
-              Full Portfolio
-            </a>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+        </a>
+
+        <a href="https://topmate.io/vamsipenmetsa/137043?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div className="w-10 h-10 bg-[#0A66C2] rounded-xl flex items-center justify-center flex-shrink-0">
+            <Linkedin size={20} className="text-white" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">Transition to Cloud/DevOps</p>
+            <p className="text-xs text-gray-500">LinkedIn optimization & career roadmap</p>
+          </div>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+        </a>
+
+        <a href="https://topmate.io/vamsipenmetsa/1804944?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div className="w-10 h-10 bg-ali-blue-dark rounded-xl flex items-center justify-center flex-shrink-0">
+            <Award size={20} className="text-white" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">Resume That Gets Interviews</p>
+            <p className="text-xs text-gray-500">Optimized for Cloud & DevOps roles</p>
+          </div>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+        </a>
+
+        {/* Divider — Free Resources */}
+        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest pt-4 pb-1">Free Resources</p>
+
+        <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
+          <div className="w-10 h-10 bg-ali-blue-dark rounded-xl flex items-center justify-center flex-shrink-0">
+            <Bot size={20} className="text-white" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">GitHub Copilot Visual Guide</p>
+            <p className="text-xs text-gray-500">Master AI-powered coding</p>
+          </div>
+          <span className="text-[10px] font-bold px-2 py-0.5 bg-ali-yellow text-ali-heading rounded-full flex-shrink-0">FREE</span>
+        </a>
+
+        <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
+          <div className="w-10 h-10 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
+            <Server size={20} className="text-white" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">Kubernetes Cheat Sheet</p>
+            <p className="text-xs text-gray-500">From basics to advanced K8s</p>
+          </div>
+          <span className="text-[10px] font-bold px-2 py-0.5 bg-ali-yellow text-ali-heading rounded-full flex-shrink-0">FREE</span>
+        </a>
+
+        {/* Divider — Testimonials */}
+        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest pt-4 pb-1">What People Say</p>
+
+        <div className="bg-white rounded-2xl p-5 border border-gray-100 space-y-4">
+          <div>
+            <p className="text-xs text-ali-orange mb-1">⭐⭐⭐⭐⭐</p>
+            <p className="text-sm text-gray-600 italic">"His insights regarding DevOps tools and technologies are very valuable."</p>
+            <p className="text-xs text-gray-400 mt-1.5"><strong className="text-ali-heading">Sumeet K.</strong> · Dec 2025</p>
+          </div>
+          <div className="border-t border-gray-100 pt-4">
+            <p className="text-xs text-ali-orange mb-1">⭐⭐⭐⭐⭐</p>
+            <p className="text-sm text-gray-600 italic">"I successfully passed my technical interview. I am so excited and grateful!"</p>
+            <p className="text-xs text-gray-400 mt-1.5"><strong className="text-ali-heading">Mariia</strong> · DevOps Engineer</p>
           </div>
         </div>
-      </section>
 
-      {/* Main Content */}
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 space-y-10">
+        {/* Divider — Connect */}
+        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest pt-4 pb-1">Connect</p>
 
-        {/* SERVICES — First for conversion */}
-        <section>
-          <SectionHeader title="Services" accent="text-ali-orange" />
-          <div className="space-y-3">
-            <LinkCard
-              href="https://topmate.io/vamsipenmetsa/1755002"
-              icon={Calendar}
-              bg="bg-gradient-to-br from-ali-orange to-ali-yellow"
-              title="Land Your Next Cloud Role"
-              desc="Mock interviews & career guidance — 150+ interviews conducted"
-            />
-            <LinkCard
-              href="https://topmate.io/vamsipenmetsa/137043?utm_source=public_profile&utm_campaign=vamsipenmetsa"
-              icon={Linkedin}
-              bg="bg-[#0A66C2]"
-              title="Transition to Cloud/DevOps"
-              desc="LinkedIn optimization & career transition roadmap"
-            />
-            <LinkCard
-              href="https://topmate.io/vamsipenmetsa/1804944?utm_source=public_profile&utm_campaign=vamsipenmetsa"
-              icon={Award}
-              bg="bg-gradient-to-br from-ali-blue-dark to-ali-blue"
-              title="Resume That Gets Interviews"
-              desc="Professional review optimized for Cloud & DevOps roles"
-            />
+        <div className="grid grid-cols-2 gap-3">
+          <a href="https://www.linkedin.com/in/vamsipenmetsa" target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-3 bg-white rounded-2xl p-3.5 border border-gray-100 hover:shadow-md transition-all">
+            <Linkedin size={18} className="text-[#0A66C2]" />
+            <span className="text-sm font-bold text-ali-heading">LinkedIn</span>
+          </a>
+          <a href="https://github.com/vamsipenmetsa" target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-3 bg-white rounded-2xl p-3.5 border border-gray-100 hover:shadow-md transition-all">
+            <Github size={18} className="text-gray-800" />
+            <span className="text-sm font-bold text-ali-heading">GitHub</span>
+          </a>
+          <a href="https://medium.com/@vamsipenmetsa" target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-3 bg-white rounded-2xl p-3.5 border border-gray-100 hover:shadow-md transition-all">
+            <BookOpen size={18} className="text-gray-800" />
+            <span className="text-sm font-bold text-ali-heading">Medium</span>
+          </a>
+          <a href="mailto:vamsivarmapenmatsa@gmail.com"
+            className="flex items-center gap-3 bg-white rounded-2xl p-3.5 border border-gray-100 hover:shadow-md transition-all">
+            <Mail size={18} className="text-ali-orange" />
+            <span className="text-sm font-bold text-ali-heading">Email</span>
+          </a>
+        </div>
+
+        {/* Divider — Communities */}
+        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest pt-4 pb-1">Communities</p>
+
+        <a href="https://linkedin.openinapp.co/groups-13986647" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div className="w-10 h-10 bg-ali-blue-dark rounded-xl flex items-center justify-center flex-shrink-0">
+            <Users size={20} className="text-white" />
           </div>
-        </section>
-
-        {/* FREE RESOURCES */}
-        <section>
-          <SectionHeader title="Free Resources" accent="text-ali-blue" />
-          <div className="space-y-3">
-            <LinkCard
-              href="https://vamsipenmetsa.gumroad.com/l/ryfhqh"
-              icon={Bot}
-              bg="bg-gradient-to-br from-ali-blue-dark to-ali-blue"
-              title="GitHub Copilot Visual Guide"
-              desc="Master AI-powered coding with prompting strategies"
-              badge="FREE"
-            />
-            <LinkCard
-              href="https://vamsipenmetsa.gumroad.com/l/knioda"
-              icon={Server}
-              bg="bg-gradient-to-br from-ali-orange to-ali-yellow"
-              title="Kubernetes Cheat Sheet"
-              desc="Complete K8s reference — basics to advanced"
-              badge="FREE"
-            />
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">DevOps Professionals Group</p>
+            <p className="text-xs text-gray-500">15,000+ members</p>
           </div>
-        </section>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+        </a>
 
-        {/* SOCIAL PROOF */}
-        <section className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-          <h2 className="text-lg font-serif font-bold text-ali-heading mb-5">What People Say</h2>
-
-          <div className="space-y-5">
-            <div className="space-y-2">
-              <div className="flex items-center gap-1 text-ali-orange text-xs">⭐⭐⭐⭐⭐</div>
-              <blockquote className="text-sm text-gray-600 italic border-l-2 border-ali-blue pl-3 py-1">
-                "His insights regarding DevOps and associated tools and technologies are very valuable."
-              </blockquote>
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 bg-ali-orange rounded-full flex items-center justify-center text-white font-bold text-[10px]">SK</div>
-                <p className="text-xs text-gray-500"><strong className="text-ali-heading">Sumeet Khastgir</strong> · Dec 2025</p>
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <div className="flex items-center gap-1 text-ali-orange text-xs">⭐⭐⭐⭐⭐</div>
-              <blockquote className="text-sm text-gray-600 italic border-l-2 border-ali-orange pl-3 py-1">
-                "I successfully passed last technical interview. Thank you for your recommendation... I am so excited and grateful!"
-              </blockquote>
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 bg-ali-blue rounded-full flex items-center justify-center text-white font-bold text-[10px]">M</div>
-                <p className="text-xs text-gray-500"><strong className="text-ali-heading">Mariia</strong> · Aspiring DevOps Engineer</p>
-              </div>
-            </div>
+        <a href="https://www.instagram.com/poland_streets" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div className="w-10 h-10 bg-[#E4405F] rounded-xl flex items-center justify-center flex-shrink-0">
+            <Instagram size={20} className="text-white" />
           </div>
-
-          <div className="mt-5 text-center">
-            <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold text-sm hover:bg-ali-blue-dark hover:shadow-lg transition-all">
-              Start your journey <ArrowRight size={16} />
-            </a>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">Poland Streets 📸</p>
+            <p className="text-xs text-gray-500">Street photography · 3M+ views</p>
           </div>
-        </section>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+        </a>
 
-        {/* CONNECT */}
-        <section>
-          <SectionHeader title="Connect" accent="text-ali-orange" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <LinkCard
-              href="https://www.linkedin.com/in/vamsipenmetsa"
-              icon={Linkedin}
-              bg="bg-[#0A66C2]"
-              title="LinkedIn"
-              desc="Professional updates"
-            />
-            <LinkCard
-              href="https://github.com/vamsipenmetsa"
-              icon={Github}
-              bg="bg-gradient-to-br from-gray-800 to-gray-600"
-              title="GitHub"
-              desc="Open source projects"
-            />
-            <LinkCard
-              href="https://medium.com/@vamsipenmetsa"
-              icon={BookOpen}
-              bg="bg-gradient-to-br from-gray-900 to-gray-700"
-              title="Medium"
-              desc="Technical articles"
-            />
-            <LinkCard
-              href="mailto:vamsivarmapenmatsa@gmail.com"
-              icon={Mail}
-              bg="bg-gradient-to-br from-ali-orange to-ali-yellow"
-              title="Email"
-              desc="Get in touch"
-            />
+        <a href="https://www.instagram.com/international_friends_wawa" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div className="w-10 h-10 bg-[#E4405F] rounded-xl flex items-center justify-center flex-shrink-0">
+            <Instagram size={20} className="text-white" />
           </div>
-        </section>
-
-        {/* COMMUNITIES */}
-        <section>
-          <SectionHeader title="Communities" accent="text-ali-blue" />
-          <div className="space-y-3">
-            <LinkCard
-              href="https://linkedin.openinapp.co/groups-13986647"
-              icon={Users}
-              bg="bg-gradient-to-br from-ali-blue to-ali-blue-dark"
-              title="DevOps Professionals Group"
-              desc="15,000+ cloud & DevOps professionals"
-            />
-            <LinkCard
-              href="https://www.instagram.com/poland_streets"
-              icon={Instagram}
-              bg="bg-gradient-to-br from-purple-500 to-pink-500"
-              title="Poland Streets 📸"
-              desc="Curated street photography (3M+ views)"
-            />
-            <LinkCard
-              href="https://www.instagram.com/international_friends_wawa"
-              icon={Instagram}
-              bg="bg-gradient-to-br from-orange-400 to-pink-400"
-              title="International Friends Warsaw"
-              desc="Community events & meetups"
-            />
-            <LinkCard
-              href="https://www.instagram.com/vamsipenmetsa7"
-              icon={Instagram}
-              bg="bg-gradient-to-br from-purple-600 to-pink-600"
-              title="Instagram"
-              desc="Personal updates & life"
-            />
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">International Friends Warsaw</p>
+            <p className="text-xs text-gray-500">Community events & meetups</p>
           </div>
-        </section>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+        </a>
 
-        {/* Back to Portfolio */}
-        <div className="text-center pt-4">
-          <a
-            href="/vamsipenmetsa-portfolio"
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border-2 border-gray-200 text-ali-heading hover:border-ali-orange hover:text-ali-orange transition-all text-sm font-medium"
-          >
-            <ArrowLeft size={16} />
-            Back to Portfolio
+        {/* Back */}
+        <div className="text-center pt-6">
+          <a href="/vamsipenmetsa-portfolio" className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-ali-orange transition-colors">
+            <ArrowLeft size={14} /> Back to Portfolio
           </a>
         </div>
       </div>
