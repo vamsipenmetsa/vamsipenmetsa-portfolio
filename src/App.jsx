@@ -198,6 +198,21 @@ function App() {
             </div>
           </div>
 
+          {/* Testimonial 3 - Ram Kumar */}
+          <div className="space-y-4 md:col-span-2 max-w-2xl mx-auto">
+            <div className="flex items-center gap-1 text-ali-orange text-sm">⭐⭐⭐⭐⭐</div>
+            <blockquote className="text-gray-600 italic border-l-4 border-ali-yellow pl-4 py-2 bg-ali-cream/50 rounded-r-lg">
+              "The session provided a clear 5-phase roadmap for my EU job search—resume refocus, LinkedIn strategy, intentional skill building, smart job tactics, and realistic market entry. Structured, no-fluff guidance. Highly recommend connecting with Vamsi."
+            </blockquote>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-ali-yellow rounded-full flex items-center justify-center text-ali-heading font-bold text-sm">RK</div>
+              <div>
+                <p className="font-bold text-ali-heading text-sm">Ram Kumar R</p>
+                <p className="text-xs text-gray-500">Cloud/DevOps · EU Job Search</p>
+              </div>
+            </div>
+          </div>
+
           <div className="text-center">
             <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all">
               Start your journey <ArrowRight size={18} />

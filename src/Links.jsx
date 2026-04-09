@@ -111,6 +111,11 @@ function Links() {
             <p className="text-sm text-gray-600 italic">"I successfully passed my technical interview. I am so excited and grateful!"</p>
             <p className="text-xs text-gray-400 mt-1.5"><strong className="text-ali-heading">Mariia</strong> · DevOps Engineer</p>
           </div>
+          <div className="border-t border-gray-100 pt-4">
+            <p className="text-xs text-ali-orange mb-1">⭐⭐⭐⭐⭐</p>
+            <p className="text-sm text-gray-600 italic">"Clear 5-phase roadmap for my EU job search. Structured, no-fluff guidance. Highly recommend."</p>
+            <p className="text-xs text-gray-400 mt-1.5"><strong className="text-ali-heading">Ram Kumar R</strong> · Cloud/DevOps</p>
+          </div>
         </div>
 
         {/* Divider — Connect */}
