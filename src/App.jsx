@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +16,7 @@ function App() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#services" className="font-sans font-medium hover:text-ali-orange transition-colors">Services</a>
+            <a href="#talks" className="font-sans font-medium hover:text-ali-orange transition-colors">Talks</a>
             <a href="#about" className="font-sans font-medium hover:text-ali-orange transition-colors">About</a>
             <a href="#resources" className="font-sans font-medium hover:text-ali-orange transition-colors">Resources</a>
             <a href="/vamsipenmetsa-portfolio/links" className="font-sans font-medium hover:text-ali-blue-dark transition-colors">Links</a>
@@ -37,6 +38,7 @@ function App() {
           <div className="md:hidden absolute top-20 left-0 w-full bg-white shadow-xl z-50 border-t border-gray-100">
             <div className="p-4 space-y-4">
               <a href="#services" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Services</a>
+              <a href="#talks" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Talks</a>
               <a href="#about" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>About</a>
               <a href="#resources" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Resources</a>
               <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="block font-bold text-ali-orange p-2" onClick={toggleMenu}>Book a Session</a>
@@ -77,6 +79,7 @@ function App() {
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/15 text-ali-blue-dark rounded-full">7 Azure Certs</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-orange/15 text-ali-orange rounded-full">150+ Global Interviews</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-yellow/20 text-yellow-700 rounded-full">EPAM AI Ambassador</span>
+              <span className="text-xs font-bold px-3 py-1.5 bg-purple-100 text-purple-700 rounded-full">🎤 Tech Speaker</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full">🇮🇳 India → 🇵🇱 Poland (since 2022)</span>
             </div>
 
@@ -159,18 +162,140 @@ function App() {
         </div>
       </section>
 
+      {/* Featured Talk Section */}
+      <section id="talks" className="py-20 bg-gradient-to-br from-ali-blue/5 via-white to-ali-orange/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-ali-orange/10 text-ali-orange rounded-full text-sm font-bold mb-4">
+              <Mic size={16} /> Featured Talk
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold">
+              Speaking at <span className="text-ali-blue-dark">Community Events</span>
+            </h2>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
+            {/* Talk Image — full-width landscape */}
+            <div className="relative">
+              <img
+                src="./Vamsi_Tech_talk.JPG"
+                alt="Vamsi Penmetsa speaking at Microsoft Azure User Group Poland meetup at EPAM Warsaw office"
+                className="w-full h-auto max-h-[480px] object-cover object-center"
+              />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1.5 bg-white/90 backdrop-blur-sm text-ali-heading text-xs font-bold rounded-full shadow-lg">April 2026</span>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-0">
+              {/* Talk Details */}
+              <div className="p-8 md:p-10">
+                <div>
+                  <div className="flex items-center gap-2 text-sm text-ali-blue-dark font-bold mb-3">
+                    <Calendar size={16} />
+                    <span>15 April 2026 · 19:00 – 19:45</span>
+                  </div>
+
+                  <h3 className="text-xl md:text-2xl font-serif font-bold text-ali-heading mb-4 leading-snug">
+                    The Blind Spots We Didn’t Know We Had — Splitting Observability Between Datadog & Azure Log Analytics
+                  </h3>
+
+                  <div className="space-y-3 mb-5">
+                    <div className="flex items-start gap-3 text-sm text-gray-600">
+                      <MapPin size={16} className="text-ali-orange flex-shrink-0 mt-0.5" />
+                      <span><strong>EPAM Warsaw Office</strong> — 82nd Microsoft Azure User Group Poland Meetup</span>
+                    </div>
+                    <div className="flex items-start gap-3 text-sm text-gray-600">
+                      <Users size={16} className="text-ali-blue-dark flex-shrink-0 mt-0.5" />
+                      <span><strong>112 registered</strong> · <strong>65 attended</strong> · Hosted by Tomasz W. & Marek G.</span>
+                    </div>
+                    <div className="flex items-start gap-3 text-sm text-gray-600">
+                      <Cloud size={16} className="text-ali-blue-dark flex-shrink-0 mt-0.5" />
+                      <span>Based on hands-on experience from the <strong>LSEG × Microsoft</strong> project</span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    <span className="text-xs font-medium px-3 py-1.5 bg-ali-blue/10 text-ali-blue-dark rounded-full">Observability</span>
+                    <span className="text-xs font-medium px-3 py-1.5 bg-ali-orange/10 text-ali-orange rounded-full">Datadog</span>
+                    <span className="text-xs font-medium px-3 py-1.5 bg-ali-blue/10 text-ali-blue-dark rounded-full">Azure Log Analytics</span>
+                    <span className="text-xs font-medium px-3 py-1.5 bg-ali-yellow/20 text-yellow-700 rounded-full">Platform Engineering</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Appreciation Quotes */}
+              <div className="p-8 md:p-10 space-y-4 md:border-l border-gray-100">
+                  <div className="bg-gradient-to-r from-ali-cream to-ali-orange/5 rounded-2xl p-4 border border-ali-orange/20">
+                    <div className="flex items-start gap-3">
+                      <Quote size={18} className="text-ali-orange flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-sm text-gray-600 italic leading-relaxed mb-2">
+                          “A big thank you for your presentation. It was a very valuable part of the event, and I’m sure the audience truly benefited from your knowledge and insights.”
+                        </p>
+                        <div className="flex items-center gap-2">
+                          <div className="w-7 h-7 bg-ali-blue-dark rounded-full flex items-center justify-center text-white font-bold text-[10px]">BB</div>
+                          <div>
+                            <p className="text-xs font-bold text-ali-heading">Bogumil Barjasz</p>
+                            <p className="text-[11px] text-gray-500">EPAM Poland Cloud Discipline Head</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-ali-blue/5 to-ali-cream rounded-2xl p-4 border border-ali-blue/20">
+                    <div className="flex items-start gap-3">
+                      <Quote size={18} className="text-ali-blue-dark flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-sm text-gray-600 italic leading-relaxed mb-2">
+                          “Congratulations for being a first-time public speaker during the Azure Meetup #82! Taking that step to speak in front of others is truly courageous and inspiring. Your willingness to share your voice sets a wonderful example for everyone.”
+                        </p>
+                        <div className="flex items-center gap-2">
+                          <div className="w-7 h-7 bg-ali-blue rounded-full flex items-center justify-center text-white font-bold text-[10px]">MD</div>
+                          <div>
+                            <p className="text-xs font-bold text-ali-heading">Maciej Deptula</p>
+                            <p className="text-[11px] text-gray-500">Azure Architect</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            {/* Event Info Bar */}
+            <div className="bg-gradient-to-r from-ali-blue-dark to-ali-blue px-6 md:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div className="flex items-center gap-3 text-white">
+                <img src="https://secure.meetupstatic.com/photos/event/c/8/e/6/clean_523458150.webp" alt="Azure User Group Poland" className="w-8 h-8 rounded-full bg-white" onError={(e) => e.target.style.display='none'} />
+                <span className="text-sm font-medium">Microsoft Azure User Group Poland · Collaboration with EPAM Systems</span>
+              </div>
+              <span className="text-xs text-white/70">4.8 ★ · 1,640 reviews</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Social Proof / Testimonials */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 text-center">
             What People Say
           </h2>
+          <p className="text-gray-500 text-center mb-10">From mentorship sessions and technical interviews</p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          {/* Mentorship Testimonials */}
+          <div className="mb-6">
+            <p className="text-xs font-bold uppercase tracking-widest text-ali-blue-dark mb-4 flex items-center gap-2">
+              <span className="w-8 h-px bg-ali-blue-dark"></span> Mentorship & Coaching
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
             {/* Testimonial 1 - Sumeet */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-1 text-ali-orange text-sm">⭐⭐⭐⭐⭐</div>
-              <blockquote className="text-gray-600 italic border-l-4 border-ali-blue pl-4 py-2 bg-ali-cream/50 rounded-r-lg">
+            <div className="bg-ali-cream/30 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-1 text-ali-orange text-sm mb-3">⭐⭐⭐⭐⭐</div>
+              <blockquote className="text-gray-600 italic border-l-4 border-ali-blue pl-4 py-2 leading-relaxed text-sm mb-4">
                 "I had a wonderful session with Vamsi, his insights regarding DevOps and associated tools and technologies are very valuable."
               </blockquote>
               <div className="flex items-center gap-3">
@@ -183,9 +308,9 @@ function App() {
             </div>
 
             {/* Testimonial 2 - Mariia */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-1 text-ali-orange text-sm">⭐⭐⭐⭐⭐</div>
-              <blockquote className="text-gray-600 italic border-l-4 border-ali-orange pl-4 py-2 bg-ali-cream/50 rounded-r-lg">
+            <div className="bg-ali-cream/30 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-1 text-ali-orange text-sm mb-3">⭐⭐⭐⭐⭐</div>
+              <blockquote className="text-gray-600 italic border-l-4 border-ali-orange pl-4 py-2 leading-relaxed text-sm mb-4">
                 "I successfully passed last technical interview. Thank you for your recommendation to try to behave as I am already middle... I am so excited and grateful!"
               </blockquote>
               <div className="flex items-center gap-3">
@@ -196,19 +321,41 @@ function App() {
                 </div>
               </div>
             </div>
+
+            {/* Testimonial 3 - Ram Kumar */}
+            <div className="bg-ali-cream/30 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow md:col-span-2">
+              <div className="flex items-center gap-1 text-ali-orange text-sm mb-3">⭐⭐⭐⭐⭐</div>
+              <blockquote className="text-gray-600 italic border-l-4 border-ali-yellow pl-4 py-2 leading-relaxed text-sm mb-4 max-w-3xl">
+                "The session provided a clear 5-phase roadmap for my EU job search—resume refocus, LinkedIn strategy, intentional skill building, smart job tactics, and realistic market entry. Structured, no-fluff guidance. Highly recommend connecting with Vamsi."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-ali-yellow rounded-full flex items-center justify-center text-ali-heading font-bold text-sm">RK</div>
+                <div>
+                  <p className="font-bold text-ali-heading text-sm">Ram Kumar R</p>
+                  <p className="text-xs text-gray-500">Cloud/DevOps · EU Job Search</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Testimonial 3 - Ram Kumar */}
-          <div className="space-y-4 md:col-span-2 max-w-2xl mx-auto">
-            <div className="flex items-center gap-1 text-ali-orange text-sm">⭐⭐⭐⭐⭐</div>
-            <blockquote className="text-gray-600 italic border-l-4 border-ali-yellow pl-4 py-2 bg-ali-cream/50 rounded-r-lg">
-              "The session provided a clear 5-phase roadmap for my EU job search—resume refocus, LinkedIn strategy, intentional skill building, smart job tactics, and realistic market entry. Structured, no-fluff guidance. Highly recommend connecting with Vamsi."
-            </blockquote>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-ali-yellow rounded-full flex items-center justify-center text-ali-heading font-bold text-sm">RK</div>
+          {/* Interview Feedback */}
+          <div className="mb-6">
+            <p className="text-xs font-bold uppercase tracking-widest text-ali-orange mb-4 flex items-center gap-2">
+              <span className="w-8 h-px bg-ali-orange"></span> Interview Feedback · 150+ Technical Interviews (Azure, DevOps, SRE, AWS)
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-r from-ali-orange/5 to-ali-blue/5 rounded-2xl p-6 border border-ali-orange/15 mb-8">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-ali-orange rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">MB</div>
               <div>
-                <p className="font-bold text-ali-heading text-sm">Ram Kumar R</p>
-                <p className="text-xs text-gray-500">Cloud/DevOps · EU Job Search</p>
+                <blockquote className="text-gray-600 italic leading-relaxed text-sm mb-3">
+                  "The interview was honestly one of the best I've had the pleasure of attending. The questions were well thought out and the tasks actually tested real skills, which I really appreciated. It left me with a very good impression of the company, and I'm definitely keen to move forward."
+                </blockquote>
+                <div>
+                  <p className="font-bold text-ali-heading text-sm">Mikolaj B.</p>
+                  <p className="text-xs text-gray-500">Interview Candidate · Feedback shared via HR · April 2026</p>
+                </div>
               </div>
             </div>
           </div>
