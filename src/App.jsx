@@ -76,7 +76,7 @@ function App() {
 
             {/* Trust Bar */}
             <div className="flex flex-wrap gap-3 justify-center md:justify-start pt-2">
-              <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/15 text-ali-blue-dark rounded-full">7 Azure Certs</span>
+              <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/15 text-ali-blue-dark rounded-full">12+ Certifications</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-orange/15 text-ali-orange rounded-full">150+ Global Interviews</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-yellow/20 text-yellow-700 rounded-full">EPAM AI Ambassador</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-purple-100 text-purple-700 rounded-full">🎤 Tech Speaker</span>
@@ -240,6 +240,12 @@ function App() {
                             <p className="text-[11px] text-gray-500">EPAM Poland Cloud Discipline Head</p>
                           </div>
                         </div>
+                        <img
+                          src="./Bogumil_feedback.png"
+                          alt="Feedback screenshot from Bogumil Barjasz after Azure Meetup #82"
+                          className="mt-3 w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                          onClick={(e) => window.open(e.target.src, '_blank')}
+                        />
                       </div>
                     </div>
                   </div>
@@ -258,6 +264,12 @@ function App() {
                             <p className="text-[11px] text-gray-500">Azure Architect</p>
                           </div>
                         </div>
+                        <img
+                          src="./Maciej_feedback.png"
+                          alt="Feedback screenshot from Maciej Deptula after Azure Meetup #82"
+                          className="mt-3 w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                          onClick={(e) => window.open(e.target.src, '_blank')}
+                        />
                       </div>
                     </div>
                   </div>
@@ -346,16 +358,28 @@ function App() {
           </div>
 
           <div className="bg-gradient-to-r from-ali-orange/5 to-ali-blue/5 rounded-2xl p-6 border border-ali-orange/15 mb-8">
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 bg-ali-orange rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">MB</div>
-              <div>
-                <blockquote className="text-gray-600 italic leading-relaxed text-sm mb-3">
-                  "The interview was honestly one of the best I've had the pleasure of attending. The questions were well thought out and the tasks actually tested real skills, which I really appreciated. It left me with a very good impression of the company, and I'm definitely keen to move forward."
-                </blockquote>
-                <div>
-                  <p className="font-bold text-ali-heading text-sm">Mikolaj B.</p>
-                  <p className="text-xs text-gray-500">Interview Candidate · Feedback shared via HR · April 2026</p>
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="flex-1">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-ali-orange rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">MB</div>
+                  <div>
+                    <blockquote className="text-gray-600 italic leading-relaxed text-sm mb-3">
+                      “The interview was honestly one of the best I’ve had the pleasure of attending. The questions were well thought out and the tasks actually tested real skills, which I really appreciated. It left me with a very good impression of the company, and I’m definitely keen to move forward.”
+                    </blockquote>
+                    <div>
+                      <p className="font-bold text-ali-heading text-sm">Mikolaj B.</p>
+                      <p className="text-xs text-gray-500">Interview Candidate · Feedback shared via HR · April 2026</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div className="md:w-80 flex-shrink-0">
+                <img
+                  src="./Interview_feedback_sharedbyHR.png"
+                  alt="Interview feedback from Mikolaj B. shared via HR"
+                  className="w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                  onClick={(e) => window.open(e.target.src, '_blank')}
+                />
               </div>
             </div>
           </div>
@@ -399,7 +423,7 @@ function App() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-ali-blue-dark mt-0.5 text-sm">✓</span>
-                  <p className="text-sm text-gray-700"><strong>7 Azure Certs</strong> incl. Solutions Architect Expert</p>
+                  <p className="text-sm text-gray-700"><strong>12+ Certifications</strong> incl. Azure, AWS & GitHub</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-ali-blue-dark mt-0.5 text-sm">✓</span>
@@ -457,19 +481,43 @@ function App() {
                 <ul className="space-y-2.5 text-sm text-gray-600">
                   <li className="flex items-start gap-2">
                     <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span><strong>Azure Solutions Architect Expert</strong></span>
+                    <span><strong>Azure Solutions Architect Expert</strong> <span className="text-xs text-gray-400">(AZ-305)</span></span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span>7 Active Azure Certifications</span>
+                    <span><strong>Azure DevOps Engineer Expert</strong> <span className="text-xs text-gray-400">(AZ-400)</span></span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span>2 EPAM AI Certifications</span>
+                    <span>Azure Security Engineer Associate <span className="text-xs text-gray-400">(AZ-500)</span></span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span>Engineering Management Essentials</span>
+                    <span>Azure Developer Associate <span className="text-xs text-gray-400">(AZ-204)</span></span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ali-blue-dark mt-0.5">✓</span>
+                    <span>Azure Administrator Associate <span className="text-xs text-gray-400">(AZ-104)</span></span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ali-blue-dark mt-0.5">✓</span>
+                    <span>Azure Fundamentals <span className="text-xs text-gray-400">(AZ-900)</span></span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#FF9900] mt-0.5">✓</span>
+                    <span><strong>AWS Certified AI Practitioner</strong></span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-gray-800 mt-0.5">✓</span>
+                    <span><strong>GitHub Copilot</strong> <span className="text-xs text-gray-400">(GH-300)</span></span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ali-orange mt-0.5">✓</span>
+                    <span>EPAM AI Masterclass Excellence</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ali-orange mt-0.5">✓</span>
+                    <span>EPAM Prompts & Game Mastery</span>
                   </li>
                 </ul>
               </div>
