@@ -495,7 +495,7 @@ function App() {
                 </p>
                 <div className="grid grid-cols-3 sm:grid-cols-6 gap-4">
                   {[
-                    { img: "https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png", name: "Solutions Architect Expert", code: "AZ-305", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/" },
+                    { img: "https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png", name: "Solutions Architect Expert", code: "AZ-305", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/25D93904B41DCA95?sharingId=C12B7F6430996004" },
                     { img: "https://images.credly.com/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png", name: "DevOps Engineer Expert", code: "AZ-400", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/9A6A85340BFB87D5?sharingId=C12B7F6430996004" },
                     { img: "https://images.credly.com/images/1ad16b6f-2c71-4a2e-ae74-ec69c4766039/azure-security-engineer-associate600x600.png", name: "Security Engineer", code: "AZ-500", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/4E16B2FDA09E8AF6?sharingId=C12B7F6430996004" },
                     { img: "https://images.credly.com/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png", name: "Developer Associate", code: "AZ-204", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/D01EC7BE672BE6F9?sharingId=C12B7F6430996004" },
