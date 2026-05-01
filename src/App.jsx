@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="min-h-screen bg-ali-cream text-ali-text selection:bg-ali-orange selection:text-white">
       {/* Navigation */}
-      <nav className="w-full py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <nav className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+      <div className="w-full py-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
           <a href="#" className="font-serif text-2xl font-bold tracking-tight">Vamsi Penmetsa</a>
 
@@ -35,7 +36,7 @@ function App() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 w-full bg-white shadow-xl z-50 border-t border-gray-100">
+          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl z-50 border-t border-gray-100">
             <div className="p-4 space-y-4">
               <a href="#services" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Services</a>
               <a href="#talks" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Talks</a>
@@ -45,6 +46,7 @@ function App() {
             </div>
           </div>
         )}
+      </div>
       </nav>
 
       {/* Hero Section */}
@@ -403,7 +405,7 @@ function App() {
           {/* Two Column Layout */}
           <div className="grid md:grid-cols-2 gap-10 mb-14">
             {/* Left Column - What I Do */}
-            <div className="bg-white rounded-3xl p-8 shadow-xl border-l-4 border-ali-blue-dark">
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 border-t-4 border-t-ali-blue-dark">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 bg-ali-blue-dark rounded-lg flex items-center justify-center">
                   <Terminal size={20} className="text-white" />
@@ -437,7 +439,7 @@ function App() {
             </div>
 
             {/* Right Column - The Journey */}
-            <div className="bg-white rounded-3xl p-8 shadow-xl border-l-4 border-ali-orange">
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 border-t-4 border-t-ali-orange">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 bg-ali-orange rounded-lg flex items-center justify-center">
                   <Cloud size={20} className="text-white" />
@@ -472,79 +474,144 @@ function App() {
           </div>
 
           {/* Certifications & Career Highlights */}
-          <div className="bg-gradient-to-r from-ali-blue/5 to-ali-orange/5 rounded-3xl p-8 md:p-10">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-serif font-bold mb-5 flex items-center gap-2">
-                  <span className="text-2xl">🏆</span> Certifications
-                </h3>
-                <ul className="space-y-2.5 text-sm text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span><strong>Azure Solutions Architect Expert</strong> <span className="text-xs text-gray-400">(AZ-305)</span></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span><strong>Azure DevOps Engineer Expert</strong> <span className="text-xs text-gray-400">(AZ-400)</span></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span>Azure Security Engineer Associate <span className="text-xs text-gray-400">(AZ-500)</span></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span>Azure Developer Associate <span className="text-xs text-gray-400">(AZ-204)</span></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span>Azure Administrator Associate <span className="text-xs text-gray-400">(AZ-104)</span></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-blue-dark mt-0.5">✓</span>
-                    <span>Azure Fundamentals <span className="text-xs text-gray-400">(AZ-900)</span></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#FF9900] mt-0.5">✓</span>
-                    <span><strong>AWS Certified AI Practitioner</strong></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-gray-800 mt-0.5">✓</span>
-                    <span><strong>GitHub Copilot</strong> <span className="text-xs text-gray-400">(GH-300)</span></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-orange mt-0.5">✓</span>
-                    <span>EPAM AI Masterclass Excellence</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-orange mt-0.5">✓</span>
-                    <span>EPAM Prompts & Game Mastery</span>
-                  </li>
-                </ul>
+          <div className="space-y-6">
+
+            {/* Certifications */}
+            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-gradient-to-br from-ali-blue-dark to-ali-blue rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-serif font-bold text-ali-heading">Certifications</h3>
+                  <p className="text-xs text-gray-400 mt-0.5">12+ across Azure · AWS · GitHub · AI</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-serif font-bold mb-5 flex items-center gap-2">
-                  <span className="text-2xl">💼</span> Career Highlights
-                </h3>
-                <ul className="space-y-2.5 text-sm text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-orange mt-0.5">►</span>
-                    <span>Lead DevOps for <strong>LSEG × Microsoft</strong></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-orange mt-0.5">►</span>
-                    <span>Led SRE at <strong>IMF iData</strong></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-orange mt-0.5">►</span>
-                    <span>Azure migration for <strong>Willis Towers Watson</strong></span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ali-orange mt-0.5">►</span>
-                    <span>Cloud migration for <strong>UBS Switzerland</strong></span>
-                  </li>
-                </ul>
+
+              {/* Microsoft Azure */}
+              <div className="mb-8">
+                <p className="text-xs font-bold uppercase tracking-widest text-ali-blue-dark mb-4 flex items-center gap-2">
+                  <span className="w-6 h-px bg-ali-blue-dark inline-block"></span> Microsoft Azure
+                </p>
+                <div className="grid grid-cols-3 sm:grid-cols-6 gap-4">
+                  {[
+                    { img: "https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png", name: "Solutions Architect Expert", code: "AZ-305", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/" },
+                    { img: "https://images.credly.com/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png", name: "DevOps Engineer Expert", code: "AZ-400", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/9A6A85340BFB87D5?sharingId=C12B7F6430996004" },
+                    { img: "https://images.credly.com/images/1ad16b6f-2c71-4a2e-ae74-ec69c4766039/azure-security-engineer-associate600x600.png", name: "Security Engineer", code: "AZ-500", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/4E16B2FDA09E8AF6?sharingId=C12B7F6430996004" },
+                    { img: "https://images.credly.com/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png", name: "Developer Associate", code: "AZ-204", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/D01EC7BE672BE6F9?sharingId=C12B7F6430996004" },
+                    { img: "https://images.credly.com/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png", name: "Administrator", code: "AZ-104", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/425394C45CA3A75A?sharingId=C12B7F6430996004" },
+                    { img: "https://images.credly.com/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png", name: "Fundamentals", code: "AZ-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
+                  ].map((cert) => (
+                    <a key={cert.code} href={cert.url} target="_blank" rel="noopener noreferrer"
+                      className="group flex flex-col items-center gap-2 p-3 rounded-2xl hover:bg-ali-blue/5 transition-all duration-200">
+                      <img src={cert.img} alt={cert.name} className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-200 drop-shadow-sm" />
+                      <div className="text-center">
+                        <p className="text-[10px] font-bold text-ali-heading leading-tight">{cert.name}</p>
+                        <p className="text-[10px] text-gray-400 mt-0.5">{cert.code}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              {/* AWS + GitHub row */}
+              <div className="grid grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#FF9900] mb-4 flex items-center gap-2">
+                    <span className="w-6 h-px bg-[#FF9900] inline-block"></span> Amazon Web Services
+                  </p>
+                  <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/b6a32f65459e4763a6ae0c9067be7ef0" target="_blank" rel="noopener noreferrer"
+                    className="group inline-flex flex-col items-center gap-2 p-3 rounded-2xl hover:bg-[#FF9900]/5 transition-all duration-200">
+                    <img src="https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" alt="AWS Certified AI Practitioner" className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-200 drop-shadow-sm" />
+                    <div className="text-center">
+                      <p className="text-[10px] font-bold text-ali-heading leading-tight">AI Practitioner</p>
+                      <p className="text-[10px] text-gray-400 mt-0.5">AWS-AIF</p>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-gray-700 mb-4 flex items-center gap-2">
+                    <span className="w-6 h-px bg-gray-700 inline-block"></span> GitHub
+                  </p>
+                  <a href="https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/287336BFD482D840?sharingId=C12B7F6430996004" target="_blank" rel="noopener noreferrer"
+                    className="group inline-flex flex-col items-center gap-2 p-3 rounded-2xl hover:bg-gray-50 transition-all duration-200">
+                    <img src="https://images.credly.com/images/6b924fae-3cd7-4233-b012-97413c62c85d/blob" alt="GitHub Copilot" className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-200 drop-shadow-sm" />
+                    <div className="text-center">
+                      <p className="text-[10px] font-bold text-ali-heading leading-tight">GitHub Copilot</p>
+                      <p className="text-[10px] text-gray-400 mt-0.5">GH-300</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              {/* EPAM AI */}
+              <div className="mt-6 pt-6 border-t border-gray-100">
+                <p className="text-xs font-bold uppercase tracking-widest text-purple-600 mb-3 flex items-center gap-2">
+                  <span className="w-6 h-px bg-purple-600 inline-block"></span> AI & Leadership
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-xs font-bold border border-purple-100">EPAM AI Masterclass Excellence</span>
+                  <span className="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-xs font-bold border border-purple-100">EPAM Prompts & Game Mastery</span>
+                  <span className="px-4 py-2 bg-blue-50 text-ali-blue-dark rounded-full text-xs font-bold border border-blue-100">Microsoft Copilot Champion</span>
+                </div>
               </div>
             </div>
+
+            {/* Career Highlights */}
+            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-gradient-to-br from-ali-orange to-amber-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-serif font-bold text-ali-heading">Career Highlights</h3>
+                  <p className="text-xs text-gray-400 mt-0.5">Global enterprise clients across finance & tech</p>
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="bg-ali-blue/5 rounded-2xl p-5 border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-ali-blue-dark mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-bold text-sm text-ali-blue-dark">LSEG × Microsoft UK</p>
+                      <p className="text-sm font-medium text-ali-heading mt-0.5">Lead DevOps & Platform Engineer</p>
+                      <p className="text-xs text-gray-500 mt-1">Modeling-as-a-Service on Azure</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-ali-orange/5 rounded-2xl p-5 border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-ali-orange mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-bold text-sm text-ali-orange">IMF iData</p>
+                      <p className="text-sm font-medium text-ali-heading mt-0.5">Site Reliability Engineer</p>
+                      <p className="text-xs text-gray-500 mt-1">SRE lead for international financial platform</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-ali-blue/5 rounded-2xl p-5 border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-ali-blue-dark mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-bold text-sm text-ali-blue-dark">Willis Towers Watson</p>
+                      <p className="text-sm font-medium text-ali-heading mt-0.5">DevOps Engineer</p>
+                      <p className="text-xs text-gray-500 mt-1">Azure cloud migration & automation</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-ali-orange/5 rounded-2xl p-5 border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-ali-orange mt-2 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-bold text-sm text-ali-orange">UBS Switzerland</p>
+                      <p className="text-sm font-medium text-ali-heading mt-0.5">Cloud Engineer</p>
+                      <p className="text-xs text-gray-500 mt-1">Cloud migration for global banking</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -563,7 +630,7 @@ function App() {
                 <Code size={32} className="text-ali-blue-dark" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-lg mb-1 group-hover:text-ali-blue-dark transition-colors">GitHub Copilot Visual Guide</h3>
+                <h3 className="font-bold text-lg mb-1 group-hover:text-ali-blue-dark transition-colors">GitHub Copilot Guide</h3>
                 <p className="text-sm text-gray-500">Master AI-powered coding with prompting strategies</p>
               </div>
               <span className="text-xs font-bold px-3 py-1 bg-ali-yellow/20 text-yellow-800 rounded-full flex-shrink-0">FREE</span>
