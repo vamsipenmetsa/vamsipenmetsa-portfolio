@@ -85,6 +85,18 @@ function Links() {
           <span className="text-[10px] font-bold px-2 py-0.5 bg-ali-orange text-white rounded-full flex-shrink-0">NEW</span>
         </a>
 
+        <a href="https://vamsipenmetsa.gumroad.com/l/terraform" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
+          <div className="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+            <Server size={20} className="text-white" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">Terraform EBook</p>
+            <p className="text-xs text-gray-500">IaC from fundamentals to production</p>
+          </div>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+        </a>
+
         <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" rel="noopener noreferrer"
           className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
           <div className="w-10 h-10 bg-ali-blue-dark rounded-xl flex items-center justify-center flex-shrink-0">

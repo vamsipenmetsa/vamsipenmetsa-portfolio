@@ -654,6 +654,17 @@ function App() {
 
           {/* Other Resources */}
           <div className="grid md:grid-cols-2 gap-6">
+            <a href="https://vamsipenmetsa.gumroad.com/l/terraform" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
+              <div className="w-16 h-16 bg-purple-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
+                <Terminal size={32} className="text-purple-600" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-bold text-lg mb-1 group-hover:text-purple-600 transition-colors">Terraform EBook</h3>
+                <p className="text-sm text-gray-500">Infrastructure as Code — from fundamentals to production</p>
+              </div>
+              <ArrowRight size={20} className="text-gray-300 group-hover:text-purple-600 transition-colors flex-shrink-0" />
+            </a>
+
             <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
               <div className="w-16 h-16 bg-ali-blue/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-ali-blue/20 transition-colors">
                 <Code size={32} className="text-ali-blue-dark" />
