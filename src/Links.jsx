@@ -13,8 +13,8 @@ function Links() {
           className="w-24 h-24 rounded-full border-4 border-white shadow-lg mx-auto object-cover object-[center_20%] mb-4"
         />
         <h1 className="text-2xl font-serif font-bold text-ali-heading">Vamsi Penmetsa</h1>
-        <p className="text-xs font-bold tracking-widest uppercase text-ali-blue-dark mt-1">Lead DevOps & Platform Engineer</p>
-        <p className="text-xs text-gray-500 mt-2">LSEG × Microsoft · 7 Azure Certs · 🇮🇳 → 🇵🇱</p>
+        <p className="text-xs font-bold tracking-widest uppercase text-ali-blue-dark mt-1">AI Systems Architect | Building MaaS</p>
+        <p className="text-xs text-gray-500 mt-2">LSEG × Microsoft · 7X Azure Certified · GH-300 · 🇮🇳 → 🇵🇱</p>
       </div>
 
       {/* Links */}
@@ -70,8 +70,20 @@ function Links() {
           <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
         </a>
 
-        {/* Divider — Free Resources */}
-        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest pt-4 pb-1">Free Resources</p>
+        {/* Divider — Products & Resources */}
+        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest pt-4 pb-1">Products & Resources</p>
+
+        <a href="https://vamsipenmetsa.gumroad.com/l/claude" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border-2 border-ali-orange/30 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
+          <div className="w-10 h-10 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
+            <BookOpen size={20} className="text-white" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">Claude Exam Patterns EBook</p>
+            <p className="text-xs text-gray-500">From the Breaking Down Claude in 30 Days series</p>
+          </div>
+          <span className="text-[10px] font-bold px-2 py-0.5 bg-ali-orange text-white rounded-full flex-shrink-0">NEW</span>
+        </a>
 
         <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" rel="noopener noreferrer"
           className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
@@ -82,7 +94,7 @@ function Links() {
             <p className="font-bold text-sm text-ali-heading">GitHub Copilot Visual Guide</p>
             <p className="text-xs text-gray-500">Master AI-powered coding</p>
           </div>
-          <span className="text-[10px] font-bold px-2 py-0.5 bg-ali-yellow text-ali-heading rounded-full flex-shrink-0">FREE</span>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
         </a>
 
         <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" rel="noopener noreferrer"
@@ -94,7 +106,19 @@ function Links() {
             <p className="font-bold text-sm text-ali-heading">Kubernetes Cheat Sheet</p>
             <p className="text-xs text-gray-500">From basics to advanced K8s</p>
           </div>
-          <span className="text-[10px] font-bold px-2 py-0.5 bg-ali-yellow text-ali-heading rounded-full flex-shrink-0">FREE</span>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+        </a>
+
+        <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7460975088108978176" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-[#0A66C2]/20 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div className="w-10 h-10 bg-[#0A66C2] rounded-xl flex items-center justify-center flex-shrink-0">
+            <Linkedin size={20} className="text-white" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">The Architect's Edge</p>
+            <p className="text-xs text-gray-500">Weekly AI, cloud & platform engineering patterns</p>
+          </div>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
         </a>
 
         {/* Divider — Testimonials */}
