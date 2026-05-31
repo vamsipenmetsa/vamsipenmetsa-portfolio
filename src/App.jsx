@@ -19,7 +19,7 @@ function App() {
             <a href="#services" className="font-sans font-medium hover:text-ali-orange transition-colors">Services</a>
             <a href="#talks" className="font-sans font-medium hover:text-ali-orange transition-colors">Talks</a>
             <a href="#about" className="font-sans font-medium hover:text-ali-orange transition-colors">About</a>
-            <a href="#resources" className="font-sans font-medium hover:text-ali-orange transition-colors">Resources</a>
+            <a href="#products" className="font-sans font-medium hover:text-ali-orange transition-colors">Products</a>
             <a href="/vamsipenmetsa-portfolio/links" className="font-sans font-medium hover:text-ali-blue-dark transition-colors">Links</a>
             <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-lg transition-all transform hover:scale-105 shadow-sm">
               Book a Session
@@ -41,7 +41,7 @@ function App() {
               <a href="#services" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Services</a>
               <a href="#talks" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Talks</a>
               <a href="#about" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>About</a>
-              <a href="#resources" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Resources</a>
+              <a href="#products" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Products</a>
               <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="block font-bold text-ali-orange p-2" onClick={toggleMenu}>Book a Session</a>
             </div>
           </div>
@@ -58,7 +58,7 @@ function App() {
             <div className="relative w-72 h-72 md:w-[420px] md:h-[420px]">
               <img
                 src="./vamsiPenmetsa.png"
-                alt="Vamsi Penmetsa — Lead DevOps & Platform Engineer"
+                alt="Vamsi Penmetsa — AI Systems Architect"
                 className="w-full h-full object-contain z-10 relative"
               />
             </div>
@@ -66,7 +66,7 @@ function App() {
 
           {/* Text Side */}
           <div className="w-full md:w-7/12 text-center md:text-left space-y-5">
-            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">Lead DevOps & Platform Engineer</p>
+            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Systems Architect</p>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-ali-heading leading-tight">
               Building ML/LLM Platforms
               <span className="block text-ali-orange">at Enterprise Scale</span>
@@ -78,19 +78,19 @@ function App() {
 
             {/* Trust Bar */}
             <div className="flex flex-wrap gap-3 justify-center md:justify-start pt-2">
-              <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/15 text-ali-blue-dark rounded-full">12+ Certifications</span>
-              <span className="text-xs font-bold px-3 py-1.5 bg-ali-orange/15 text-ali-orange rounded-full">150+ Global Interviews</span>
+              <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/15 text-ali-blue-dark rounded-full">7X Azure Certified</span>
+              <span className="text-xs font-bold px-3 py-1.5 bg-ali-orange/15 text-ali-orange rounded-full">150+ Technical Interviews</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-yellow/20 text-yellow-700 rounded-full">EPAM AI Ambassador</span>
-              <span className="text-xs font-bold px-3 py-1.5 bg-purple-100 text-purple-700 rounded-full">🎤 Tech Speaker</span>
-              <span className="text-xs font-bold px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full">🇮🇳 India → 🇵🇱 Poland (since 2022)</span>
+              <span className="text-xs font-bold px-3 py-1.5 bg-purple-100 text-purple-700 rounded-full">Breaking Down Claude in 30 Days</span>
+              <span className="text-xs font-bold px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full">GitHub Copilot Certified (GH-300)</span>
             </div>
 
             <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all shadow-lg">
                 Book a 1:1 Session <ArrowRight size={18} className="inline ml-1 -mt-0.5" />
               </a>
-              <a href="#resources" className="px-8 py-3.5 bg-white text-ali-heading border-2 border-gray-200 rounded-full font-bold hover:border-ali-orange hover:shadow-lg transition-all">
-                🎁 Free Resources
+              <a href="#products" className="px-8 py-3.5 bg-white text-ali-heading border-2 border-gray-200 rounded-full font-bold hover:border-ali-orange hover:shadow-lg transition-all">
+                📚 Products & Resources
               </a>
             </div>
           </div>
@@ -574,7 +574,7 @@ function App() {
                     <div className="w-2 h-2 rounded-full bg-ali-blue-dark mt-2 flex-shrink-0"></div>
                     <div>
                       <p className="font-bold text-sm text-ali-blue-dark">LSEG × Microsoft UK</p>
-                      <p className="text-sm font-medium text-ali-heading mt-0.5">Lead DevOps & Platform Engineer</p>
+                      <p className="text-sm font-medium text-ali-heading mt-0.5">AI Systems Architect & Platform Engineer</p>
                       <p className="text-xs text-gray-500 mt-1">Modeling-as-a-Service on Azure</p>
                     </div>
                   </div>
@@ -616,14 +616,43 @@ function App() {
         </div>
       </section>
 
-      {/* Resources Section — Compact */}
-      <section id="resources" className="py-20 bg-gradient-to-b from-ali-cream to-ali-yellow/10">
+      {/* Products & Resources Section */}
+      <section id="products" className="py-20 bg-gradient-to-b from-ali-cream to-ali-yellow/10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">🎁 Free Resources</h2>
-            <p className="text-gray-500 text-lg">Grab these tools to accelerate your career.</p>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">Products & Resources</h2>
+            <p className="text-gray-500 text-lg">Tools and guides to accelerate your career.</p>
           </div>
 
+          {/* Featured Product */}
+          <div className="mb-10">
+            <a href="https://vamsipenmetsa.gumroad.com/l/claude" target="_blank" rel="noopener noreferrer" className="group block bg-white rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-ali-orange/30 hover:border-ali-orange relative overflow-hidden">
+              <div className="absolute top-4 right-4">
+                <span className="text-xs font-bold px-4 py-1.5 bg-ali-orange text-white rounded-full shadow-sm">NEW</span>
+              </div>
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-ali-orange/20 to-ali-yellow/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <BookOpen size={40} className="text-ali-orange" />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="font-bold text-2xl mb-2 group-hover:text-ali-orange transition-colors">Claude Exam Patterns EBook</h3>
+                  <p className="text-gray-600 leading-relaxed mb-3">Master Claude AI with proven exam patterns, prompt engineering techniques, and real-world strategies. From the "Breaking Down Claude in 30 Days" series.</p>
+                  <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <span className="text-xs font-medium px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Claude AI</span>
+                    <span className="text-xs font-medium px-3 py-1 bg-ali-blue/10 text-ali-blue-dark rounded-full">Exam Patterns</span>
+                    <span className="text-xs font-medium px-3 py-1 bg-ali-orange/10 text-ali-orange rounded-full">Prompt Engineering</span>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 text-center">
+                  <span className="inline-flex items-center gap-2 px-6 py-3 bg-ali-orange text-white rounded-full font-bold group-hover:bg-ali-blue-dark group-hover:shadow-lg transition-all">
+                    Get EBook <ArrowRight size={16} />
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          {/* Other Resources */}
           <div className="grid md:grid-cols-2 gap-6">
             <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
               <div className="w-16 h-16 bg-ali-blue/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-ali-blue/20 transition-colors">
@@ -633,7 +662,7 @@ function App() {
                 <h3 className="font-bold text-lg mb-1 group-hover:text-ali-blue-dark transition-colors">GitHub Copilot Guide</h3>
                 <p className="text-sm text-gray-500">Master AI-powered coding with prompting strategies</p>
               </div>
-              <span className="text-xs font-bold px-3 py-1 bg-ali-yellow/20 text-yellow-800 rounded-full flex-shrink-0">FREE</span>
+              <ArrowRight size={20} className="text-gray-300 group-hover:text-ali-blue-dark transition-colors flex-shrink-0" />
             </a>
 
             <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
@@ -644,8 +673,22 @@ function App() {
                 <h3 className="font-bold text-lg mb-1 group-hover:text-ali-orange transition-colors">Kubernetes Cheat Sheet</h3>
                 <p className="text-sm text-gray-500">Complete K8s reference — basics to advanced</p>
               </div>
-              <span className="text-xs font-bold px-3 py-1 bg-ali-yellow/20 text-yellow-800 rounded-full flex-shrink-0">FREE</span>
+              <ArrowRight size={20} className="text-gray-300 group-hover:text-ali-orange transition-colors flex-shrink-0" />
             </a>
+          </div>
+
+          {/* Newsletter CTA */}
+          <div className="mt-10 bg-white rounded-3xl p-8 border border-[#0A66C2]/20 text-center">
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center">
+                <Linkedin size={28} className="text-[#0A66C2]" />
+              </div>
+              <h3 className="font-bold text-xl font-serif">The Architect's Edge</h3>
+              <p className="text-gray-600 text-sm max-w-md">Weekly patterns from AI, cloud, and platform engineering. Real architectures, zero fluff.</p>
+              <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7460975088108978176" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-[#0A66C2] text-white rounded-full font-bold hover:bg-[#004182] hover:shadow-lg transition-all">
+                Subscribe on LinkedIn <ArrowRight size={16} />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -694,7 +737,7 @@ function App() {
             <div className="flex gap-6">
               <a href="#services" className="hover:text-ali-orange transition-colors">Services</a>
               <a href="#about" className="hover:text-ali-orange transition-colors">About</a>
-              <a href="#resources" className="hover:text-ali-orange transition-colors">Resources</a>
+              <a href="#products" className="hover:text-ali-orange transition-colors">Products</a>
               <a href="https://linkedin.openinapp.co/groups-13986647" target="_blank" rel="noopener noreferrer" className="hover:text-ali-orange transition-colors">Community</a>
             </div>
           </div>

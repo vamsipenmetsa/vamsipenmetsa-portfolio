@@ -4,7 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/vamsipenmetsa-portfolio/',
+  // GitHub Pages needs /vamsipenmetsa-portfolio/ base
+  // IPFS/Fleek builds use BASE_PATH=/ via build:ipfs script
+  base: process.env.BASE_PATH || '/vamsipenmetsa-portfolio/',
   plugins: [
     react(),
     tailwindcss(),
