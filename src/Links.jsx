@@ -49,9 +49,9 @@ function Links() {
               <Megaphone size={18} className="text-white" />
             </div>
             <div className="flex-1 min-w-0">
-              <p className="font-bold text-sm relative inline-block">
+              <p className="font-bold text-sm relative inline-block pb-2">
                 Brand Collaborations
-                <svg className="absolute w-full h-3 -bottom-1 left-0 text-white" viewBox="0 0 120 9" fill="none" aria-hidden="true">
+                <svg className="absolute w-full h-3 bottom-0 left-0 text-ali-yellow" viewBox="0 0 120 9" fill="none" aria-hidden="true">
                   <path d="M2 7C28 3.7 95 -2.3 118 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </p>
