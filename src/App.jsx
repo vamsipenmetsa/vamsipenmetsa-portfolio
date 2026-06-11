@@ -71,11 +71,21 @@ function App() {
             <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Systems Architect</p>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-ali-heading leading-tight">
               Building ML/LLM Platforms
-              <span className="block text-ali-orange">at Enterprise Scale</span>
+              <span className="block text-ali-orange relative">
+                at Enterprise Scale
+                <svg className="absolute w-full h-4 -bottom-2 left-0 text-ali-orange/50" viewBox="0 0 300 12" fill="none" aria-hidden="true">
+                  <path d="M3 9C60 3 120 1 180 5C220 8 260 10 297 6" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/>
+                </svg>
+              </span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-sans max-w-xl">
-              I've helped <span className="font-bold text-ali-heading">150+ engineers</span> break into cloud, land DevOps roles, and ace technical interviews. Currently architecting ML/LLM platforms for <span className="font-bold text-ali-heading">LSEG × Microsoft UK</span>.
+              I've helped <span className="font-bold text-ali-heading relative inline-block">
+                150+ engineers
+                <svg className="absolute inset-x-0 -bottom-0.5 w-full h-2 text-ali-orange/50" viewBox="0 0 120 6" fill="none" aria-hidden="true">
+                  <path d="M1 4C30 1 70 1 119 4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+                </svg>
+              </span> break into cloud, land DevOps roles, and ace technical interviews. Currently architecting ML/LLM platforms for <span className="font-bold text-ali-heading">LSEG × Microsoft UK</span>.
             </p>
 
             {/* Trust Bar */}
@@ -170,7 +180,11 @@ function App() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 text-center">
-            What People Say
+            What <span className="relative inline-block">People
+              <svg className="absolute w-full h-3 -bottom-0.5 left-0 text-ali-orange/40" viewBox="0 0 80 9" fill="none" aria-hidden="true">
+                <path d="M2 7C20 3 50 2 78 5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+              </svg>
+            </span> Say
           </h2>
           <p className="text-gray-500 text-center mb-10">From mentorship sessions and technical interviews</p>
 
@@ -263,7 +277,7 @@ function App() {
           </div>
 
           <div className="text-center">
-            <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all">
+            <a href="https://topmate.io/vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all">
               Start your journey <ArrowRight size={18} />
             </a>
           </div>
@@ -622,7 +636,14 @@ function App() {
       <section id="products" className="py-20 bg-gradient-to-b from-ali-cream to-ali-yellow/10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">Products & Resources</h2>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">
+              Products & <span className="relative inline-block">
+                Resources
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue-dark/40" viewBox="0 0 130 9" fill="none" aria-hidden="true">
+                  <path d="M2 7C30 3 80 2 128 5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+                </svg>
+              </span>
+            </h2>
             <p className="text-gray-500 text-lg">Tools and guides to accelerate your career.</p>
           </div>
 
@@ -764,7 +785,12 @@ function App() {
                   <p className="font-bold text-sm text-ali-heading">Sponsored Post</p>
                   <p className="text-xs text-gray-500">Image / video · brand mention</p>
                 </div>
-                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
+                <div className="relative">
+                  <svg className="absolute -top-3 -right-2 w-5 h-5 text-ali-orange" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path d="M10 0l1.8 6.6L18.4 10l-6.6 3.4L10 20l-1.8-6.6L1.6 10l6.6-3.4z"/>
+                  </svg>
+                  <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
+                </div>
               </div>
             </div>
 
@@ -808,7 +834,12 @@ function App() {
                   <p className="font-bold text-sm text-ali-heading">Sponsored Ad</p>
                   <p className="text-xs text-gray-500">Top-of-email banner · CTA button</p>
                 </div>
-                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
+                <div className="relative">
+                  <svg className="absolute -top-3 -right-2 w-5 h-5 text-ali-orange" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path d="M10 0l1.8 6.6L18.4 10l-6.6 3.4L10 20l-1.8-6.6L1.6 10l6.6-3.4z"/>
+                  </svg>
+                  <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
+                </div>
               </div>
             </div>
 
@@ -838,8 +869,18 @@ function App() {
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-            Ready to <span className="text-ali-orange">Level Up?</span>
+            Ready to <span className="text-ali-orange relative inline-block">
+              Level Up?
+              <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange/40" viewBox="0 0 100 9" fill="none" aria-hidden="true">
+                <path d="M2 7Q25 3 50 6Q75 9 98 4" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+              </svg>
+            </span>
           </h2>
+          <div className="flex justify-center my-4" aria-hidden="true">
+            <svg className="w-7 h-9 text-ali-orange/40" viewBox="0 0 28 44" fill="none">
+              <path d="M14 2 Q12 18 14 34 M8 26 Q14 36 20 26" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
           <p className="text-lg text-gray-600 mb-10 max-w-xl mx-auto">
             Whether it's career guidance, resume help, or DevOps mentorship — let's talk.
           </p>
