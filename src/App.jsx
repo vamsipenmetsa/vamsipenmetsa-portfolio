@@ -71,26 +71,19 @@ function App() {
             <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Systems Architect</p>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-ali-heading leading-tight">
               Building ML/LLM Platforms
-              <span className="block text-ali-orange relative pb-3">
+              <span className="block text-ali-orange relative">
                 at Enterprise Scale
-                {/* thick marker-style underline */}
-                <svg className="absolute w-full h-7 -bottom-1 left-0 text-ali-orange" viewBox="0 0 300 18" fill="none" aria-hidden="true">
-                  <path d="M3 14 C40 6 80 4 120 8 C158 12 192 6 228 10 C255 12 275 9 297 11" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.8"/>
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 320 9" fill="none" aria-hidden="true">
+                  <path d="M2 7C74 3.7 253 -2.3 318 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-sans max-w-xl">
               I've helped <span className="font-bold text-ali-heading relative inline-block">
-                {/* rough hand-drawn circle around 150+ */}
-                <span className="relative inline-block">
-                  150+
-                  <svg className="absolute overflow-visible pointer-events-none" style={{top:'-6px',left:'-8px',width:'calc(100% + 16px)',height:'calc(100% + 12px)'}} viewBox="0 0 75 36" fill="none" aria-hidden="true">
-                    <path d="M8 18 C7 8 14 1 28 1 C45 0 66 4 68 16 C70 26 62 33 46 34 C27 35 8 28 8 18" stroke="#f59e5e" strokeWidth="3" strokeLinecap="round" opacity="0.9"/>
-                  </svg>
-                </span> engineers
-                <svg className="absolute inset-x-0 -bottom-1 w-full h-3" viewBox="0 0 150 9" fill="none" aria-hidden="true">
-                  <path d="M2 7 C30 2 70 1 105 4 C125 5 138 5 148 6" stroke="#f59e5e" strokeWidth="4" strokeLinecap="round" opacity="0.85"/>
+                150+ engineers
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 150 9" fill="none" aria-hidden="true">
+                  <path d="M2 7C35 3.7 119 -2.3 148 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span> break into cloud, land DevOps roles, and ace technical interviews. Currently architecting ML/LLM platforms for <span className="font-bold text-ali-heading">LSEG × Microsoft UK</span>.
             </p>
@@ -104,12 +97,6 @@ function App() {
               <span className="text-xs font-bold px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full">GitHub Copilot Certified (GH-300)</span>
             </div>
 
-            {/* sketch arrow pointing to CTAs */}
-            <div className="flex justify-center md:justify-start -mb-1" aria-hidden="true">
-              <svg className="w-12 h-10 text-ali-orange -rotate-6" viewBox="0 0 48 42" fill="none">
-                <path d="M8 6 C10 16 14 26 22 36 M14 28 C18 37 22 38 26 30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
             <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all shadow-lg">
                 Book a 1:1 Session <ArrowRight size={18} className="inline ml-1 -mt-0.5" />
@@ -193,9 +180,9 @@ function App() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 text-center">
-            What <span className="relative inline-block pb-2">People
-              <svg className="absolute w-full h-5 -bottom-0.5 left-0 text-ali-orange" viewBox="0 0 85 13" fill="none" aria-hidden="true">
-                <path d="M2 10 C18 4 40 3 65 7 C72 8 79 8 83 9" stroke="currentColor" strokeWidth="6" strokeLinecap="round" opacity="0.8"/>
+            What <span className="relative inline-block">People
+              <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 80 9" fill="none" aria-hidden="true">
+                <path d="M2 7C18 3.7 63 -2.3 78 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
               </svg>
             </span> Say
           </h2>
@@ -672,10 +659,10 @@ function App() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">
-              Products & <span className="relative inline-block pb-2">
+              Products & <span className="relative inline-block">
                 Resources
-                <svg className="absolute w-full h-5 -bottom-0.5 left-0 text-ali-blue-dark" viewBox="0 0 130 13" fill="none" aria-hidden="true">
-                  <path d="M2 11 C28 5 60 3 90 7 C108 9 120 8 128 9" stroke="currentColor" strokeWidth="6" strokeLinecap="round" opacity="0.75"/>
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue-dark" viewBox="0 0 130 9" fill="none" aria-hidden="true">
+                  <path d="M2 7C30 3.7 103 -2.3 128 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h2>
@@ -771,10 +758,10 @@ function App() {
               <Megaphone size={16} /> Work With Me
             </span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              Brand <span className="text-ali-orange relative inline-block pb-2">
+              Brand <span className="text-ali-orange relative inline-block">
                 Collaborations
-                <svg className="absolute w-full h-6 -bottom-0.5 left-0 text-ali-orange" viewBox="0 0 200 15" fill="none" aria-hidden="true">
-                  <path d="M2 12 C40 5 80 3 120 7 C150 10 170 8 198 10" stroke="currentColor" strokeWidth="6" strokeLinecap="round" opacity="0.8"/>
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 230 9" fill="none" aria-hidden="true">
+                  <path d="M2 7C53 3.7 182 -2.3 228 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h2>
@@ -825,12 +812,7 @@ function App() {
                   <p className="font-bold text-sm text-ali-heading">Sponsored Post</p>
                   <p className="text-xs text-gray-500">Image / video · brand mention</p>
                 </div>
-                <div className="relative">
-                  <svg className="absolute -top-4 -right-3 w-7 h-7 text-ali-orange" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path d="M10 0l1.8 6.6L18.4 10l-6.6 3.4L10 20l-1.8-6.6L1.6 10l6.6-3.4z"/>
-                  </svg>
-                  <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
-                </div>
+                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
               </div>
             </div>
 
@@ -874,12 +856,7 @@ function App() {
                   <p className="font-bold text-sm text-ali-heading">Sponsored Ad</p>
                   <p className="text-xs text-gray-500">Top-of-email banner · CTA button</p>
                 </div>
-                <div className="relative">
-                  <svg className="absolute -top-4 -right-3 w-7 h-7 text-ali-orange" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path d="M10 0l1.8 6.6L18.4 10l-6.6 3.4L10 20l-1.8-6.6L1.6 10l6.6-3.4z"/>
-                  </svg>
-                  <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
-                </div>
+                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
               </div>
             </div>
 
@@ -909,19 +886,13 @@ function App() {
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-            Ready to <span className="text-ali-orange relative inline-block pb-2">
+            Ready to <span className="text-ali-orange relative inline-block">
               Level Up?
-              <svg className="absolute w-full h-6 -bottom-0.5 left-0 text-ali-orange" viewBox="0 0 110 15" fill="none" aria-hidden="true">
-                <path d="M2 12 C20 5 45 3 68 7 C84 10 96 8 108 10" stroke="currentColor" strokeWidth="7" strokeLinecap="round" opacity="0.8"/>
+              <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 120 9" fill="none" aria-hidden="true">
+                <path d="M2 7C28 3.7 95 -2.3 118 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
               </svg>
             </span>
           </h2>
-          <div className="flex justify-center my-5" aria-hidden="true">
-            {/* hand-drawn down arrow */}
-            <svg className="w-9 h-14 text-ali-orange" viewBox="0 0 36 56" fill="none">
-              <path d="M18 3 C17 16 18 30 18 48 M8 38 C13 50 18 52 24 42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
           <p className="text-lg text-gray-600 mb-10 max-w-xl mx-auto">
             Whether it's career guidance, resume help, or DevOps mentorship — let's talk.
           </p>

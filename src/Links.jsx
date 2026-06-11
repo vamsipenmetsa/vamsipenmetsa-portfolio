@@ -14,8 +14,8 @@ function Links() {
         />
         <h1 className="text-2xl font-serif font-bold text-ali-heading relative inline-block">
           Vamsi Penmetsa
-          <svg className="absolute inset-x-0 -bottom-0.5 w-full h-2.5 text-ali-orange/50" viewBox="0 0 160 8" fill="none" aria-hidden="true">
-            <path d="M2 5C35 1.5 80 1 130 3.5C145 4.5 155 5.5 158 5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+          <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 160 9" fill="none" aria-hidden="true">
+            <path d="M2 7C37 3.7 126 -2.3 158 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
           </svg>
         </h1>
         <p className="text-xs font-bold tracking-widest uppercase text-ali-blue-dark mt-1">AI Systems Architect | Building MaaS</p>
@@ -51,15 +51,15 @@ function Links() {
             <div className="flex-1 min-w-0">
               <p className="font-bold text-sm relative inline-block">
                 Brand Collaborations
-                <svg className="absolute inset-x-0 -bottom-0.5 w-full h-2 text-white/60" viewBox="0 0 120 6" fill="none" aria-hidden="true">
-                  <path d="M1 4C30 1.5 70 1 119 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-white" viewBox="0 0 120 9" fill="none" aria-hidden="true">
+                  <path d="M2 7C28 3.7 95 -2.3 118 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </p>
               <p className="text-xs text-white/80">Sponsorships · Partnerships · Promos</p>
             </div>
             <span className="text-[10px] font-bold px-2 py-0.5 bg-white/25 rounded-full flex-shrink-0">NEW</span>
           </div>
-          <p className="text-xs text-white/90 pl-12">30.5K LinkedIn followers · 4.5K newsletter subscribers · <span className="relative inline-block font-bold">$300/package<svg className="absolute -top-1.5 -right-3 w-3 h-3 text-white/70" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0l1 3.5L12 2l-1.5 3L14 6l-3.5 1L12 10l-3-1.5L8 12l-1-3.5L4 10l1.5-3L2 6l3.5-1L4 2l3 1.5z"/></svg></span></p>
+          <p className="text-xs text-white/90 pl-12">30.5K LinkedIn followers · 4.5K newsletter subscribers · <span className="font-bold">$300/package</span></p>
           <div className="flex items-center gap-1 pl-12 mt-2 text-xs font-bold text-white/90">
             View on Passionfroot <ArrowRight size={13} />
           </div>
@@ -170,8 +170,8 @@ function Links() {
         {/* Divider — Testimonials */}
         <p className="text-xs font-bold text-gray-400 uppercase tracking-widest pt-4 pb-1 relative inline-block">
           What People Say
-          <svg className="absolute inset-x-0 -bottom-0.5 w-full h-1.5 text-ali-orange/40" viewBox="0 0 100 5" fill="none" aria-hidden="true">
-            <path d="M1 3.5C20 1 50 1 99 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+          <svg className="absolute w-full h-3 -bottom-0.5 left-0 text-ali-orange" viewBox="0 0 100 9" fill="none" aria-hidden="true">
+            <path d="M2 7C23 3.7 79 -2.3 98 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
           </svg>
         </p>
 
