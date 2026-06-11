@@ -793,7 +793,7 @@ function App() {
               </div>
               <div className="bg-gray-50 rounded-xl p-4 mb-5 space-y-2.5">
                 {[
-                  ['Click-through rate', '3%'],
+                  ['Click-through rate', '7%'],
                   ['Core age group', '25–34 (45%)'],
                   ['Reader profile', 'DevOps · Cloud · AI'],
                 ].map(([label, value]) => (
