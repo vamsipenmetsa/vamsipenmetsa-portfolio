@@ -75,7 +75,7 @@ function App() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-sans max-w-xl">
-              Architecting a Modeling-as-a-Service platform for <span className="font-bold text-ali-heading">LSEG × Microsoft UK</span> on Azure — from development to production, with security-first design for regulated finance.
+              I've helped <span className="font-bold text-ali-heading">150+ engineers</span> break into cloud, land DevOps roles, and ace technical interviews. Currently architecting ML/LLM platforms for <span className="font-bold text-ali-heading">LSEG × Microsoft UK</span>.
             </p>
 
             {/* Trust Bar */}
@@ -96,134 +96,6 @@ function App() {
               </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Brand Collaborations */}
-      <section id="collaborate" className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-ali-orange/10 text-ali-orange rounded-full text-sm font-bold mb-4">
-              <Megaphone size={16} /> Work With Me
-            </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              Brand <span className="text-ali-orange">Collaborations</span>
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Technical content for cloud engineers and architects — built on real production experience, not vendor press releases.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-
-            {/* LinkedIn Channel */}
-            <div className="bg-white rounded-3xl border-2 border-[#0A66C2]/20 p-8 hover:shadow-xl hover:-translate-y-1 transition-all hover:border-[#0A66C2]/40">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#0A66C2] rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Linkedin size={22} className="text-white" />
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-lg text-ali-heading">LinkedIn Profile</h3>
-                  <p className="text-xs text-gray-400">linkedin.com/in/vamsipenmetsa</p>
-                </div>
-              </div>
-              <div className="grid grid-cols-3 gap-3 mb-5">
-                {[
-                  { n: '30.5K', l: 'Followers' },
-                  { n: '10.2K', l: 'Impressions / post' },
-                  { n: '673K', l: 'Reached / year' },
-                ].map(({ n, l }, i) => (
-                  <div key={l} className={`text-center ${i === 1 ? 'border-x border-gray-100' : ''}`}>
-                    <p className="text-xl font-bold font-serif text-ali-heading">{n}</p>
-                    <p className="text-[10px] text-gray-400 mt-0.5 leading-tight">{l}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="bg-gray-50 rounded-xl p-4 mb-5 space-y-2.5">
-                {[
-                  ['Seniority (Senior / Manager+)', '48%'],
-                  ['Industry (IT & Software Dev)', '71%'],
-                  ['Top locations', 'US 40% · EU 30% · IN 20%'],
-                ].map(([label, value]) => (
-                  <div key={label} className="flex justify-between text-xs">
-                    <span className="text-gray-500">{label}</span>
-                    <span className="font-bold text-ali-heading">{value}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="flex items-center justify-between p-4 bg-[#0A66C2]/5 rounded-xl border border-[#0A66C2]/10">
-                <div>
-                  <p className="font-bold text-sm text-ali-heading">Sponsored Post</p>
-                  <p className="text-xs text-gray-500">Image / video · brand mention</p>
-                </div>
-                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
-              </div>
-            </div>
-
-            {/* Newsletter Channel */}
-            <div className="bg-white rounded-3xl border-2 border-ali-orange/20 p-8 hover:shadow-xl hover:-translate-y-1 transition-all hover:border-ali-orange/40">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Mail size={22} className="text-white" />
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-lg text-ali-heading">The Architect's Edge</h3>
-                  <p className="text-xs text-gray-400">Weekly newsletter · Every Tuesday</p>
-                </div>
-              </div>
-              <div className="grid grid-cols-3 gap-3 mb-5">
-                {[
-                  { n: '4.5K', l: 'Subscribers' },
-                  { n: '25%', l: 'Open rate' },
-                  { n: '540', l: 'Clicks / send' },
-                ].map(({ n, l }, i) => (
-                  <div key={l} className={`text-center ${i === 1 ? 'border-x border-gray-100' : ''}`}>
-                    <p className="text-xl font-bold font-serif text-ali-heading">{n}</p>
-                    <p className="text-[10px] text-gray-400 mt-0.5 leading-tight">{l}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="bg-gray-50 rounded-xl p-4 mb-5 space-y-2.5">
-                {[
-                  ['Click-through rate', '3%'],
-                  ['Core age group', '25–34 (45%)'],
-                  ['Reader profile', 'DevOps · Cloud · AI'],
-                ].map(([label, value]) => (
-                  <div key={label} className="flex justify-between text-xs">
-                    <span className="text-gray-500">{label}</span>
-                    <span className="font-bold text-ali-heading">{value}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="flex items-center justify-between p-4 bg-ali-orange/5 rounded-xl border border-ali-orange/10">
-                <div>
-                  <p className="font-bold text-sm text-ali-heading">Sponsored Ad</p>
-                  <p className="text-xs text-gray-500">Top-of-email banner · CTA button</p>
-                </div>
-                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
-              </div>
-            </div>
-
-          </div>
-
-          {/* Passionfroot CTA — dark elegant */}
-          <div className="bg-ali-heading rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6">
-            <div className="flex-1 text-center md:text-left">
-              <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-2">Custom packages · Media kit · Availability</p>
-              <h3 className="font-serif font-bold text-xl md:text-2xl text-white">View full creator profile on Passionfroot</h3>
-              <p className="text-sm text-white/60 mt-1">Book directly, see all packages, and download the media kit.</p>
-            </div>
-            <a
-              href="https://www.passionfroot.me/vamsi-penmetsa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-shrink-0 inline-flex items-center gap-2 px-7 py-3.5 bg-white text-ali-heading rounded-full font-bold hover:shadow-xl hover:scale-105 transition-all"
-            >
-              View on Passionfroot <ArrowRight size={16} />
-            </a>
-          </div>
-
         </div>
       </section>
 
@@ -290,6 +162,110 @@ function App() {
                 Book session <ArrowRight size={16} />
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof / Testimonials */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 text-center">
+            What People Say
+          </h2>
+          <p className="text-gray-500 text-center mb-10">From mentorship sessions and technical interviews</p>
+
+          {/* Mentorship Testimonials */}
+          <div className="mb-6">
+            <p className="text-xs font-bold uppercase tracking-widest text-ali-blue-dark mb-4 flex items-center gap-2">
+              <span className="w-8 h-px bg-ali-blue-dark"></span> Mentorship & Coaching
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* Testimonial 1 - Sumeet */}
+            <div className="bg-ali-cream/30 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-1 text-ali-orange text-sm mb-3">⭐⭐⭐⭐⭐</div>
+              <blockquote className="text-gray-600 italic border-l-4 border-ali-blue pl-4 py-2 leading-relaxed text-sm mb-4">
+                "I had a wonderful session with Vamsi, his insights regarding DevOps and associated tools and technologies are very valuable."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-ali-orange rounded-full flex items-center justify-center text-white font-bold text-sm">SK</div>
+                <div>
+                  <p className="font-bold text-ali-heading text-sm">Sumeet Khastgir</p>
+                  <p className="text-xs text-gray-500">Dec 2025</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 2 - Mariia */}
+            <div className="bg-ali-cream/30 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-1 text-ali-orange text-sm mb-3">⭐⭐⭐⭐⭐</div>
+              <blockquote className="text-gray-600 italic border-l-4 border-ali-orange pl-4 py-2 leading-relaxed text-sm mb-4">
+                "I successfully passed last technical interview. Thank you for your recommendation to try to behave as I am already middle... I am so excited and grateful!"
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-ali-blue rounded-full flex items-center justify-center text-white font-bold text-sm">M</div>
+                <div>
+                  <p className="font-bold text-ali-heading text-sm">Mariia</p>
+                  <p className="text-xs text-gray-500">Aspiring DevOps Engineer</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 3 - Ram Kumar */}
+            <div className="bg-ali-cream/30 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow md:col-span-2">
+              <div className="flex items-center gap-1 text-ali-orange text-sm mb-3">⭐⭐⭐⭐⭐</div>
+              <blockquote className="text-gray-600 italic border-l-4 border-ali-yellow pl-4 py-2 leading-relaxed text-sm mb-4 max-w-3xl">
+                "The session provided a clear 5-phase roadmap for my EU job search—resume refocus, LinkedIn strategy, intentional skill building, smart job tactics, and realistic market entry. Structured, no-fluff guidance. Highly recommend connecting with Vamsi."
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-ali-yellow rounded-full flex items-center justify-center text-ali-heading font-bold text-sm">RK</div>
+                <div>
+                  <p className="font-bold text-ali-heading text-sm">Ram Kumar R</p>
+                  <p className="text-xs text-gray-500">Cloud/DevOps · EU Job Search</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Interview Feedback */}
+          <div className="mb-6">
+            <p className="text-xs font-bold uppercase tracking-widest text-ali-orange mb-4 flex items-center gap-2">
+              <span className="w-8 h-px bg-ali-orange"></span> Interview Feedback · 150+ Technical Interviews (Azure, DevOps, SRE, AWS)
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-r from-ali-orange/5 to-ali-blue/5 rounded-2xl p-6 border border-ali-orange/15 mb-8">
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="flex-1">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-ali-orange rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">MB</div>
+                  <div>
+                    <blockquote className="text-gray-600 italic leading-relaxed text-sm mb-3">
+                      “The interview was honestly one of the best I’ve had the pleasure of attending. The questions were well thought out and the tasks actually tested real skills, which I really appreciated. It left me with a very good impression of the company, and I’m definitely keen to move forward.”
+                    </blockquote>
+                    <div>
+                      <p className="font-bold text-ali-heading text-sm">Mikolaj B.</p>
+                      <p className="text-xs text-gray-500">Interview Candidate · Feedback shared via HR · April 2026</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="md:w-80 flex-shrink-0">
+                <img
+                  src="./Interview_feedback_sharedbyHR.png"
+                  alt="Interview feedback from Mikolaj B. shared via HR"
+                  className="w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                  onClick={(e) => window.open(e.target.src, '_blank')}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all">
+              Start your journey <ArrowRight size={18} />
+            </a>
           </div>
         </div>
       </section>
@@ -416,110 +392,6 @@ function App() {
               </div>
               <span className="text-xs text-white/70">4.8 ★ · 1,640 reviews</span>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof / Testimonials */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 text-center">
-            What People Say
-          </h2>
-          <p className="text-gray-500 text-center mb-10">From mentorship sessions and technical interviews</p>
-
-          {/* Mentorship Testimonials */}
-          <div className="mb-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-ali-blue-dark mb-4 flex items-center gap-2">
-              <span className="w-8 h-px bg-ali-blue-dark"></span> Mentorship & Coaching
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {/* Testimonial 1 - Sumeet */}
-            <div className="bg-ali-cream/30 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-1 text-ali-orange text-sm mb-3">⭐⭐⭐⭐⭐</div>
-              <blockquote className="text-gray-600 italic border-l-4 border-ali-blue pl-4 py-2 leading-relaxed text-sm mb-4">
-                "I had a wonderful session with Vamsi, his insights regarding DevOps and associated tools and technologies are very valuable."
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-ali-orange rounded-full flex items-center justify-center text-white font-bold text-sm">SK</div>
-                <div>
-                  <p className="font-bold text-ali-heading text-sm">Sumeet Khastgir</p>
-                  <p className="text-xs text-gray-500">Dec 2025</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 - Mariia */}
-            <div className="bg-ali-cream/30 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-1 text-ali-orange text-sm mb-3">⭐⭐⭐⭐⭐</div>
-              <blockquote className="text-gray-600 italic border-l-4 border-ali-orange pl-4 py-2 leading-relaxed text-sm mb-4">
-                "I successfully passed last technical interview. Thank you for your recommendation to try to behave as I am already middle... I am so excited and grateful!"
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-ali-blue rounded-full flex items-center justify-center text-white font-bold text-sm">M</div>
-                <div>
-                  <p className="font-bold text-ali-heading text-sm">Mariia</p>
-                  <p className="text-xs text-gray-500">Aspiring DevOps Engineer</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 3 - Ram Kumar */}
-            <div className="bg-ali-cream/30 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow md:col-span-2">
-              <div className="flex items-center gap-1 text-ali-orange text-sm mb-3">⭐⭐⭐⭐⭐</div>
-              <blockquote className="text-gray-600 italic border-l-4 border-ali-yellow pl-4 py-2 leading-relaxed text-sm mb-4 max-w-3xl">
-                "The session provided a clear 5-phase roadmap for my EU job search—resume refocus, LinkedIn strategy, intentional skill building, smart job tactics, and realistic market entry. Structured, no-fluff guidance. Highly recommend connecting with Vamsi."
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-ali-yellow rounded-full flex items-center justify-center text-ali-heading font-bold text-sm">RK</div>
-                <div>
-                  <p className="font-bold text-ali-heading text-sm">Ram Kumar R</p>
-                  <p className="text-xs text-gray-500">Cloud/DevOps · EU Job Search</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Interview Feedback */}
-          <div className="mb-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-ali-orange mb-4 flex items-center gap-2">
-              <span className="w-8 h-px bg-ali-orange"></span> Interview Feedback · 150+ Technical Interviews (Azure, DevOps, SRE, AWS)
-            </p>
-          </div>
-
-          <div className="bg-gradient-to-r from-ali-orange/5 to-ali-blue/5 rounded-2xl p-6 border border-ali-orange/15 mb-8">
-            <div className="flex flex-col md:flex-row gap-6">
-              <div className="flex-1">
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-ali-orange rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">MB</div>
-                  <div>
-                    <blockquote className="text-gray-600 italic leading-relaxed text-sm mb-3">
-                      “The interview was honestly one of the best I’ve had the pleasure of attending. The questions were well thought out and the tasks actually tested real skills, which I really appreciated. It left me with a very good impression of the company, and I’m definitely keen to move forward.”
-                    </blockquote>
-                    <div>
-                      <p className="font-bold text-ali-heading text-sm">Mikolaj B.</p>
-                      <p className="text-xs text-gray-500">Interview Candidate · Feedback shared via HR · April 2026</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="md:w-80 flex-shrink-0">
-                <img
-                  src="./Interview_feedback_sharedbyHR.png"
-                  alt="Interview feedback from Mikolaj B. shared via HR"
-                  className="w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
-                  onClick={(e) => window.open(e.target.src, '_blank')}
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all">
-              Start your journey <ArrowRight size={18} />
-            </a>
           </div>
         </div>
       </section>
@@ -831,6 +703,134 @@ function App() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Brand Collaborations */}
+      <section id="collaborate" className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-ali-orange/10 text-ali-orange rounded-full text-sm font-bold mb-4">
+              <Megaphone size={16} /> Work With Me
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+              Brand <span className="text-ali-orange">Collaborations</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Technical content for cloud engineers and architects — built on real production experience, not vendor press releases.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+
+            {/* LinkedIn Channel */}
+            <div className="bg-white rounded-3xl border-2 border-[#0A66C2]/20 p-8 hover:shadow-xl hover:-translate-y-1 transition-all hover:border-[#0A66C2]/40">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-[#0A66C2] rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Linkedin size={22} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="font-serif font-bold text-lg text-ali-heading">LinkedIn Profile</h3>
+                  <p className="text-xs text-gray-400">linkedin.com/in/vamsipenmetsa</p>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-3 mb-5">
+                {[
+                  { n: '30.5K', l: 'Followers' },
+                  { n: '10.2K', l: 'Impressions / post' },
+                  { n: '673K', l: 'Reached / year' },
+                ].map(({ n, l }, i) => (
+                  <div key={l} className={`text-center ${i === 1 ? 'border-x border-gray-100' : ''}`}>
+                    <p className="text-xl font-bold font-serif text-ali-heading">{n}</p>
+                    <p className="text-[10px] text-gray-400 mt-0.5 leading-tight">{l}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-gray-50 rounded-xl p-4 mb-5 space-y-2.5">
+                {[
+                  ['Seniority (Senior / Manager+)', '48%'],
+                  ['Industry (IT & Software Dev)', '71%'],
+                  ['Top locations', 'US 40% · EU 30% · IN 20%'],
+                ].map(([label, value]) => (
+                  <div key={label} className="flex justify-between text-xs">
+                    <span className="text-gray-500">{label}</span>
+                    <span className="font-bold text-ali-heading">{value}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center justify-between p-4 bg-[#0A66C2]/5 rounded-xl border border-[#0A66C2]/10">
+                <div>
+                  <p className="font-bold text-sm text-ali-heading">Sponsored Post</p>
+                  <p className="text-xs text-gray-500">Image / video · brand mention</p>
+                </div>
+                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
+              </div>
+            </div>
+
+            {/* Newsletter Channel */}
+            <div className="bg-white rounded-3xl border-2 border-ali-orange/20 p-8 hover:shadow-xl hover:-translate-y-1 transition-all hover:border-ali-orange/40">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Mail size={22} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="font-serif font-bold text-lg text-ali-heading">The Architect's Edge</h3>
+                  <p className="text-xs text-gray-400">Weekly newsletter · Every Tuesday</p>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-3 mb-5">
+                {[
+                  { n: '4.5K', l: 'Subscribers' },
+                  { n: '25%', l: 'Open rate' },
+                  { n: '540', l: 'Clicks / send' },
+                ].map(({ n, l }, i) => (
+                  <div key={l} className={`text-center ${i === 1 ? 'border-x border-gray-100' : ''}`}>
+                    <p className="text-xl font-bold font-serif text-ali-heading">{n}</p>
+                    <p className="text-[10px] text-gray-400 mt-0.5 leading-tight">{l}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-gray-50 rounded-xl p-4 mb-5 space-y-2.5">
+                {[
+                  ['Click-through rate', '3%'],
+                  ['Core age group', '25–34 (45%)'],
+                  ['Reader profile', 'DevOps · Cloud · AI'],
+                ].map(([label, value]) => (
+                  <div key={label} className="flex justify-between text-xs">
+                    <span className="text-gray-500">{label}</span>
+                    <span className="font-bold text-ali-heading">{value}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center justify-between p-4 bg-ali-orange/5 rounded-xl border border-ali-orange/10">
+                <div>
+                  <p className="font-bold text-sm text-ali-heading">Sponsored Ad</p>
+                  <p className="text-xs text-gray-500">Top-of-email banner · CTA button</p>
+                </div>
+                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Passionfroot CTA — dark elegant */}
+          <div className="bg-ali-heading rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6">
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-2">Custom packages · Media kit · Availability</p>
+              <h3 className="font-serif font-bold text-xl md:text-2xl text-white">View full creator profile on Passionfroot</h3>
+              <p className="text-sm text-white/60 mt-1">Book directly, see all packages, and download the media kit.</p>
+            </div>
+            <a
+              href="https://www.passionfroot.me/vamsi-penmetsa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 inline-flex items-center gap-2 px-7 py-3.5 bg-white text-ali-heading rounded-full font-bold hover:shadow-xl hover:scale-105 transition-all"
+            >
+              View on Passionfroot <ArrowRight size={16} />
+            </a>
+          </div>
+
         </div>
       </section>
 

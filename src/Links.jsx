@@ -15,6 +15,11 @@ function Links() {
         <h1 className="text-2xl font-serif font-bold text-ali-heading">Vamsi Penmetsa</h1>
         <p className="text-xs font-bold tracking-widest uppercase text-ali-blue-dark mt-1">AI Systems Architect | Building MaaS</p>
         <p className="text-xs text-gray-500 mt-2">LSEG × Microsoft · 7X Azure Certified · GH-300 · 🇮🇳 → 🇵🇱</p>
+        <div className="flex justify-center gap-4 mt-3 text-center">
+          <div><p className="text-sm font-bold text-ali-heading">30.5K</p><p className="text-[10px] text-gray-400">LinkedIn</p></div>
+          <div className="border-x border-gray-100 px-4"><p className="text-sm font-bold text-ali-heading">4.5K</p><p className="text-[10px] text-gray-400">Newsletter</p></div>
+          <div><p className="text-sm font-bold text-ali-heading">2M+</p><p className="text-[10px] text-gray-400">Impressions/yr</p></div>
+        </div>
       </div>
 
       {/* Links */}
@@ -44,7 +49,7 @@ function Links() {
             </div>
             <span className="text-[10px] font-bold px-2 py-0.5 bg-white/25 rounded-full flex-shrink-0">NEW</span>
           </div>
-          <p className="text-xs text-white/90 pl-12">Reach 15K+ DevOps professionals · Newsletter · Content · Reviews</p>
+          <p className="text-xs text-white/90 pl-12">30.5K LinkedIn followers · 4.5K newsletter subscribers · $300/package</p>
           <div className="flex items-center gap-1 pl-12 mt-2 text-xs font-bold text-white/90">
             View on Passionfroot <ArrowRight size={13} />
           </div>
@@ -209,7 +214,7 @@ function Links() {
           </div>
           <div className="flex-1 min-w-0">
             <p className="font-bold text-sm text-ali-heading">DevOps Professionals Group</p>
-            <p className="text-xs text-gray-500">15,000+ members</p>
+            <p className="text-xs text-gray-500">30K+ DevOps professionals</p>
           </div>
           <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
         </a>
