@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote, Megaphone, TrendingUp, FileText, Star } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote, Megaphone } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ function App() {
             <a href="#talks" className="font-sans font-medium hover:text-ali-orange transition-colors">Talks</a>
             <a href="#about" className="font-sans font-medium hover:text-ali-orange transition-colors">About</a>
             <a href="#products" className="font-sans font-medium hover:text-ali-orange transition-colors">Products</a>
-            <a href="#collaborate" className="font-sans font-medium hover:text-purple-600 transition-colors">Collaborate</a>
+            <a href="#collaborate" className="font-sans font-medium hover:text-ali-orange transition-colors">Collaborate</a>
             <a href="/vamsipenmetsa-portfolio/links" className="font-sans font-medium hover:text-ali-blue-dark transition-colors">Links</a>
             <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-lg transition-all transform hover:scale-105 shadow-sm">
               Book a Session
@@ -43,7 +43,7 @@ function App() {
               <a href="#talks" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Talks</a>
               <a href="#about" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>About</a>
               <a href="#products" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Products</a>
-              <a href="#collaborate" className="block font-medium p-2 hover:bg-purple-50 text-purple-700 rounded" onClick={toggleMenu}>Collaborate</a>
+              <a href="#collaborate" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Collaborate</a>
               <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="block font-bold text-ali-orange p-2" onClick={toggleMenu}>Book a Session</a>
             </div>
           </div>
@@ -96,6 +96,134 @@ function App() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Brand Collaborations */}
+      <section id="collaborate" className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-ali-orange/10 text-ali-orange rounded-full text-sm font-bold mb-4">
+              <Megaphone size={16} /> Work With Me
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+              Brand <span className="text-ali-orange">Collaborations</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Technical content for cloud engineers and architects — built on real production experience, not vendor press releases.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+
+            {/* LinkedIn Channel */}
+            <div className="bg-white rounded-3xl border-2 border-[#0A66C2]/20 p-8 hover:shadow-xl hover:-translate-y-1 transition-all hover:border-[#0A66C2]/40">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-[#0A66C2] rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Linkedin size={22} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="font-serif font-bold text-lg text-ali-heading">LinkedIn Profile</h3>
+                  <p className="text-xs text-gray-400">linkedin.com/in/vamsipenmetsa</p>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-3 mb-5">
+                {[
+                  { n: '30.5K', l: 'Followers' },
+                  { n: '10.2K', l: 'Impressions / post' },
+                  { n: '673K', l: 'Reached / year' },
+                ].map(({ n, l }, i) => (
+                  <div key={l} className={`text-center ${i === 1 ? 'border-x border-gray-100' : ''}`}>
+                    <p className="text-xl font-bold font-serif text-ali-heading">{n}</p>
+                    <p className="text-[10px] text-gray-400 mt-0.5 leading-tight">{l}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-gray-50 rounded-xl p-4 mb-5 space-y-2.5">
+                {[
+                  ['Seniority (Senior / Manager+)', '48%'],
+                  ['Industry (IT & Software Dev)', '71%'],
+                  ['Top locations', 'US 40% · EU 30% · IN 20%'],
+                ].map(([label, value]) => (
+                  <div key={label} className="flex justify-between text-xs">
+                    <span className="text-gray-500">{label}</span>
+                    <span className="font-bold text-ali-heading">{value}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center justify-between p-4 bg-[#0A66C2]/5 rounded-xl border border-[#0A66C2]/10">
+                <div>
+                  <p className="font-bold text-sm text-ali-heading">Sponsored Post</p>
+                  <p className="text-xs text-gray-500">Image / video · brand mention</p>
+                </div>
+                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
+              </div>
+            </div>
+
+            {/* Newsletter Channel */}
+            <div className="bg-white rounded-3xl border-2 border-ali-orange/20 p-8 hover:shadow-xl hover:-translate-y-1 transition-all hover:border-ali-orange/40">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Mail size={22} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="font-serif font-bold text-lg text-ali-heading">The Architect's Edge</h3>
+                  <p className="text-xs text-gray-400">Weekly newsletter · Every Tuesday</p>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-3 mb-5">
+                {[
+                  { n: '4.5K', l: 'Subscribers' },
+                  { n: '25%', l: 'Open rate' },
+                  { n: '540', l: 'Clicks / send' },
+                ].map(({ n, l }, i) => (
+                  <div key={l} className={`text-center ${i === 1 ? 'border-x border-gray-100' : ''}`}>
+                    <p className="text-xl font-bold font-serif text-ali-heading">{n}</p>
+                    <p className="text-[10px] text-gray-400 mt-0.5 leading-tight">{l}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-gray-50 rounded-xl p-4 mb-5 space-y-2.5">
+                {[
+                  ['Click-through rate', '3%'],
+                  ['Core age group', '25–34 (45%)'],
+                  ['Reader profile', 'DevOps · Cloud · AI'],
+                ].map(([label, value]) => (
+                  <div key={label} className="flex justify-between text-xs">
+                    <span className="text-gray-500">{label}</span>
+                    <span className="font-bold text-ali-heading">{value}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center justify-between p-4 bg-ali-orange/5 rounded-xl border border-ali-orange/10">
+                <div>
+                  <p className="font-bold text-sm text-ali-heading">Sponsored Ad</p>
+                  <p className="text-xs text-gray-500">Top-of-email banner · CTA button</p>
+                </div>
+                <p className="text-2xl font-serif font-bold text-ali-heading">$300</p>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Passionfroot CTA — dark elegant */}
+          <div className="bg-ali-heading rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6">
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-2">Custom packages · Media kit · Availability</p>
+              <h3 className="font-serif font-bold text-xl md:text-2xl text-white">View full creator profile on Passionfroot</h3>
+              <p className="text-sm text-white/60 mt-1">Book directly, see all packages, and download the media kit.</p>
+            </div>
+            <a
+              href="https://www.passionfroot.me/vamsi-penmetsa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 inline-flex items-center gap-2 px-7 py-3.5 bg-white text-ali-heading rounded-full font-bold hover:shadow-xl hover:scale-105 transition-all"
+            >
+              View on Passionfroot <ArrowRight size={16} />
+            </a>
+          </div>
+
         </div>
       </section>
 
@@ -703,90 +831,6 @@ function App() {
               </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Brand Collaborations Section */}
-      <section id="collaborate" className="py-20 bg-gradient-to-br from-ali-orange/5 via-white to-purple-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          {/* Header */}
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-bold mb-4">
-              <Megaphone size={16} /> Brand Collaborations
-            </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              Let's Create <span className="text-ali-orange">Together</span>
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Reaching cloud engineers, DevOps professionals, and AI practitioners across LinkedIn and beyond. Available for sponsorships, product features, and content partnerships.
-            </p>
-          </div>
-
-          {/* Audience Reach Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-            {[
-              { stat: '15K+', label: 'DevOps Community', sub: 'LinkedIn Group' },
-              { stat: '150+', label: 'Interviews Conducted', sub: 'Cloud & DevOps' },
-              { stat: '7×', label: 'Azure Certified', sub: 'Tech Authority' },
-              { stat: '30+', label: 'Day Content Series', sub: 'Breaking Down Claude' },
-            ].map(({ stat, label, sub }) => (
-              <div key={label} className="bg-white rounded-2xl p-5 text-center border border-gray-100 shadow-sm">
-                <p className="text-2xl font-serif font-bold text-ali-orange">{stat}</p>
-                <p className="text-xs font-bold text-ali-heading mt-1">{label}</p>
-                <p className="text-[11px] text-gray-400 mt-0.5">{sub}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Passionfroot CTA — Hero Card */}
-          <div className="relative bg-gradient-to-r from-ali-orange to-purple-600 rounded-3xl p-8 md:p-10 text-white overflow-hidden mb-10 shadow-2xl">
-            <div className="absolute -top-10 -right-10 w-48 h-48 bg-white/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="absolute -bottom-8 -left-8 w-36 h-36 bg-white/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="relative z-10 flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-1 text-center md:text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full text-sm font-bold mb-4">
-                  <Star size={14} className="fill-current" /> New Portfolio · Brand Deals
-                </div>
-                <h3 className="text-2xl md:text-3xl font-serif font-bold mb-3 leading-snug">
-                  Sponsor My Content &<br className="hidden md:block" /> Reach Tech Professionals
-                </h3>
-                <p className="text-white/85 text-sm md:text-base leading-relaxed max-w-lg">
-                  I've launched a dedicated creator portfolio on Passionfroot for brand partnerships — newsletter sponsorships, tool reviews, ebook promotions, and content collaborations targeting cloud & AI professionals.
-                </p>
-              </div>
-              <div className="flex-shrink-0 text-center">
-                <a
-                  href="https://www.passionfroot.me/vamsi-penmetsa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-white text-ali-orange rounded-full font-bold text-base hover:shadow-2xl hover:scale-105 transition-all shadow-lg"
-                >
-                  View on Passionfroot <ArrowRight size={18} />
-                </a>
-                <p className="text-white/60 text-xs mt-3">Packages, pricing & media kit</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Collaboration Types */}
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { icon: <Linkedin size={20} className="text-[#0A66C2]" />, bg: 'bg-[#0A66C2]/10', title: 'Newsletter Sponsorship', desc: 'Featured spot in The Architect\'s Edge — weekly AI & cloud insights' },
-              { icon: <Star size={20} className="text-ali-orange" />, bg: 'bg-ali-orange/10', title: 'Product Reviews', desc: 'Honest deep-dives on dev tools, cloud platforms & AI products' },
-              { icon: <FileText size={20} className="text-purple-600" />, bg: 'bg-purple-50', title: 'Content Partnerships', desc: 'Co-created articles, tutorials, and LinkedIn posts' },
-              { icon: <TrendingUp size={20} className="text-green-600" />, bg: 'bg-green-50', title: 'Course & EBook Promos', desc: 'Promote to a targeted audience of cloud & DevOps professionals' },
-            ].map(({ icon, bg, title, desc }) => (
-              <div key={title} className="bg-white rounded-2xl p-5 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all">
-                <div className={`w-10 h-10 ${bg} rounded-xl flex items-center justify-center mb-3`}>
-                  {icon}
-                </div>
-                <p className="font-bold text-sm text-ali-heading mb-1">{title}</p>
-                <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
-
         </div>
       </section>
 
