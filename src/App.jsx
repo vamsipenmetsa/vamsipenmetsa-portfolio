@@ -74,8 +74,8 @@ function App() {
               <span className="block text-ali-orange relative pb-3">
                 at Enterprise Scale
                 {/* thick marker-style underline */}
-                <svg className="absolute w-full h-7 -bottom-1 left-0 text-ali-orange/60" viewBox="0 0 300 18" fill="none" aria-hidden="true">
-                  <path d="M3 14 C40 6 80 4 120 8 C158 12 192 6 228 10 C255 12 275 9 297 11" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
+                <svg className="absolute w-full h-7 -bottom-1 left-0 text-ali-orange" viewBox="0 0 300 18" fill="none" aria-hidden="true">
+                  <path d="M3 14 C40 6 80 4 120 8 C158 12 192 6 228 10 C255 12 275 9 297 11" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.8"/>
                 </svg>
               </span>
             </h1>
@@ -86,11 +86,11 @@ function App() {
                 <span className="relative inline-block">
                   150+
                   <svg className="absolute overflow-visible pointer-events-none" style={{top:'-6px',left:'-8px',width:'calc(100% + 16px)',height:'calc(100% + 12px)'}} viewBox="0 0 75 36" fill="none" aria-hidden="true">
-                    <path d="M8 18 C7 8 14 1 28 1 C45 0 66 4 68 16 C70 26 62 33 46 34 C27 35 8 28 8 18" stroke="#f59e5e" strokeWidth="2.5" strokeLinecap="round" opacity="0.65"/>
+                    <path d="M8 18 C7 8 14 1 28 1 C45 0 66 4 68 16 C70 26 62 33 46 34 C27 35 8 28 8 18" stroke="#f59e5e" strokeWidth="3" strokeLinecap="round" opacity="0.9"/>
                   </svg>
                 </span> engineers
                 <svg className="absolute inset-x-0 -bottom-1 w-full h-3" viewBox="0 0 150 9" fill="none" aria-hidden="true">
-                  <path d="M2 7 C30 2 70 1 105 4 C125 5 138 5 148 6" stroke="#f59e5e" strokeWidth="4" strokeLinecap="round" opacity="0.55"/>
+                  <path d="M2 7 C30 2 70 1 105 4 C125 5 138 5 148 6" stroke="#f59e5e" strokeWidth="4" strokeLinecap="round" opacity="0.85"/>
                 </svg>
               </span> break into cloud, land DevOps roles, and ace technical interviews. Currently architecting ML/LLM platforms for <span className="font-bold text-ali-heading">LSEG × Microsoft UK</span>.
             </p>
@@ -106,7 +106,7 @@ function App() {
 
             {/* sketch arrow pointing to CTAs */}
             <div className="flex justify-center md:justify-start -mb-1" aria-hidden="true">
-              <svg className="w-12 h-10 text-ali-orange/45 -rotate-6" viewBox="0 0 48 42" fill="none">
+              <svg className="w-12 h-10 text-ali-orange -rotate-6" viewBox="0 0 48 42" fill="none">
                 <path d="M8 6 C10 16 14 26 22 36 M14 28 C18 37 22 38 26 30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
@@ -127,10 +127,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14 text-center">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">
-              How Can <span className="relative inline-block pb-2">
+              How Can <span className="relative inline-block">
                 I Help You?
-                <svg className="absolute w-full h-6 -bottom-0.5 left-0 text-ali-blue/60" viewBox="0 0 200 15" fill="none" aria-hidden="true">
-                  <path d="M3 12 C40 5 85 3 125 7 C155 10 175 8 197 10" stroke="currentColor" strokeWidth="6" strokeLinecap="round"/>
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue" viewBox="0 0 200 9" fill="none" aria-hidden="true">
+                  <path d="M2 7C45.9 3.7 156.7 -2.3 198 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h2>
@@ -194,8 +194,8 @@ function App() {
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 text-center">
             What <span className="relative inline-block pb-2">People
-              <svg className="absolute w-full h-5 -bottom-0.5 left-0 text-ali-orange/60" viewBox="0 0 85 13" fill="none" aria-hidden="true">
-                <path d="M2 10 C18 4 40 3 65 7 C72 8 79 8 83 9" stroke="currentColor" strokeWidth="6" strokeLinecap="round"/>
+              <svg className="absolute w-full h-5 -bottom-0.5 left-0 text-ali-orange" viewBox="0 0 85 13" fill="none" aria-hidden="true">
+                <path d="M2 10 C18 4 40 3 65 7 C72 8 79 8 83 9" stroke="currentColor" strokeWidth="6" strokeLinecap="round" opacity="0.8"/>
               </svg>
             </span> Say
           </h2>
@@ -507,22 +507,32 @@ function App() {
 
             {/* Certifications */}
             <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-10 bg-gradient-to-br from-ali-blue-dark to-ali-blue rounded-xl flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+
+              {/* Header */}
+              <div className="flex items-center justify-between flex-wrap gap-3 mb-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-ali-blue-dark to-ali-blue rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-serif font-bold text-ali-heading">Certifications</h3>
+                    <p className="text-xs text-gray-400 mt-0.5">12+ across Azure · AWS · GitHub · AI</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-serif font-bold text-ali-heading">Certifications</h3>
-                  <p className="text-xs text-gray-400 mt-0.5">12+ across Azure · AWS · GitHub · AI</p>
-                </div>
+                <span className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 bg-green-50 text-green-700 border border-green-100 rounded-full">
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> All Verified
+                </span>
               </div>
 
-              {/* Microsoft Azure */}
+              {/* Microsoft Azure — featured */}
               <div className="mb-8">
-                <p className="text-xs font-bold uppercase tracking-widest text-ali-blue-dark mb-4 flex items-center gap-2">
-                  <span className="w-6 h-px bg-ali-blue-dark inline-block"></span> Microsoft Azure
-                </p>
-                <div className="grid grid-cols-3 sm:grid-cols-6 gap-4">
+                <div className="flex items-center justify-between mb-5">
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#0078d4] flex items-center gap-2">
+                    <span className="w-5 h-px bg-[#0078d4] inline-block"></span> Microsoft Azure
+                  </p>
+                  <span className="text-[10px] font-bold px-2 py-1 bg-[#0078d4]/10 text-[#0078d4] rounded-full">7× Certified</span>
+                </div>
+                <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
                   {[
                     { img: "https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png", name: "Solutions Architect Expert", code: "AZ-305", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/25D93904B41DCA95?sharingId=C12B7F6430996004" },
                     { img: "https://images.credly.com/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png", name: "DevOps Engineer Expert", code: "AZ-400", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/9A6A85340BFB87D5?sharingId=C12B7F6430996004" },
@@ -532,57 +542,69 @@ function App() {
                     { img: "https://images.credly.com/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png", name: "Fundamentals", code: "AZ-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
                   ].map((cert) => (
                     <a key={cert.code} href={cert.url} target="_blank" rel="noopener noreferrer"
-                      className="group flex flex-col items-center gap-2 p-3 rounded-2xl hover:bg-ali-blue/5 transition-all duration-200">
-                      <img src={cert.img} alt={cert.name} className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-200 drop-shadow-sm" />
-                      <div className="text-center">
-                        <p className="text-[10px] font-bold text-ali-heading leading-tight">{cert.name}</p>
-                        <p className="text-[10px] text-gray-400 mt-0.5">{cert.code}</p>
-                      </div>
+                      className="group flex flex-col items-center gap-2 p-3 rounded-2xl bg-blue-50/40 hover:bg-[#0078d4]/10 hover:-translate-y-1 transition-all duration-200 border border-blue-100/60">
+                      <img src={cert.img} alt={cert.name} className="w-16 h-16 object-contain group-hover:scale-105 transition-transform duration-200 drop-shadow-md" />
+                      <p className="text-[10px] font-bold text-ali-heading leading-tight text-center">{cert.name}</p>
+                      <span className="text-[9px] font-bold px-1.5 py-0.5 bg-[#0078d4]/10 text-[#0078d4] rounded-full">{cert.code}</span>
                     </a>
                   ))}
                 </div>
               </div>
 
-              {/* AWS + GitHub row */}
-              <div className="grid grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+              {/* AWS · GitHub · AI — unified bottom row */}
+              <div className="pt-6 border-t border-gray-100 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                {/* AWS */}
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-[#FF9900] mb-4 flex items-center gap-2">
-                    <span className="w-6 h-px bg-[#FF9900] inline-block"></span> Amazon Web Services
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#FF9900] mb-3 flex items-center gap-2">
+                    <span className="w-4 h-px bg-[#FF9900] inline-block"></span> Amazon Web Services
                   </p>
                   <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/b6a32f65459e4763a6ae0c9067be7ef0" target="_blank" rel="noopener noreferrer"
-                    className="group inline-flex flex-col items-center gap-2 p-3 rounded-2xl hover:bg-[#FF9900]/5 transition-all duration-200">
-                    <img src="https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" alt="AWS Certified AI Practitioner" className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-200 drop-shadow-sm" />
-                    <div className="text-center">
-                      <p className="text-[10px] font-bold text-ali-heading leading-tight">AI Practitioner</p>
-                      <p className="text-[10px] text-gray-400 mt-0.5">AWS-AIF</p>
+                    className="group flex items-center gap-4 p-4 rounded-2xl bg-amber-50/60 border border-amber-100/60 hover:border-[#FF9900]/40 hover:bg-[#FF9900]/5 hover:-translate-y-0.5 transition-all duration-200">
+                    <img src="https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" alt="AWS Certified AI Practitioner" className="w-14 h-14 object-contain group-hover:scale-105 transition-transform drop-shadow-sm flex-shrink-0" />
+                    <div>
+                      <p className="font-bold text-sm text-ali-heading">AI Practitioner</p>
+                      <span className="text-[10px] font-bold px-2 py-0.5 bg-[#FF9900]/15 text-[#FF9900] rounded-full">AWS-AIF</span>
                     </div>
                   </a>
                 </div>
+
+                {/* GitHub */}
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-gray-700 mb-4 flex items-center gap-2">
-                    <span className="w-6 h-px bg-gray-700 inline-block"></span> GitHub
+                  <p className="text-xs font-bold uppercase tracking-widest text-gray-600 mb-3 flex items-center gap-2">
+                    <span className="w-4 h-px bg-gray-600 inline-block"></span> GitHub
                   </p>
                   <a href="https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/287336BFD482D840?sharingId=C12B7F6430996004" target="_blank" rel="noopener noreferrer"
-                    className="group inline-flex flex-col items-center gap-2 p-3 rounded-2xl hover:bg-gray-50 transition-all duration-200">
-                    <img src="https://images.credly.com/images/6b924fae-3cd7-4233-b012-97413c62c85d/blob" alt="GitHub Copilot" className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-200 drop-shadow-sm" />
-                    <div className="text-center">
-                      <p className="text-[10px] font-bold text-ali-heading leading-tight">GitHub Copilot</p>
-                      <p className="text-[10px] text-gray-400 mt-0.5">GH-300</p>
+                    className="group flex items-center gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:border-gray-300 hover:-translate-y-0.5 transition-all duration-200">
+                    <img src="https://images.credly.com/images/6b924fae-3cd7-4233-b012-97413c62c85d/blob" alt="GitHub Copilot" className="w-14 h-14 object-contain group-hover:scale-105 transition-transform drop-shadow-sm flex-shrink-0" />
+                    <div>
+                      <p className="font-bold text-sm text-ali-heading">GitHub Copilot</p>
+                      <span className="text-[10px] font-bold px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full">GH-300</span>
                     </div>
                   </a>
                 </div>
-              </div>
 
-              {/* EPAM AI */}
-              <div className="mt-6 pt-6 border-t border-gray-100">
-                <p className="text-xs font-bold uppercase tracking-widest text-purple-600 mb-3 flex items-center gap-2">
-                  <span className="w-6 h-px bg-purple-600 inline-block"></span> AI & Leadership
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-xs font-bold border border-purple-100">EPAM AI Masterclass Excellence</span>
-                  <span className="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-xs font-bold border border-purple-100">EPAM Prompts & Game Mastery</span>
-                  <span className="px-4 py-2 bg-blue-50 text-ali-blue-dark rounded-full text-xs font-bold border border-blue-100">Microsoft Copilot Champion</span>
+                {/* AI & Leadership */}
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-purple-600 mb-3 flex items-center gap-2">
+                    <span className="w-4 h-px bg-purple-600 inline-block"></span> AI & Leadership
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3 p-3 rounded-xl bg-purple-50/70 border border-purple-100/60">
+                      <span className="text-base flex-shrink-0">🤖</span>
+                      <p className="text-xs font-bold text-purple-700 leading-snug">EPAM AI Masterclass Excellence</p>
+                    </div>
+                    <div className="flex items-center gap-3 p-3 rounded-xl bg-purple-50/70 border border-purple-100/60">
+                      <span className="text-base flex-shrink-0">🎮</span>
+                      <p className="text-xs font-bold text-purple-700 leading-snug">EPAM Prompts & Game Mastery</p>
+                    </div>
+                    <div className="flex items-center gap-3 p-3 rounded-xl bg-blue-50/70 border border-blue-100/60">
+                      <span className="text-base flex-shrink-0">⚡</span>
+                      <p className="text-xs font-bold text-ali-blue-dark leading-snug">Microsoft Copilot Champion</p>
+                    </div>
+                  </div>
                 </div>
+
               </div>
             </div>
 
@@ -652,8 +674,8 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">
               Products & <span className="relative inline-block pb-2">
                 Resources
-                <svg className="absolute w-full h-5 -bottom-0.5 left-0 text-ali-blue-dark/55" viewBox="0 0 130 13" fill="none" aria-hidden="true">
-                  <path d="M2 11 C28 5 60 3 90 7 C108 9 120 8 128 9" stroke="currentColor" strokeWidth="6" strokeLinecap="round"/>
+                <svg className="absolute w-full h-5 -bottom-0.5 left-0 text-ali-blue-dark" viewBox="0 0 130 13" fill="none" aria-hidden="true">
+                  <path d="M2 11 C28 5 60 3 90 7 C108 9 120 8 128 9" stroke="currentColor" strokeWidth="6" strokeLinecap="round" opacity="0.75"/>
                 </svg>
               </span>
             </h2>
@@ -751,8 +773,8 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
               Brand <span className="text-ali-orange relative inline-block pb-2">
                 Collaborations
-                <svg className="absolute w-full h-6 -bottom-0.5 left-0 text-ali-orange/55" viewBox="0 0 200 15" fill="none" aria-hidden="true">
-                  <path d="M2 12 C40 5 80 3 120 7 C150 10 170 8 198 10" stroke="currentColor" strokeWidth="6" strokeLinecap="round"/>
+                <svg className="absolute w-full h-6 -bottom-0.5 left-0 text-ali-orange" viewBox="0 0 200 15" fill="none" aria-hidden="true">
+                  <path d="M2 12 C40 5 80 3 120 7 C150 10 170 8 198 10" stroke="currentColor" strokeWidth="6" strokeLinecap="round" opacity="0.8"/>
                 </svg>
               </span>
             </h2>
@@ -889,14 +911,14 @@ function App() {
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
             Ready to <span className="text-ali-orange relative inline-block pb-2">
               Level Up?
-              <svg className="absolute w-full h-6 -bottom-0.5 left-0 text-ali-orange/60" viewBox="0 0 110 15" fill="none" aria-hidden="true">
-                <path d="M2 12 C20 5 45 3 68 7 C84 10 96 8 108 10" stroke="currentColor" strokeWidth="7" strokeLinecap="round"/>
+              <svg className="absolute w-full h-6 -bottom-0.5 left-0 text-ali-orange" viewBox="0 0 110 15" fill="none" aria-hidden="true">
+                <path d="M2 12 C20 5 45 3 68 7 C84 10 96 8 108 10" stroke="currentColor" strokeWidth="7" strokeLinecap="round" opacity="0.8"/>
               </svg>
             </span>
           </h2>
           <div className="flex justify-center my-5" aria-hidden="true">
             {/* hand-drawn down arrow */}
-            <svg className="w-9 h-14 text-ali-orange/45" viewBox="0 0 36 56" fill="none">
+            <svg className="w-9 h-14 text-ali-orange" viewBox="0 0 36 56" fill="none">
               <path d="M18 3 C17 16 18 30 18 48 M8 38 C13 50 18 52 24 42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
