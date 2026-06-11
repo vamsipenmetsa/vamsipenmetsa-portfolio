@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Bot, Server, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Bot, Server, ArrowRight, Megaphone } from 'lucide-react';
 
 function Links() {
   return (
@@ -29,6 +29,25 @@ function Links() {
         <a href="/vamsipenmetsa-portfolio"
           className="block w-full text-center py-3 bg-white text-ali-heading rounded-2xl font-bold text-sm border-2 border-gray-200 hover:border-ali-orange transition-colors">
           View Full Portfolio
+        </a>
+
+        {/* Brand Collaborations — Passionfroot */}
+        <a href="https://www.passionfroot.me/vamsi-penmetsa" target="_blank" rel="noopener noreferrer"
+          className="block w-full rounded-2xl p-4 bg-gradient-to-r from-ali-orange to-purple-600 text-white hover:opacity-95 hover:-translate-y-0.5 transition-all shadow-lg">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+              <Megaphone size={18} className="text-white" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="font-bold text-sm">Brand Collaborations</p>
+              <p className="text-xs text-white/80">Sponsorships · Partnerships · Promos</p>
+            </div>
+            <span className="text-[10px] font-bold px-2 py-0.5 bg-white/25 rounded-full flex-shrink-0">NEW</span>
+          </div>
+          <p className="text-xs text-white/90 pl-12">Reach 15K+ DevOps professionals · Newsletter · Content · Reviews</p>
+          <div className="flex items-center gap-1 pl-12 mt-2 text-xs font-bold text-white/90">
+            View on Passionfroot <ArrowRight size={13} />
+          </div>
         </a>
 
         {/* Divider — Services */}

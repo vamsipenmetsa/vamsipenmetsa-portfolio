@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote, Megaphone, TrendingUp, FileText, Star } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +20,7 @@ function App() {
             <a href="#talks" className="font-sans font-medium hover:text-ali-orange transition-colors">Talks</a>
             <a href="#about" className="font-sans font-medium hover:text-ali-orange transition-colors">About</a>
             <a href="#products" className="font-sans font-medium hover:text-ali-orange transition-colors">Products</a>
+            <a href="#collaborate" className="font-sans font-medium hover:text-purple-600 transition-colors">Collaborate</a>
             <a href="/vamsipenmetsa-portfolio/links" className="font-sans font-medium hover:text-ali-blue-dark transition-colors">Links</a>
             <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-lg transition-all transform hover:scale-105 shadow-sm">
               Book a Session
@@ -42,6 +43,7 @@ function App() {
               <a href="#talks" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Talks</a>
               <a href="#about" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>About</a>
               <a href="#products" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Products</a>
+              <a href="#collaborate" className="block font-medium p-2 hover:bg-purple-50 text-purple-700 rounded" onClick={toggleMenu}>Collaborate</a>
               <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="block font-bold text-ali-orange p-2" onClick={toggleMenu}>Book a Session</a>
             </div>
           </div>
@@ -701,6 +703,90 @@ function App() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Brand Collaborations Section */}
+      <section id="collaborate" className="py-20 bg-gradient-to-br from-ali-orange/5 via-white to-purple-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Header */}
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-bold mb-4">
+              <Megaphone size={16} /> Brand Collaborations
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+              Let's Create <span className="text-ali-orange">Together</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Reaching cloud engineers, DevOps professionals, and AI practitioners across LinkedIn and beyond. Available for sponsorships, product features, and content partnerships.
+            </p>
+          </div>
+
+          {/* Audience Reach Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {[
+              { stat: '15K+', label: 'DevOps Community', sub: 'LinkedIn Group' },
+              { stat: '150+', label: 'Interviews Conducted', sub: 'Cloud & DevOps' },
+              { stat: '7×', label: 'Azure Certified', sub: 'Tech Authority' },
+              { stat: '30+', label: 'Day Content Series', sub: 'Breaking Down Claude' },
+            ].map(({ stat, label, sub }) => (
+              <div key={label} className="bg-white rounded-2xl p-5 text-center border border-gray-100 shadow-sm">
+                <p className="text-2xl font-serif font-bold text-ali-orange">{stat}</p>
+                <p className="text-xs font-bold text-ali-heading mt-1">{label}</p>
+                <p className="text-[11px] text-gray-400 mt-0.5">{sub}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Passionfroot CTA — Hero Card */}
+          <div className="relative bg-gradient-to-r from-ali-orange to-purple-600 rounded-3xl p-8 md:p-10 text-white overflow-hidden mb-10 shadow-2xl">
+            <div className="absolute -top-10 -right-10 w-48 h-48 bg-white/10 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute -bottom-8 -left-8 w-36 h-36 bg-white/10 rounded-full blur-2xl pointer-events-none" />
+            <div className="relative z-10 flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-1 text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full text-sm font-bold mb-4">
+                  <Star size={14} className="fill-current" /> New Portfolio · Brand Deals
+                </div>
+                <h3 className="text-2xl md:text-3xl font-serif font-bold mb-3 leading-snug">
+                  Sponsor My Content &<br className="hidden md:block" /> Reach Tech Professionals
+                </h3>
+                <p className="text-white/85 text-sm md:text-base leading-relaxed max-w-lg">
+                  I've launched a dedicated creator portfolio on Passionfroot for brand partnerships — newsletter sponsorships, tool reviews, ebook promotions, and content collaborations targeting cloud & AI professionals.
+                </p>
+              </div>
+              <div className="flex-shrink-0 text-center">
+                <a
+                  href="https://www.passionfroot.me/vamsi-penmetsa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-white text-ali-orange rounded-full font-bold text-base hover:shadow-2xl hover:scale-105 transition-all shadow-lg"
+                >
+                  View on Passionfroot <ArrowRight size={18} />
+                </a>
+                <p className="text-white/60 text-xs mt-3">Packages, pricing & media kit</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Collaboration Types */}
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { icon: <Linkedin size={20} className="text-[#0A66C2]" />, bg: 'bg-[#0A66C2]/10', title: 'Newsletter Sponsorship', desc: 'Featured spot in The Architect\'s Edge — weekly AI & cloud insights' },
+              { icon: <Star size={20} className="text-ali-orange" />, bg: 'bg-ali-orange/10', title: 'Product Reviews', desc: 'Honest deep-dives on dev tools, cloud platforms & AI products' },
+              { icon: <FileText size={20} className="text-purple-600" />, bg: 'bg-purple-50', title: 'Content Partnerships', desc: 'Co-created articles, tutorials, and LinkedIn posts' },
+              { icon: <TrendingUp size={20} className="text-green-600" />, bg: 'bg-green-50', title: 'Course & EBook Promos', desc: 'Promote to a targeted audience of cloud & DevOps professionals' },
+            ].map(({ icon, bg, title, desc }) => (
+              <div key={title} className="bg-white rounded-2xl p-5 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+                <div className={`w-10 h-10 ${bg} rounded-xl flex items-center justify-center mb-3`}>
+                  {icon}
+                </div>
+                <p className="font-bold text-sm text-ali-heading mb-1">{title}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
