@@ -73,7 +73,7 @@ function App() {
               Building ML/LLM Platforms
               <span className="block text-ali-orange relative">
                 at Enterprise Scale
-                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 320 9" fill="none" aria-hidden="true">
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue-dark" viewBox="0 0 320 9" fill="none" aria-hidden="true">
                   <path d="M2 7C74 3.7 253 -2.3 318 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
@@ -760,7 +760,7 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
               Brand <span className="text-ali-orange relative inline-block">
                 Collaborations
-                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 230 9" fill="none" aria-hidden="true">
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue-dark" viewBox="0 0 230 9" fill="none" aria-hidden="true">
                   <path d="M2 7C53 3.7 182 -2.3 228 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
@@ -888,7 +888,7 @@ function App() {
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
             Ready to <span className="text-ali-orange relative inline-block">
               Level Up?
-              <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 120 9" fill="none" aria-hidden="true">
+              <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue-dark" viewBox="0 0 120 9" fill="none" aria-hidden="true">
                 <path d="M2 7C28 3.7 95 -2.3 118 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
               </svg>
             </span>
