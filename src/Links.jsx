@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, ArrowRight, Megaphone } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, ArrowRight, Megaphone, Rss } from 'lucide-react';
 
 function Links() {
   return (
@@ -139,6 +139,18 @@ function Links() {
           <div className="flex-1 min-w-0">
             <p className="font-bold text-sm text-ali-heading">The Architect's Edge</p>
             <p className="text-xs text-gray-500">Weekly AI, cloud & platform engineering patterns</p>
+          </div>
+          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+        </a>
+
+        <a href="https://brokenpipeline.substack.com/subscribe" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-[#FF6719]/20 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div className="w-10 h-10 bg-[#FF6719] rounded-xl flex items-center justify-center flex-shrink-0">
+            <Rss size={20} className="text-white" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">Broken Pipeline</p>
+            <p className="text-xs text-gray-500">Where Systems Meet Humanity — Substack</p>
           </div>
           <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
         </a>

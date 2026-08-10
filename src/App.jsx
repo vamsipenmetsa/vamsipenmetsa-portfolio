@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote, Megaphone } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote, Megaphone, Rss } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -743,17 +743,33 @@ function App() {
             </a>
           </div>
 
-          {/* Newsletter CTA */}
-          <div className="mt-10 bg-white rounded-3xl p-8 border border-[#0A66C2]/20 text-center">
-            <div className="flex flex-col items-center gap-4">
-              <div className="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center">
-                <Linkedin size={28} className="text-[#0A66C2]" />
+          {/* Newsletter CTAs */}
+          <div className="mt-10 grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-3xl p-8 border border-[#0A66C2]/20 text-center">
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center">
+                  <Linkedin size={28} className="text-[#0A66C2]" />
+                </div>
+                <h3 className="font-bold text-xl font-serif">The Architect's Edge</h3>
+                <p className="text-gray-600 text-sm max-w-md">Weekly patterns from AI, cloud, and platform engineering. Real architectures, zero fluff.</p>
+                <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7460975088108978176" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-[#0A66C2] text-white rounded-full font-bold hover:bg-[#004182] hover:shadow-lg transition-all">
+                  Subscribe on LinkedIn <ArrowRight size={16} />
+                </a>
               </div>
-              <h3 className="font-bold text-xl font-serif">The Architect's Edge</h3>
-              <p className="text-gray-600 text-sm max-w-md">Weekly patterns from AI, cloud, and platform engineering. Real architectures, zero fluff.</p>
-              <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7460975088108978176" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-[#0A66C2] text-white rounded-full font-bold hover:bg-[#004182] hover:shadow-lg transition-all">
-                Subscribe on LinkedIn <ArrowRight size={16} />
-              </a>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 border border-[#FF6719]/20 text-center">
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-14 h-14 bg-[#FF6719]/10 rounded-2xl flex items-center justify-center">
+                  <Rss size={28} className="text-[#FF6719]" />
+                </div>
+                <h3 className="font-bold text-xl font-serif">Broken Pipeline</h3>
+                <p className="text-xs font-bold text-[#FF6719] uppercase tracking-widest -mt-2">Where Systems Meet Humanity</p>
+                <p className="text-gray-600 text-sm max-w-md">Systems break. People build. We learn. Notes on AI, DevOps, and architecture from production.</p>
+                <a href="https://brokenpipeline.substack.com/subscribe" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF6719] text-white rounded-full font-bold hover:bg-[#e0570f] hover:shadow-lg transition-all">
+                  Subscribe on Substack <ArrowRight size={16} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
