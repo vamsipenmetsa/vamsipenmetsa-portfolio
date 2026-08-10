@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, Bot, Server, ArrowRight, Megaphone } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, ArrowRight, Megaphone } from 'lucide-react';
 
 function Links() {
   return (
@@ -129,42 +129,6 @@ function Links() {
             <p className="text-xs text-gray-500">Attract recruiters — free step-by-step guide</p>
           </div>
           <span className="text-[10px] font-bold px-2 py-0.5 bg-green-500 text-white rounded-full flex-shrink-0">FREE</span>
-        </a>
-
-        <a href="https://vamsipenmetsa.gumroad.com/l/terraform" target="_blank" rel="noopener noreferrer"
-          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
-          <div className="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
-            <Server size={20} className="text-white" />
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="font-bold text-sm text-ali-heading">Terraform EBook</p>
-            <p className="text-xs text-gray-500">IaC from fundamentals to production</p>
-          </div>
-          <span className="text-[10px] font-bold text-gray-400 flex-shrink-0">PLN 11.13+</span>
-        </a>
-
-        <a href="https://vamsipenmetsa.gumroad.com/l/ghcp" target="_blank" rel="noopener noreferrer"
-          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
-          <div className="w-10 h-10 bg-ali-blue-dark rounded-xl flex items-center justify-center flex-shrink-0">
-            <Bot size={20} className="text-white" />
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="font-bold text-sm text-ali-heading">GitHub Copilot Visual Guide</p>
-            <p className="text-xs text-gray-500">Master AI-powered coding</p>
-          </div>
-          <span className="text-[10px] font-bold text-gray-400 flex-shrink-0">PLN 18.57+</span>
-        </a>
-
-        <a href="https://vamsipenmetsa.gumroad.com/l/kube" target="_blank" rel="noopener noreferrer"
-          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
-          <div className="w-10 h-10 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
-            <Server size={20} className="text-white" />
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="font-bold text-sm text-ali-heading">Kubernetes Cheat Sheet</p>
-            <p className="text-xs text-gray-500">From basics to advanced K8s</p>
-          </div>
-          <span className="text-[10px] font-bold text-gray-400 flex-shrink-0">PLN 11.13+</span>
         </a>
 
         <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7460975088108978176" target="_blank" rel="noopener noreferrer"

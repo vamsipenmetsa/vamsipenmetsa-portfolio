@@ -714,7 +714,7 @@ function App() {
                 <h3 className="font-bold text-lg mb-1 group-hover:text-purple-600 transition-colors">Terraform EBook</h3>
                 <p className="text-sm text-gray-500">Infrastructure as Code — from fundamentals to production</p>
               </div>
-              <span className="text-xs font-bold text-gray-400 flex-shrink-0">PLN 11.13+</span>
+              <span className="text-xs font-bold text-gray-400 flex-shrink-0">$2.99+</span>
               <ArrowRight size={20} className="text-gray-300 group-hover:text-purple-600 transition-colors flex-shrink-0" />
             </a>
 
@@ -726,7 +726,7 @@ function App() {
                 <h3 className="font-bold text-lg mb-1 group-hover:text-ali-blue-dark transition-colors">GitHub Copilot Guide</h3>
                 <p className="text-sm text-gray-500">Master AI-powered coding with prompting strategies</p>
               </div>
-              <span className="text-xs font-bold text-gray-400 flex-shrink-0">PLN 18.57+</span>
+              <span className="text-xs font-bold text-gray-400 flex-shrink-0">$4.99+</span>
               <ArrowRight size={20} className="text-gray-300 group-hover:text-ali-blue-dark transition-colors flex-shrink-0" />
             </a>
 
@@ -738,7 +738,7 @@ function App() {
                 <h3 className="font-bold text-lg mb-1 group-hover:text-ali-orange transition-colors">Kubernetes Cheat Sheet</h3>
                 <p className="text-sm text-gray-500">Complete K8s reference — basics to advanced</p>
               </div>
-              <span className="text-xs font-bold text-gray-400 flex-shrink-0">PLN 11.13+</span>
+              <span className="text-xs font-bold text-gray-400 flex-shrink-0">$2.99+</span>
               <ArrowRight size={20} className="text-gray-300 group-hover:text-ali-orange transition-colors flex-shrink-0" />
             </a>
           </div>
