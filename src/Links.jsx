@@ -108,7 +108,7 @@ function Links() {
         <p className="text-xs font-bold text-gray-400 uppercase tracking-widest pt-4 pb-1">Products & Resources</p>
 
         <a href="https://vamsipenmetsa.gumroad.com/l/claude" target="_blank" rel="noopener noreferrer"
-          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border-2 border-ali-orange/30 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border-2 border-green-500/40 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
           <div className="w-10 h-10 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
             <BookOpen size={20} className="text-white" />
           </div>
@@ -116,7 +116,19 @@ function Links() {
             <p className="font-bold text-sm text-ali-heading">Claude Exam Patterns EBook</p>
             <p className="text-xs text-gray-500">From the Breaking Down Claude in 30 Days series</p>
           </div>
-          <span className="text-[10px] font-bold px-2 py-0.5 bg-ali-orange text-white rounded-full flex-shrink-0">NEW</span>
+          <span className="text-[10px] font-bold px-2 py-0.5 bg-green-500 text-white rounded-full flex-shrink-0">FREE</span>
+        </a>
+
+        <a href="https://vamsipenmetsa.gumroad.com/l/linkedin" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border-2 border-green-500/40 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
+          <div className="w-10 h-10 bg-[#0A66C2] rounded-xl flex items-center justify-center flex-shrink-0">
+            <Linkedin size={20} className="text-white" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-ali-heading">LinkedIn Zero-Cost Playbook</p>
+            <p className="text-xs text-gray-500">Attract recruiters — free step-by-step guide</p>
+          </div>
+          <span className="text-[10px] font-bold px-2 py-0.5 bg-green-500 text-white rounded-full flex-shrink-0">FREE</span>
         </a>
 
         <a href="https://vamsipenmetsa.gumroad.com/l/terraform" target="_blank" rel="noopener noreferrer"
@@ -128,10 +140,10 @@ function Links() {
             <p className="font-bold text-sm text-ali-heading">Terraform EBook</p>
             <p className="text-xs text-gray-500">IaC from fundamentals to production</p>
           </div>
-          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+          <span className="text-[10px] font-bold text-gray-400 flex-shrink-0">PLN 11.13+</span>
         </a>
 
-        <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" rel="noopener noreferrer"
+        <a href="https://vamsipenmetsa.gumroad.com/l/ghcp" target="_blank" rel="noopener noreferrer"
           className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
           <div className="w-10 h-10 bg-ali-blue-dark rounded-xl flex items-center justify-center flex-shrink-0">
             <Bot size={20} className="text-white" />
@@ -140,10 +152,10 @@ function Links() {
             <p className="font-bold text-sm text-ali-heading">GitHub Copilot Visual Guide</p>
             <p className="text-xs text-gray-500">Master AI-powered coding</p>
           </div>
-          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+          <span className="text-[10px] font-bold text-gray-400 flex-shrink-0">PLN 18.57+</span>
         </a>
 
-        <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" rel="noopener noreferrer"
+        <a href="https://vamsipenmetsa.gumroad.com/l/kube" target="_blank" rel="noopener noreferrer"
           className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
           <div className="w-10 h-10 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
             <Server size={20} className="text-white" />
@@ -152,7 +164,7 @@ function Links() {
             <p className="font-bold text-sm text-ali-heading">Kubernetes Cheat Sheet</p>
             <p className="text-xs text-gray-500">From basics to advanced K8s</p>
           </div>
-          <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
+          <span className="text-[10px] font-bold text-gray-400 flex-shrink-0">PLN 11.13+</span>
         </a>
 
         <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7460975088108978176" target="_blank" rel="noopener noreferrer"

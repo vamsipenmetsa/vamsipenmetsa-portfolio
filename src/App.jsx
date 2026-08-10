@@ -669,35 +669,42 @@ function App() {
             <p className="text-gray-500 text-lg">Tools and guides to accelerate your career.</p>
           </div>
 
-          {/* Featured Product */}
-          <div className="mb-10">
-            <a href="https://vamsipenmetsa.gumroad.com/l/claude" target="_blank" rel="noopener noreferrer" className="group block bg-white rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-ali-orange/30 hover:border-ali-orange relative overflow-hidden">
+          {/* Featured Free Products */}
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <a href="https://vamsipenmetsa.gumroad.com/l/claude" target="_blank" rel="noopener noreferrer" className="group block bg-white rounded-3xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-green-500/40 hover:border-green-500 relative overflow-hidden">
               <div className="absolute top-4 right-4">
-                <span className="text-xs font-bold px-4 py-1.5 bg-ali-orange text-white rounded-full shadow-sm">NEW</span>
+                <span className="text-xs font-bold px-4 py-1.5 bg-green-500 text-white rounded-full shadow-sm">FREE</span>
               </div>
-              <div className="flex flex-col md:flex-row items-center gap-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-ali-orange/20 to-ali-yellow/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                  <BookOpen size={40} className="text-ali-orange" />
+              <div className="flex items-center gap-5">
+                <div className="w-16 h-16 bg-gradient-to-br from-ali-orange/20 to-ali-yellow/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <BookOpen size={32} className="text-ali-orange" />
                 </div>
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="font-bold text-2xl mb-2 group-hover:text-ali-orange transition-colors">Claude Exam Patterns EBook</h3>
-                  <p className="text-gray-600 leading-relaxed mb-3">Master Claude AI with proven exam patterns, prompt engineering techniques, and real-world strategies. From the "Breaking Down Claude in 30 Days" series.</p>
-                  <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                    <span className="text-xs font-medium px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Claude AI</span>
-                    <span className="text-xs font-medium px-3 py-1 bg-ali-blue/10 text-ali-blue-dark rounded-full">Exam Patterns</span>
-                    <span className="text-xs font-medium px-3 py-1 bg-ali-orange/10 text-ali-orange rounded-full">Prompt Engineering</span>
-                  </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-lg mb-1 group-hover:text-ali-orange transition-colors">Claude Exam Patterns EBook</h3>
+                  <p className="text-sm text-gray-500">Exam patterns & prompt engineering, free to download</p>
                 </div>
-                <div className="flex-shrink-0 text-center">
-                  <span className="inline-flex items-center gap-2 px-6 py-3 bg-ali-orange text-white rounded-full font-bold group-hover:bg-ali-blue-dark group-hover:shadow-lg transition-all">
-                    Get EBook <ArrowRight size={16} />
-                  </span>
+                <ArrowRight size={20} className="text-gray-300 group-hover:text-ali-orange transition-colors flex-shrink-0" />
+              </div>
+            </a>
+
+            <a href="https://vamsipenmetsa.gumroad.com/l/linkedin" target="_blank" rel="noopener noreferrer" className="group block bg-white rounded-3xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-green-500/40 hover:border-green-500 relative overflow-hidden">
+              <div className="absolute top-4 right-4">
+                <span className="text-xs font-bold px-4 py-1.5 bg-green-500 text-white rounded-full shadow-sm">FREE</span>
+              </div>
+              <div className="flex items-center gap-5">
+                <div className="w-16 h-16 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Linkedin size={32} className="text-[#0A66C2]" />
                 </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-lg mb-1 group-hover:text-[#0A66C2] transition-colors">LinkedIn Zero-Cost Playbook</h3>
+                  <p className="text-sm text-gray-500">Attract recruiters — free step-by-step playbook</p>
+                </div>
+                <ArrowRight size={20} className="text-gray-300 group-hover:text-[#0A66C2] transition-colors flex-shrink-0" />
               </div>
             </a>
           </div>
 
-          {/* Other Resources */}
+          {/* Paid Resources */}
           <div className="grid md:grid-cols-2 gap-6">
             <a href="https://vamsipenmetsa.gumroad.com/l/terraform" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
               <div className="w-16 h-16 bg-purple-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
@@ -707,10 +714,11 @@ function App() {
                 <h3 className="font-bold text-lg mb-1 group-hover:text-purple-600 transition-colors">Terraform EBook</h3>
                 <p className="text-sm text-gray-500">Infrastructure as Code — from fundamentals to production</p>
               </div>
+              <span className="text-xs font-bold text-gray-400 flex-shrink-0">PLN 11.13+</span>
               <ArrowRight size={20} className="text-gray-300 group-hover:text-purple-600 transition-colors flex-shrink-0" />
             </a>
 
-            <a href="https://vamsipenmetsa.gumroad.com/l/ryfhqh" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
+            <a href="https://vamsipenmetsa.gumroad.com/l/ghcp" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
               <div className="w-16 h-16 bg-ali-blue/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-ali-blue/20 transition-colors">
                 <Code size={32} className="text-ali-blue-dark" />
               </div>
@@ -718,10 +726,11 @@ function App() {
                 <h3 className="font-bold text-lg mb-1 group-hover:text-ali-blue-dark transition-colors">GitHub Copilot Guide</h3>
                 <p className="text-sm text-gray-500">Master AI-powered coding with prompting strategies</p>
               </div>
+              <span className="text-xs font-bold text-gray-400 flex-shrink-0">PLN 18.57+</span>
               <ArrowRight size={20} className="text-gray-300 group-hover:text-ali-blue-dark transition-colors flex-shrink-0" />
             </a>
 
-            <a href="https://vamsipenmetsa.gumroad.com/l/knioda" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
+            <a href="https://vamsipenmetsa.gumroad.com/l/kube" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
               <div className="w-16 h-16 bg-ali-orange/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-ali-orange/20 transition-colors">
                 <Cloud size={32} className="text-ali-orange" />
               </div>
@@ -729,6 +738,7 @@ function App() {
                 <h3 className="font-bold text-lg mb-1 group-hover:text-ali-orange transition-colors">Kubernetes Cheat Sheet</h3>
                 <p className="text-sm text-gray-500">Complete K8s reference — basics to advanced</p>
               </div>
+              <span className="text-xs font-bold text-gray-400 flex-shrink-0">PLN 11.13+</span>
               <ArrowRight size={20} className="text-gray-300 group-hover:text-ali-orange transition-colors flex-shrink-0" />
             </a>
           </div>
