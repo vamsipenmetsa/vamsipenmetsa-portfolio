@@ -260,7 +260,7 @@ function Links() {
 
         {/* Back */}
         <div className="text-center pt-6">
-          <a href="/vamsipenmetsa-portfolio" className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-ali-orange transition-colors">
+          <a href="/portfolio" className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-ali-orange transition-colors">
             <ArrowLeft size={14} /> Back to Portfolio
           </a>
         </div>

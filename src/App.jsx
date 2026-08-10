@@ -21,7 +21,7 @@ function App() {
             <a href="#about" className="font-sans font-medium hover:text-ali-orange transition-colors">About</a>
             <a href="#products" className="font-sans font-medium hover:text-ali-orange transition-colors">Products</a>
             <a href="#collaborate" className="font-sans font-medium hover:text-ali-orange transition-colors">Collaborate</a>
-            <a href="/vamsipenmetsa-portfolio/links" className="font-sans font-medium hover:text-ali-blue-dark transition-colors">Links</a>
+            <a href="/portfolio/links" className="font-sans font-medium hover:text-ali-blue-dark transition-colors">Links</a>
             <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-lg transition-all transform hover:scale-105 shadow-sm">
               Book a Session
             </a>

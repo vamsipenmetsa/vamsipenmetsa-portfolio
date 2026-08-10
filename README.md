@@ -1,6 +1,6 @@
 # Vamsi Penmetsa - Portfolio
 
-🌐 **Live Website**: [https://vamsipenmetsa.github.io/vamsipenmetsa-portfolio/](https://vamsipenmetsa.github.io/vamsipenmetsa-portfolio/)
+🌐 **Live Website**: [https://vamsipenmetsa.github.io/portfolio/](https://vamsipenmetsa.github.io/portfolio/)
 
 Personal portfolio website showcasing my work as a Lead DevOps Engineer, AI Enthusiast, and content creator.
 
@@ -16,7 +16,7 @@ Personal portfolio website showcasing my work as a Lead DevOps Engineer, AI Enth
 
 - `/src` - React components and styles
 - `/public` - Static assets
-- `/links.html` - Standalone links page
+- `/public/links/index.html` - Standalone, crawler-friendly links page (served statically at `/links/`, includes OpenGraph tags for LinkedIn/social previews)
 
 ## 🛠️ Built With
 
