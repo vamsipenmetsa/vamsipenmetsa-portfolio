@@ -916,7 +916,7 @@ function App() {
               <p className="text-sm text-white/60 mt-1">Book directly, see all packages, and download the media kit.</p>
             </div>
             <a
-              href="https://www.passionfroot.me/vamsi-penmetsa"
+              href="https://www.passionfroot.me/vamsipenmetsa"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0 inline-flex items-center gap-2 px-7 py-3.5 bg-white text-ali-heading rounded-full font-bold hover:shadow-xl hover:scale-105 transition-all"

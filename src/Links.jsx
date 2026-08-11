@@ -46,7 +46,7 @@ function Links() {
         </a>
 
         {/* Brand Collaborations — Passionfroot */}
-        <a href="https://www.passionfroot.me/vamsi-penmetsa" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.passionfroot.me/vamsipenmetsa" target="_blank" rel="noopener noreferrer"
           className="block w-full rounded-2xl p-4 bg-gradient-to-r from-ali-orange to-purple-600 text-white hover:opacity-95 hover:-translate-y-0.5 transition-all shadow-lg">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
