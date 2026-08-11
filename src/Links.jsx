@@ -10,6 +10,10 @@ function Links() {
         <img
           src="./vamsi-profile.jpg"
           alt="Vamsi Penmetsa"
+          width={480}
+          height={617}
+          fetchPriority="high"
+          decoding="async"
           className="w-24 h-24 rounded-full border-4 border-white shadow-lg mx-auto object-cover object-[center_20%] mb-4"
         />
         <h1 className="text-2xl font-serif font-bold text-ali-heading relative inline-block">

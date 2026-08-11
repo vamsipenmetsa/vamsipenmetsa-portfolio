@@ -59,8 +59,12 @@ function App() {
           <div className="relative w-full md:w-5/12 flex justify-center md:justify-end">
             <div className="relative w-72 h-72 md:w-[420px] md:h-[420px]">
               <img
-                src="./vamsiPenmetsa.png"
+                src="./vamsiPenmetsa.webp"
                 alt="Vamsi Penmetsa — AI Systems Architect"
+                width={900}
+                height={1157}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-contain z-10 relative"
               />
             </div>
@@ -267,8 +271,12 @@ function App() {
               </div>
               <div className="md:w-80 flex-shrink-0">
                 <img
-                  src="./Interview_feedback_sharedbyHR.png"
+                  src="./Interview_feedback_sharedbyHR.webp"
                   alt="Interview feedback from Mikolaj B. shared via HR"
+                  width={700}
+                  height={139}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
                   onClick={(e) => window.open(e.target.src, '_blank')}
                 />
@@ -300,8 +308,12 @@ function App() {
             {/* Talk Image — full-width landscape */}
             <div className="relative">
               <img
-                src="./Vamsi_Tech_talk.JPG"
+                src="./Vamsi_Tech_talk.webp"
                 alt="Vamsi Penmetsa speaking at Microsoft Azure User Group Poland meetup at EPAM Warsaw office"
+                width={2400}
+                height={1600}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto max-h-[480px] object-cover object-center"
               />
               <div className="absolute top-4 left-4">
@@ -363,8 +375,12 @@ function App() {
                           </div>
                         </div>
                         <img
-                          src="./Bogumil_feedback.png"
+                          src="./Bogumil_feedback.webp"
                           alt="Feedback screenshot from Bogumil Barjasz after Azure Meetup #82"
+                          width={1000}
+                          height={263}
+                          loading="lazy"
+                          decoding="async"
                           className="mt-3 w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
                           onClick={(e) => window.open(e.target.src, '_blank')}
                         />
@@ -387,8 +403,12 @@ function App() {
                           </div>
                         </div>
                         <img
-                          src="./Maciej_feedback.png"
+                          src="./Maciej_feedback.webp"
                           alt="Feedback screenshot from Maciej Deptula after Azure Meetup #82"
+                          width={1000}
+                          height={216}
+                          loading="lazy"
+                          decoding="async"
                           className="mt-3 w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
                           onClick={(e) => window.open(e.target.src, '_blank')}
                         />
@@ -401,7 +421,7 @@ function App() {
             {/* Event Info Bar */}
             <div className="bg-gradient-to-r from-ali-blue-dark to-ali-blue px-6 md:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
               <div className="flex items-center gap-3 text-white">
-                <img src="https://secure.meetupstatic.com/photos/event/c/8/e/6/clean_523458150.webp" alt="Azure User Group Poland" className="w-8 h-8 rounded-full bg-white" onError={(e) => e.target.style.display='none'} />
+                <span className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-sm" aria-hidden="true">🇵🇱</span>
                 <span className="text-sm font-medium">Microsoft Azure User Group Poland · Collaboration with EPAM Systems</span>
               </div>
               <span className="text-xs text-white/70">4.8 ★ · 1,640 reviews</span>
@@ -730,7 +750,7 @@ function App() {
               <ArrowRight size={20} className="text-gray-300 group-hover:text-ali-blue-dark transition-colors flex-shrink-0" />
             </a>
 
-            <a href="https://vamsipenmetsa.gumroad.com/l/kube" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
+            <a href="https://vamsipenmetsa.gumroad.com/l/kube" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 bg-white rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 md:col-span-2">
               <div className="w-16 h-16 bg-ali-orange/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-ali-orange/20 transition-colors">
                 <Cloud size={32} className="text-ali-orange" />
               </div>
